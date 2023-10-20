@@ -37,13 +37,13 @@ export function BreweryMain() {
                 Haus Brews
               </div>
               <p class="text-gray-700 text-center">
-                Check out what we&apos;ve got on our 20 rotating taps!
+                Check out what we&apos;re brewing up!
               </p>
             </div>
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
-          <Link href="#">
+          <Link href="/brewery/food">
             <Image class="w-full" src={beerPic} alt="Second offering pic" />
             <div class="px-6 py-4">
               <div class="font-bold text-4xl text-center text-red-800 mb-2">
