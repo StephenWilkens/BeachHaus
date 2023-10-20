@@ -104,16 +104,16 @@ export function TwNav() {
             </svg>
           </button>
         </div>
-        <a href="#" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
+        <a href="/about" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
           About
         </a>
-        <a href="#" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
+        <a href="/brewery" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
           Brewery
         </a>
-        <a href="#" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
+        <a href="/restaurant" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
           Restaurant
         </a>
-        <a href="#" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
+        <a href="/rooftop" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
           Rooftop Bar
         </a>
       </div>
