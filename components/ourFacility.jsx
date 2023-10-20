@@ -1,9 +1,9 @@
 import lander_location from "../public/lander-location-Beach-Haus-1.jpg";
+import Link from "next/link";
 import Image from "next/image";
 import taps from "../public/TapMarkers.jpg";
 import bhLong from "../public/bh-long.jpeg";
 import entree from "../public/801entree.jpeg";
-
 
 export function OurFacility() {
   return (
@@ -23,9 +23,14 @@ export function OurFacility() {
               & refreshing ales. Don’t forget the food & views!
             </p>
             <br />
-            <p className="text-center">
-              Check out the new releases & our fan favorites on our menu!
-            </p>
+            <div class="ml-20 md:ml-36">
+              <Link
+                href="/brewery"
+                class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-4 rounded"
+              >
+                Learn More
+              </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -61,9 +66,18 @@ export function OurFacility() {
               </p>
               <br />
               <p>Check out the new releases & our fan favorites on our menu!</p>
+              <br />
+              <div class="ml-10 md:ml-36">
+              <Link
+                href="/restaurant"
+                class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-4 rounded"
+              >
+                Learn More
+              </Link>
+            </div>
             </div>
             <div className="hidden md:block md:col-start-2 md:col-end-2">
-              <Image src={taps} alt="taps"/>
+              <Image src={taps} alt="taps" />
             </div>
           </div>
         </div>
@@ -79,12 +93,12 @@ export function OurFacility() {
         </div>
         <div class="z-20 col-span-2 h-full w-full p-10">
           <div className="mx-auto grid grid-cols-2 py-10">
-            <div className="bg-orange-50 py-20 px-12 col-span-2 md:col-start-2 md:col-end-2 place-self-center mx-10">
+            <div className="bg-orange-50 py-20 px-5 mx-auto md:px-12 col-span-2 md:col-start-2 md:col-end-2 place-self-center md:mx-10">
               <h1 className="text-4xl ">Host Private Parties With Us</h1>
               <br />
               <p className="">
-                Contact our private events booking staff to rent out our event space for your
-                next party!
+                Contact our private events booking staff to rent out our event
+                space for your next party!
               </p>
               <br />
               <button class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-4 rounded">
