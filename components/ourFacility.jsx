@@ -63,7 +63,7 @@ export function OurFacility() {
               <p>Check out the new releases & our fan favorites on our menu!</p>
             </div>
             <div className="hidden md:block md:col-start-2 md:col-end-2">
-              <Image src={taps} />
+              <Image src={taps} alt="taps"/>
             </div>
           </div>
         </div>
