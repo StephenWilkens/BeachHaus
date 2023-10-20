@@ -21,10 +21,10 @@ export function MainAbout() {
       </div>
       <div class="bg-black">
         <p class="text-white text-left text-xl px-10 md:px-20 py-10">
-          This iconic location was originally the site of Freedman's bakery,
+          This iconic location was originally the site of Freedman&apos;s bakery,
           which opened in June of 1950. In February of 2014, we took over the
           building to continue to build onto the legacy. After many months of
-          heavy construction, Beach Haus opened it's doors for the first time on
+          heavy construction, Beach Haus opened it&apos;s doors for the first time on
           March 1st, 2015, starting with our 30 barrel brew house.
           <br />
           <br />

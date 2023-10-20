@@ -37,7 +37,7 @@ export function BreweryMain() {
                 Haus Brews
               </div>
               <p class="text-gray-700 text-center">
-                Check out what we've got on our 20 rotating taps!
+                Check out what we&apos;ve got on our 20 rotating taps!
               </p>
             </div>
           </Link>

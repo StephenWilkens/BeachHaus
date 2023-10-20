@@ -11,7 +11,7 @@ export function OurFacility() {
       <div className="mx-auto  bg-orange-50">
         <div className="max-w-6xl mx-auto grid grid-cols-2 py-10">
           <div className="hidden md:block md:col-start-1 md:col-end-1">
-            <Image src={taps} />
+            <Image src={taps} alt="taps" />
           </div>
           <div className="border-2 border-black py-20 px-12 rounded-xl col-span-2 md:col-start-2 md:col-end-2 place-self-center mx-3 md:mx-10">
             <h1 className="font-bold text-4xl text-center">

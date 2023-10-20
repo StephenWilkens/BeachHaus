@@ -22,7 +22,7 @@ export function ImageSlider({ autoSlide = false, autoSlideInterval = 3000 }) {
     if (!autoSlide) return;
     const slideInterval = setInterval(nextSlide, autoSlideInterval);
     return () => clearInterval(slideInterval);
-  }, []);
+  },);
 
   const prevSlide = () => {
     setCurrentIndex((currentIndex) =>

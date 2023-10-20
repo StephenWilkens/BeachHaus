@@ -315,7 +315,7 @@ export function BreweryFoodMenu() {
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">
-            FLIPPIN' FISH SANDWICH
+            FLIPPIN&apos; FISH SANDWICH
           </h1>
           <p class="text-center text-sm text-gray-500">
             Fried Flounder, Arugula, Peppadews, Lemon Pepper Aioli, Toasted
