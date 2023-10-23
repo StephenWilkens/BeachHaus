@@ -3,10 +3,10 @@ import bh1 from "../public/bh1.jpg";
 import bh2 from "../public/bh2.jpg";
 import bh3 from "../public/bh3.jpg";
 import bh4 from "../public/bh4.jpg";
-import av1 from "../public/averyimg1.jpeg"
-import av2 from "../public/averyimg2.jpeg"
-import av3 from "../public/averimg3.jpeg"
-import av4 from "../public/averyimg4.jpeg"
+import av1 from "../public/averyimg1.jpeg";
+import av2 from "../public/averyimg2.jpeg";
+import av3 from "../public/averimg3.jpeg";
+import av4 from "../public/averyimg4.jpeg";
 import bhLong from "../public/bh-long.jpeg";
 import Image from "next/image";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
@@ -22,7 +22,7 @@ export function ImageSlider({ autoSlide = false, autoSlideInterval = 3000 }) {
     if (!autoSlide) return;
     const slideInterval = setInterval(nextSlide, autoSlideInterval);
     return () => clearInterval(slideInterval);
-  },);
+  });
 
   const prevSlide = () => {
     setCurrentIndex((currentIndex) =>
@@ -41,8 +41,12 @@ export function ImageSlider({ autoSlide = false, autoSlideInterval = 3000 }) {
   };
 
   return (
-    <div className=" w-full m-auto relative group ">
-      <Image src={slides[currentIndex]} alt="Slider Image" className="" />
+    <div className=" w-full  lg:max-h-[540px] 2xl:max-h-[780px] m-auto relative group flex items-center justify-center overflow-hidden">
+        <Image
+          src={slides[currentIndex]}
+          alt="Slider Image"
+          class="place-self-center"
+        />
       <div className="absolute inset-0 flex items-center justify-between p-4">
         {/* Need some javascript to say if(currentIndex === 1) {use this ^} else if (=== 2) {use that} */}
         <button
