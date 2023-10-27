@@ -3,6 +3,7 @@ import Link from "next/link";
 import { bhRoundLogo } from "../public/bhRoundLogo.png";
 import Image from "next/image";
 import { useState } from "react";
+import { Dropdown } from "flowbite-react";
 
 export function TwNav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,16 +33,32 @@ export function TwNav() {
             </div>
 
             <div class="hidden md:flex items-center space-x-2">
-              <a href="/about" class="py-5 px-2 text-gray-700 hover:text-black">
+              <Link href="/about" class="py-5 px-2 text-gray-700 hover:text-black">
                 About
-              </a>
-              <a href="/brewery" class="py-5 px-2 text-gray-700 hover:text-black">
-                Brewery
-              </a>
-              <a href="/restaurant" class="py-5 px-2 text-gray-700 hover:text-black">
-                Restaurant
-              </a>
-              <a href="/rooftop" class="py-5 px-2 text-gray-700 hover:text-black">
+              </Link>
+
+              <Dropdown label="The Brewery" inline>
+                <Dropdown.Item as={Link} href="/brewery">Home</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/ontap">Currently on Tap</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/food">Food Menu</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/ourbeer">Our Beers</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/contractbrewing">Contract Brewing</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/eventspace">Event Space</Dropdown.Item>
+              </Dropdown>
+              
+              <Dropdown label="801 Craft Kitchen" inline>
+                <Dropdown.Item as={Link} href="/restaurant">Home</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/ontap">Currently on Tap</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/food">Food Menu</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/ourbeer">Our Beers</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/contractbrewing">Contract Brewing</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/eventspace">Event Space</Dropdown.Item>
+              </Dropdown>
+              
+              <a
+                href="/rooftop"
+                class="py-5 px-2 text-gray-700 hover:text-black"
+              >
                 Rooftop Bar
               </a>
             </div>
@@ -110,7 +127,10 @@ export function TwNav() {
         <a href="/brewery" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
           Brewery
         </a>
-        <a href="/restaurant" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
+        <a
+          href="/restaurant"
+          class="block py-2 pxp-4 text-sm hover:bg-gray-200"
+        >
           Restaurant
         </a>
         <a href="/rooftop" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
