@@ -135,25 +135,25 @@ export function TwNav() {
           <Sidebar.Collapse
             label="The Brewery"
           >
-            <Sidebar.Item href="/brewing">
+            <Sidebar.Item href="/brewery">
               Home
             </Sidebar.Item>
-            <Sidebar.Item href="/brewing/ontap">
+            <Sidebar.Item href="/brewery/ontap">
               On Tap
             </Sidebar.Item>
-            <Sidebar.Item href="/brewing/food">
+            <Sidebar.Item href="/brewery/food">
               Food Menu
             </Sidebar.Item>
-            <Sidebar.Item href="/brewing/ourbeers">
+            <Sidebar.Item href="/brewery/ourbeers">
               Our Beers
             </Sidebar.Item>
-            <Sidebar.Item href="/brewing/beerfinder">
+            <Sidebar.Item href="/brewery/beerfinder">
               Beer Finder
             </Sidebar.Item>
-            <Sidebar.Item href="/brewing/contractbrewing">
+            <Sidebar.Item href="/brewery/contractbrewing">
               Contract Brewing
             </Sidebar.Item>
-            <Sidebar.Item href="/brewing/eventspace">
+            <Sidebar.Item href="/brewery/eventspace">
               Event Space
             </Sidebar.Item>
           </Sidebar.Collapse>

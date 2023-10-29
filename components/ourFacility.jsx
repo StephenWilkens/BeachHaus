@@ -1,36 +1,56 @@
+"use client";
 import lander_location from "../public/lander-location-Beach-Haus-1.jpg";
 import Link from "next/link";
 import Image from "next/image";
 import taps from "../public/TapMarkers.jpg";
 import bhLong from "../public/bh-long.jpeg";
 import entree from "../public/801entree.jpeg";
+import oakTableSpread from "../public/oakTableSpread.jpeg";
+import { Card } from "flowbite-react";
 
 export function OurFacility() {
   return (
     <div>
-      <div className="mx-auto  bg-orange-50">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 py-10">
-          <div className="hidden md:block md:col-start-1 md:col-end-1">
-            <Image src={taps} alt="taps" />
+      <div className="mx-auto md:bg-gray-50">
+        <div>
+          <div class="md:hidden max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
+            <Link href="/brewery">
+              <Image
+                class="w-full"
+                src={oakTableSpread}
+                alt="first offering pic"
+              />
+              <div class="px-6 py-5">
+                <div class="font-bold text-5xl text-cyan-800 text-center mb-2">
+                  The Brewery at
+                  <br />
+                  Beach Haus
+                </div>
+                <p class="text-gray-700 text-justify pt-5 text-xl">
+                  Not only is our brewery the Jersey Shore&apos;s premier
+                  brewery for crispy lagers & refreshing ales, but we also offer
+                  incredible food and a full bar.
+                </p>
+              </div>
+            </Link>
           </div>
-          <div className="border-2 border-black py-20 px-12 rounded-xl col-span-2 md:col-start-2 md:col-end-2 place-self-center mx-3 md:mx-10">
-            <h1 className="font-bold text-4xl text-center">
-              Brewery at Beach Haus
+        </div>
+        <div className="max-w-7xl mx-auto grid grid-cols-2 py-5">
+          <div className="hidden md:block md:col-start-1 md:col-end-1">
+            <Image src={oakTableSpread} alt="taps" />
+          </div>
+          <div className="hidden md:block md:bg-white md:shadow-xl md:rounded-md md:py-32 md:px-12 md:col-span-1 md:place-self-center md:place-content-end md:mx-3 md:ml-28">
+            <h1 className="font-bold text-6xl text-cyan-800 text-justify">
+              The Brewery
+              <br />
+              at Beach Haus
             </h1>
             <br />
-            <p className="text-center">
-              Beach Haus is the Jersey Shore’s premier brewery for crispy lagers
-              & refreshing ales. Don’t forget the food & views!
+            <p className="text-gray-700 text-justify text-xl">
+              Not only is our brewery the Jersey Shore&apos;s premier brewery
+              for crispy lagers & refreshing ales, but we also offer
+              incredible food and a full bar.
             </p>
-            <br />
-            <div class="ml-20 md:ml-36">
-              <Link
-                href="/brewery"
-                class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-4 rounded"
-              >
-                Learn More
-              </Link>
-            </div>
           </div>
         </div>
       </div>
@@ -68,13 +88,13 @@ export function OurFacility() {
               <p>Check out the new releases & our fan favorites on our menu!</p>
               <br />
               <div class="ml-10 md:ml-36">
-              <Link
-                href="/restaurant"
-                class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-4 rounded"
-              >
-                Learn More
-              </Link>
-            </div>
+                <Link
+                  href="/restaurant"
+                  class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-4 rounded"
+                >
+                  Learn More
+                </Link>
+              </div>
             </div>
             <div className="hidden md:block md:col-start-2 md:col-end-2">
               <Image src={taps} alt="taps" />
@@ -93,15 +113,15 @@ export function OurFacility() {
         </div>
         <div class="z-20 col-span-2 h-full w-full p-10">
           <div className="mx-auto grid grid-cols-2 py-10">
-            <div className="bg-orange-50 py-20 px-5 mx-auto md:px-12 col-span-2 md:col-start-2 md:col-end-2 place-self-center md:mx-10">
-              <h1 className="text-4xl ">Host Private Parties With Us</h1>
+            <div className="bg-white shadow-inner rounded-md pb-6 pt-4 px-5 md:px-12 md:py-16 col-span-2 md:col-start-2 md:col-end-2 place-self-center md:mx-10">
+              <h1 className="text-4xl md:text-6xl md:font-medium text-cyan-800">Host Private Parties With Us</h1>
               <br />
               <p className="">
                 Contact our private events booking staff to rent out our event
                 space for your next party!
               </p>
               <br />
-              <button class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-4 rounded">
+              <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-4 rounded">
                 Book Today!
               </button>
             </div>
