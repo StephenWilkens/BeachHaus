@@ -10,7 +10,7 @@ import wave from "../public/bhWave.png";
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 text-white relative bottom-0 w-full">
       <div className="grid justify-items-center grid-cols-1 md:grid-cols-3 max-w-7xl px-5 py-16  mx-auto">
         <div className="space-y-5 p-5 ">
           <Link

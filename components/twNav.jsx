@@ -46,7 +46,7 @@ export function TwNav() {
                 <Dropdown.Item as={Link} href="/brewery/ourbeer">Our Beers</Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/beerfinder">Beer Finder</Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/contractbrewing">Contract Brewing</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/eventspace">Event Space</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/eventsbooking">Event Space</Dropdown.Item>
               </Dropdown>
               
               <Dropdown label="801 Craft Kitchen" inline>
@@ -69,12 +69,12 @@ export function TwNav() {
             <a href="#" class="py-5 px-3 text-gray-700 hover:text-black">
               Shop
             </a>
-            <a
-              href="#"
+            <Link
+              href="/brewery/eventsbooking"
               class="py-5 px-3 bg-red-500 hover:bg-red-400 text-white hover:text-red-800 rounded transition duration-300"
             >
               Book an Event!
-            </a>
+            </Link>
           </div>
 
           <div onClick={handleNav} class="md:hidden flex items-center">
@@ -153,7 +153,7 @@ export function TwNav() {
             <Sidebar.Item href="/brewery/contractbrewing">
               Contract Brewing
             </Sidebar.Item>
-            <Sidebar.Item href="/brewery/eventspace">
+            <Sidebar.Item href="/brewery/eventbooking">
               Event Space
             </Sidebar.Item>
           </Sidebar.Collapse>
