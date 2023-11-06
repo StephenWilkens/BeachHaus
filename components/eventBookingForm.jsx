@@ -8,6 +8,7 @@ import {
   Radio,
   Textarea,
   Datepicker,
+  Select,
 } from "flowbite-react";
 
 export function EventBookingForm() {
@@ -107,9 +108,37 @@ export function EventBookingForm() {
           <Datepicker id="eventDate" />
         </div>
         {/* Start Time*/}
+        <div>
+          <div className="mb-2 block">
+            <Label htmlFor="startTime" value="Start Time" />
+          </div>
+          <TextInput id="startTime" type="text" placeholder="Start Time" />
+        </div>
         {/* End Time*/}
+        <div>
+          <div className="mb-2 block">
+            <Label htmlFor="endTime" value="End Time" />
+          </div>
+          <TextInput id="endTime" type="text" placeholder="End Time" />
+        </div>
         {/* Guest Count*/}
+        <div>
+          <div className="mb-2 block">
+            <Label htmlFor="guestCount" value="Guest Count" />
+          </div>
+          <TextInput id="guestCount" type="number" placeholder="Guest Count" />
+        </div>
         {/* Additional Info*/}
+        <div>
+          <div className="mb-2 block">
+            <Label htmlFor="additionalInfo" value="Additional Information" />
+          </div>
+          <Textarea
+            id="additionalInfo"
+            type="text"
+            placeholder="Additional Information"
+          />
+        </div>
         {/* lead form ID*/}
         {/* email opt in*/}
         {/* lead source id*/}
