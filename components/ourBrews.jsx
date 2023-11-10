@@ -1,26 +1,310 @@
+"use client";
+
+import { Card } from "flowbite-react";
 import Image from "next/image";
 import highSide from "../public/HIGH-SIDE-BLONDE-ALE-BEACH-HAUS.png";
 
 export function OurBrews() {
   return (
     <div>
-      <div className="grid grid-cols-1 justify-items-center">
-        <div class="group">
-          <div className="relative col-span-1 max-w-fit rounded overflow-hidden m-5 transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-              <Image class="w-full " src={highSide} alt="highside" />
-            <div class="z-10 absolute inset-0 h-full w-full rounded-xl bg-black/50 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-              <div className="flex min-h-full flex-col items-center justify-center">
-                <h1 class="text-3xl font-bold">High Side</h1>
-                <p class="text-xl">ABV 6%</p>
-                <p class="text-xl">IBU 22</p>
-
-                <p class="text-base">
-                  Beach Haus High Side pours clean with cascades of fine, bright
-                  white bubbles that introduce a nose of soft bread sweetness,
-                  then balanced by a subdued hop presence from the addition of
-                  Horizon hops.
-                </p>
+      <div className="grid grid-cols-1 md:grid-cols-4 justify-items-center">
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
               </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
+          <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
+            <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
+              <div className="bg-gray-200 rounded-t-xl relative">
+                <div class="absolute top-5 inset-x-24">
+                  <Image src={highSide} alt="hs" class="" />
+                </div>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl font-semibold">HIGH SIDE</h1>
+                <p class="text-4xl font-medium">Blonde Ale</p>
+              </div>
+            </div>
+            <div class="w-full h-full rounded-xl shadow-xl absolute bg-gray-700 text-white [transform:rotateY(180deg)] [backface-visibility:hidden] flex flex-col justify-center items-center space-y-8">
+              <p className="text-3xl font-medium">ABV: 6%</p>
+              <p className="text-3xl font-medium">IBU: 22</p>
+              <p className="text-center">
+                Beach Haus High Side pours clean with cascades of fine, bright
+                white bubbles that introduce a nose of soft bread sweetness,
+                then balanced by a subdued hop presence from the addition of
+                Horizon hops.
+              </p>
             </div>
           </div>
         </div>
@@ -29,29 +313,17 @@ export function OurBrews() {
   );
 }
 
-//  <div class="flex min-h-screen items-center justify-center bg-slate-100">
-//    <div class="group h-96 w-72 ">
-//      <div className="relative h-full w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-//        <div className="absolute inset-0">
-//          <Image
-//            src={highSide}
-//            alt="highside"
-//            class="rounded-xl p-5  shadow-black/40"
-//          />
-//        </div>
-//        <div class="absolute inset-0 h-full w-full rounded-xl bg-black/50 px-12 text-center text-slate-200 [transform:rotateY(180deg)] [backface-visibility:hidden]">
-//          <div className="flex min-h-full flex-col items-center justify-center">
-//            <h1 class="text-3xl font-bold">High Side</h1>
-//            <p class="text-xl">ABV 6%</p>
-//            <p class="text-xl">IBU 22</p>
-//            <p class="text-base">
-//              Beach Haus High Side pours clean with cascades of fine, bright
-//              white bubbles that introduce a nose of soft bread sweetness,
-//              then balanced by a subdued hop presence from the addition of
-//              Horizon hops.
-//            </p>
-//          </div>
-//        </div>
-//      </div>
-//    </div>
-//  </div>
+{
+  /* <div className="col-span-1">
+  <div className=" bg-transparent w-[300px] h-[200px] border-1 border hover:[ transform: rotateY(180deg)]">
+    <div class="relative w-full h-full text-center hover:[ transform: rotateY(180deg)] [transition: transform 0.8s] [transform-style: preserve-3d]">
+      <div class="absolute w-full h-full [backface-visibility: hidden]">
+        <Image src={highSide} alt="High Side" />
+      </div>
+      <div class="absolute w-full h-full [backface-visibility: hidden]">
+        <p>Highside ripsss</p>
+        </div>
+        </div>
+        </div>
+      </div> */
+}

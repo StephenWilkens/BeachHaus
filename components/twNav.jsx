@@ -43,7 +43,7 @@ export function TwNav() {
                 <Dropdown.Item as={Link} href="/brewery">Home</Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/ontap">Currently on Tap</Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/food">Food Menu</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/ourbeer">Our Beers</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/ourbrews">Our Beers</Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/beerfinder">Beer Finder</Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/contractbrewing">Contract Brewing</Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/eventsbooking">Event Space</Dropdown.Item>
