@@ -24,19 +24,19 @@ export function BreweryFoodMenu() {
         <div class="row-span-1 mx-auto mt-3">
           <Link
             href="#appetizers"
-            class="m-3 font-medium hover:font-regular hover:text-red-800"
+            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
           >
             Appetizers
           </Link>
           <Link
             href="#soup&salad"
-            class="m-3 font-medium hover:font-regular hover:text-red-800"
+            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
           >
             Soup & Salad
           </Link>
           <Link
             href="#burgers"
-            class="m-3 font-medium hover:font-regular hover:text-red-800"
+            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
           >
             Burgers
           </Link>
@@ -44,31 +44,31 @@ export function BreweryFoodMenu() {
         <div class="row-span-1 mx-auto mt-1 mb-3">
           <Link
             href="#pizza"
-            class="m-3 font-medium hover:font-regular hover:text-red-800"
+            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
           >
             Wood-Fired Pizza
           </Link>
           <Link
             href="#entrees"
-            class="m-3 font-medium hover:font-regular hover:text-red-800"
+            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
           >
             Entrees
           </Link>
           <Link
             href="#dessert"
-            class="m-3 font-medium hover:font-regular hover:text-red-800"
+            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
           >
             Dessert
           </Link>
         </div>
       </div>
       <div id="appetizers" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-red-800 text-center">
+        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
           APPETIZERS
         </h1>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
-        <div class="">
+        <div class="md:pt-5">
           <h1 class="text-center text-2xl font-medium">BAVARIAN PRETZEL</h1>
           <p class="text-center text-sm text-gray-500">
             Beach Haus Beer Cheese, Fancy Mustard
@@ -131,12 +131,12 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="soup&salad" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-red-800 text-center">
+        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
           SOUP & SALAD
         </h1>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
-        <div>
+        <div class="md:col-span-2 md:pb-3">
           <h1 class="text-center font-semibold">
             ADD CHICKEN +6 • ADD SHRIMP +10
           </h1>
@@ -164,12 +164,12 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="burgers" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-red-800 text-center">
+        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
           BURGERS
         </h1>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
-        <div>
+        <div class="md:col-span-2 pb-3">
           <h1 class="text-center font-semibold">
             ALL BURGERS ARE SERVED WITH A SIDE OF HAUS CUT FRIES AND A PICKLE
           </h1>
@@ -205,12 +205,12 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="pizza" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-red-800 text-center">
+        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
           WOOD-FIRED PIZZA
         </h1>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
-        <div>
+        <div class="md:col-span-2 md:pb-3">
           <h1 class="text-center font-semibold">
             COOKED IN OUR TRADITIONAL BRICK OVEN FUELED BY HARDWOOD
           </h1>
@@ -245,12 +245,12 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="entrees" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-red-800 text-center">
+        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
           ENTREES
         </h1>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
-        <div>
+        <div class="md:col-span-2 md:pb-3">
           <h1 class="text-center font-semibold">
             ENJOY OUR FAVORITES AT THE JERSEY SHORE
           </h1>
@@ -340,12 +340,12 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="dessert" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-red-800 text-center">
+        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
           DESSERT
         </h1>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
-        <div class="">
+        <div class="md:col-span-2 pb-5">
           <h1 class="text-center text-2xl font-medium">CONEY WAFFLE ICE CREAM</h1>
           <p class="text-center text-sm text-gray-500">10</p>
         </div>

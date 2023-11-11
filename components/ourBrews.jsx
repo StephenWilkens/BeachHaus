@@ -18,7 +18,7 @@ import krampus from "../public/krampus-16oz-Beach-Haus-opt.png";
 export function OurBrews() {
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-items-center my-10">
         <div class="col-span-1 w-[330px] h-[470px] group [perspective:800px] py-5">
           <div class="w-full h-full relative transition-transform duration-1000 group-hover:[transform:rotateY(180deg)] [transform-style:preserve-3d]">
             <div class="w-full h-full absolute rounded-xl shadow-xl bg-white [backface-visibility:hidden] grid grid-rows-2">
