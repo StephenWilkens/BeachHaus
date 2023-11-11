@@ -39,46 +39,52 @@ export function OurFacility() {
           <div className="hidden md:block md:col-start-1 md:col-end-1">
             <Image src={oakTableSpread} alt="taps" />
           </div>
-          <div className="hidden md:block md:bg-white md:shadow-xl md:rounded-md md:py-32 md:px-12 md:col-span-1 md:place-self-center md:place-content-end md:mx-3 md:ml-28">
-            <h1 className="font-bold text-6xl text-cyan-800 text-justify">
-              The Brewery
+          <Link href="/brewery">
+            <div className="hidden md:block md:bg-white md:shadow-xl md:rounded-md md:py-32 md:px-12 md:col-span-1 md:place-self-center md:place-content-end md:mx-3 md:ml-28 md:mt-12">
+              <h1 className="font-bold text-6xl text-cyan-800 text-justify">
+                The Brewery
+                <br />
+                at Beach Haus
+              </h1>
               <br />
-              at Beach Haus
+              <p className="text-gray-700 text-justify text-xl">
+                Not only is our brewery the Jersey Shore&apos;s premier brewery
+                for crispy lagers & refreshing ales, but we also offer
+                incredible food and a full bar.
+              </p>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <Link href="/801craftkitchen">
+        <div className="grid grid-cols-2 bg-black relative">
+          <div className="w-full m-auto col-span-2">
+            <Image
+              src={entree}
+              alt="div background"
+              fill
+              class="object-cover opacity-60 absolute"
+            />
+          </div>
+          <div class="z-20 col-span-2 h-full w-full p-10 md:p-40 flex flex-col space-y-10">
+            <h1 className="text-6xl text-white text-center">
+              801 Craft Kitchen
             </h1>
-            <br />
-            <p className="text-gray-700 text-justify text-xl">
-              Not only is our brewery the Jersey Shore&apos;s premier brewery
-              for crispy lagers & refreshing ales, but we also offer
-              incredible food and a full bar.
+            <p className="text-4xl text-white text-center">
+              Casual contemporary American sit-down dining
+            </p>
+            <p className="text-white text-center">
+              Chef Rob Tuzeneu delivers a menu encompassing light shareable
+              appetizers to seasonally sourced mains and crafted desserts.
             </p>
           </div>
         </div>
-      </div>
-      <div className="grid grid-cols-2 bg-black relative">
-        <div className="w-full m-auto col-span-2">
-          <Image
-            src={entree}
-            alt="div background"
-            fill
-            class="object-cover opacity-60 absolute"
-          />
-        </div>
-        <div class="z-20 col-span-2 h-full w-full p-10 md:p-40 flex flex-col space-y-10">
-          <h1 className="text-6xl text-white text-center">801 Craft Kitchen</h1>
-          <p className="text-4xl text-white text-center">
-            Casual contemporary American sit-down dining
-          </p>
-          <p className="text-white text-center">
-            Chef Rob Tuzeneu delivers a menu encompassing light shareable
-            appetizers to seasonally sourced mains and crafted desserts.
-          </p>
-        </div>
-      </div>
+      </Link>
       <div>
-        <div className="mx-auto bg-orange-50">
+        <div className="mx-auto bg-gray-50">
           <div className="max-w-6xl mx-auto grid grid-cols-2 py-10">
-            <div className="border-2 border-black py-20 px-12 col-span-2 md:col-start-1 md:col-end-1 place-self-center mx-10">
-              <h1 className="text-4xl">Rooftop at Beach Haus</h1>
+            <div className="shadow-2xl rounded-md py-20 px-12 col-span-2 md:col-start-1 md:col-end-1 place-self-center mx-10">
+              <h1 className="text-4xl text-cyan-800">Rooftop at Beach Haus</h1>
               <br />
               <p>
                 A 40-seat bar, fire pits with soft seating, an extensive
@@ -89,8 +95,8 @@ export function OurFacility() {
               <br />
               <div class="ml-10 md:ml-36">
                 <Link
-                  href="/restaurant"
-                  class="bg-blue-400 hover:bg-blue-700 text-white py-2 px-4 rounded"
+                  href="/rooftop"
+                  class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-4 rounded"
                 >
                   Learn More
                 </Link>
@@ -114,7 +120,9 @@ export function OurFacility() {
         <div class="z-20 col-span-2 h-full w-full p-10">
           <div className="mx-auto grid grid-cols-2 py-10">
             <div className="bg-white shadow-inner rounded-md pb-6 pt-4 px-5 md:px-12 md:py-16 col-span-2 md:col-start-2 md:col-end-2 place-self-center md:mx-10">
-              <h1 className="text-4xl md:text-6xl md:font-medium text-cyan-800">Host Private Parties With Us</h1>
+              <h1 className="text-4xl md:text-6xl md:font-medium text-cyan-800">
+                Host Private Parties With Us
+              </h1>
               <br />
               <p className="">
                 Contact our private events booking staff to rent out our event
@@ -122,7 +130,7 @@ export function OurFacility() {
               </p>
               <br />
               <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-4 rounded">
-                Book Today!
+                <Link href="/brewery/eventsbooking">Book Today!</Link>
               </button>
             </div>
           </div>

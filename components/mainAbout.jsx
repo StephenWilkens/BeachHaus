@@ -8,12 +8,12 @@ export function MainAbout() {
         <div class="w-full m-auto col-span-2">
           <Image
             src={tanks}
-            alt="About us background"
+            alt="About background"
             fill
             class="object-cover opacity-70 absolute"
           />
         </div>
-        <div class="z-20 col-span-2 h-full w-full p-10 md:py-20">
+        <div class="z-20 col-span-2 h-full w-full p-10 md:py-40">
           <h1 className="text-8xl text-white font-bold text-center">
             OUR STORY
           </h1>

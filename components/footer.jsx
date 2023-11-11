@@ -15,50 +15,39 @@ export function Footer() {
         <div className="space-y-5 p-5 ">
           <Link
             href="#"
-            class="block text-lg text-blue-400 hover:text-blue-200"
+            class="block text-lg  hover:text-cyan-800"
           >
             Contact Us
           </Link>
           <Link
             href="#"
-            class="block text-lg text-blue-400 hover:text-blue-200"
+            class="block text-lg  hover:text-cyan-800"
           >
             Careers
           </Link>
-          <Link
-            href="#"
-            class="block text-lg text-blue-400 hover:text-blue-200"
-          >
-            Something Cool
-          </Link>
-          <Link
-            href="#"
-            class="block text-lg text-blue-400 hover:text-blue-200"
-          >
-            Something Neat
-          </Link>
-          <div className="flex justify-evenly">
+          
+          <div className="flex justify-evenly md:pt-3">
             <Link
               href="https://www.instagram.com/beachhausbeer/"
-              className="text-3xl hover:text-blue-400"
+              className="text-3xl hover:text-cyan-800"
             >
               <BiLogoInstagram />
             </Link>
             <Link
               href="https://www.facebook.com/beachhausbrewery"
-              className="text-3xl hover:text-blue-400"
+              className="text-3xl hover:text-cyan-800"
             >
               <BiLogoFacebook />
             </Link>
             <Link
               href="https://twitter.com/beachhausbeer"
-              className="text-3xl hover:text-blue-400"
+              className="text-3xl hover:text-cyan-800"
             >
               <BiLogoTwitter />
             </Link>
             <Link
               href="https://www.youtube.com/@beachhaus3566/featured"
-              className="text-3xl hover:text-blue-400"
+              className="text-3xl hover:text-cyan-800"
             >
               <BiLogoYoutube />
             </Link>
@@ -84,11 +73,11 @@ export function Footer() {
           <div className="flex justify-between">
             <Link
               href="https://goo.gl/maps/rRY7NUqANGRwRMAz8"
-              class="text-sm text-blue-400 hover:text-blue-200"
+              class="text-sm  hover:text-cyan-800"
             >
               Directions
             </Link>
-            <Link href="#" class="text-sm text-blue-400 hover:text-blue-200">
+            <Link href="#" class="text-sm  hover:text-cyan-800">
               Hours
             </Link>
           </div>
@@ -96,19 +85,19 @@ export function Footer() {
         <div className="space-y-7 p-5">
           <Link
             href="#"
-            class="block text-lg text-blue-400 hover:text-blue-200"
+            class="block text-lg  hover:text-cyan-800"
           >
             Beach Haus Brewery
           </Link>
           <Link
             href="#"
-            class="block text-lg text-blue-400 hover:text-blue-200"
+            class="block text-lg  hover:text-cyan-800"
           >
             801 Craft Kitchen
           </Link>
           <Link
             href="#"
-            class="block text-lg text-blue-400 hover:text-blue-200"
+            class="block text-lg  hover:text-cyan-800"
           >
             Rooftop at Beach Haus
           </Link>
