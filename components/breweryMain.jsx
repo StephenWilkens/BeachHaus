@@ -24,7 +24,7 @@ export function BreweryMain() {
         </div>
       </div>
       <div class="p-10">
-        <h1 class="text-6xl text-center text-red-800 font-bold">
+        <h1 class="text-6xl text-center text-cyan-800 font-bold">
           Our Offerings
         </h1>
       </div>
@@ -33,7 +33,7 @@ export function BreweryMain() {
           <Link href="/brewery/ontap">
             <Image class="w-full" src={beerPic} alt="first offering pic" />
             <div class="px-6 py-5">
-              <div class="font-bold text-4xl text-red-800 text-center mb-2">
+              <div class="font-bold text-4xl text-cyan-800 text-center mb-2">
                 Haus Brews
               </div>
               <p class="text-gray-700 text-center">
@@ -46,7 +46,7 @@ export function BreweryMain() {
           <Link href="/brewery/food">
             <Image class="w-full" src={beerPic} alt="Second offering pic" />
             <div class="px-6 py-4">
-              <div class="font-bold text-4xl text-center text-red-800 mb-2">
+              <div class="font-bold text-4xl text-center text-cyan-800 mb-2">
                 Haus Foods
               </div>
               <p class="text-gray-700 text-center">
@@ -59,7 +59,7 @@ export function BreweryMain() {
           <Link href="/brewery/contractbrewing">
             <Image class="w-full" src={brewLines} alt="third offering pic" />
             <div class="px-6 py-5">
-              <div class="font-semibold text-4xl text-red-800 text-center mb-2">
+              <div class="font-semibold text-4xl text-cyan-800 text-center mb-2">
                 Contract Brewing
               </div>
               <p class="text-gray-700 text-center">
