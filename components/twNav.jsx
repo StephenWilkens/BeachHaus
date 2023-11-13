@@ -5,8 +5,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { Dropdown, Sidebar } from "flowbite-react";
 
-
-
 export function TwNav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -14,7 +12,7 @@ export function TwNav() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav class="bg-gray-100">
+    <nav class="bg-gray-100 z-50">
       <div class="max-w-7xl mx-auto px-8">
         <div class="flex justify-between">
           <div class="flex space-x-4">
@@ -35,27 +33,52 @@ export function TwNav() {
             </div>
 
             <div class="hidden md:flex items-center space-x-2">
-              <Link href="/about" class="py-5 px-2 text-gray-700 hover:text-black">
+              <Link
+                href="/about"
+                class="py-5 px-2 text-gray-700 hover:text-black"
+              >
                 About
               </Link>
 
               <Dropdown label="The Brewery" inline>
-                <Dropdown.Item as={Link} href="/brewery">Home</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/ontap">Currently on Tap</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/food">Food Menu</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/ourbrews">Our Beers</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/beerfinder">Beer Finder</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/contractbrewing">Contract Brewing</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/eventsbooking">Event Space</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery">
+                  Home
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/ontap">
+                  Currently on Tap
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/food">
+                  Food Menu
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/ourbrews">
+                  Our Beers
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/beerfinder">
+                  Beer Finder
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/contractbrewing">
+                  Contract Brewing
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/eventsbooking">
+                  Event Space
+                </Dropdown.Item>
               </Dropdown>
-              
+
               <Dropdown label="801 Craft Kitchen" inline>
-                <Dropdown.Item as={Link} href="/801craftkitchen">Home</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/801craftkitchen/menu">Menu</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/801craftkitchen/events">Event Hosting</Dropdown.Item>
-                <Dropdown.Item as={Link} href="/801craftkitchen/contact">Contact Us</Dropdown.Item>
+                <Dropdown.Item as={Link} href="/801craftkitchen">
+                  Home
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/801craftkitchen/menu">
+                  Menu
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/801craftkitchen/events">
+                  Event Hosting
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/801craftkitchen/contact">
+                  Contact Us
+                </Dropdown.Item>
               </Dropdown>
-              
+
               <Link
                 href="/rooftop"
                 class="py-5 px-2 text-gray-700 hover:text-black"
@@ -123,80 +146,48 @@ export function TwNav() {
           </button>
         </div>
         <Sidebar className="w-full">
-      <Sidebar.Items className="">
-        <Sidebar.ItemGroup className="">
-          <Sidebar.Item
-            href="/"
-          >
-            <p>
-              Home
-            </p>
-          </Sidebar.Item>
-          <Sidebar.Collapse
-            label="The Brewery"
-          >
-            <Sidebar.Item href="/brewery">
-              Home
-            </Sidebar.Item>
-            <Sidebar.Item href="/brewery/ontap">
-              On Tap
-            </Sidebar.Item>
-            <Sidebar.Item href="/brewery/food">
-              Food Menu
-            </Sidebar.Item>
-            <Sidebar.Item href="/brewery/ourbeers">
-              Our Beers
-            </Sidebar.Item>
-            <Sidebar.Item href="/brewery/beerfinder">
-              Beer Finder
-            </Sidebar.Item>
-            <Sidebar.Item href="/brewery/contractbrewing">
-              Contract Brewing
-            </Sidebar.Item>
-            <Sidebar.Item href="/brewery/eventbooking">
-              Event Space
-            </Sidebar.Item>
-          </Sidebar.Collapse>
-          <Sidebar.Collapse
-            label="801 Craft Kitchen"
-          >
-            <Sidebar.Item href="/801craftkitchen">
-              Home
-            </Sidebar.Item>
-            <Sidebar.Item href="/801craftkitchen/menu">
-              Menu
-            </Sidebar.Item>
-            <Sidebar.Item href="/801craftkitchen/events">
-              Events
-            </Sidebar.Item>
-            <Sidebar.Item href="/801craftkitchen/contact">
-              Contact
-            </Sidebar.Item>
-          </Sidebar.Collapse>
-          <Sidebar.Item
-            href="/rooftop"
-          >
-            <p>
-              Rooftop Bar
-            </p>
-          </Sidebar.Item>
-          <Sidebar.Item
-            href="/shop"
-          >
-            <p>
-              Shop
-            </p>
-          </Sidebar.Item>
-          <Sidebar.Item
-            href="/brewery/eventspace"
-          >
-            <p>
-              Book an Event!
-            </p>
-          </Sidebar.Item>
-        </Sidebar.ItemGroup>
-      </Sidebar.Items>
-    </Sidebar>
+          <Sidebar.Items className="">
+            <Sidebar.ItemGroup className="">
+              <Sidebar.Item href="/">
+                <p>Home</p>
+              </Sidebar.Item>
+              <Sidebar.Collapse label="The Brewery">
+                <Sidebar.Item href="/brewery">Home</Sidebar.Item>
+                <Sidebar.Item href="/brewery/ontap">On Tap</Sidebar.Item>
+                <Sidebar.Item href="/brewery/food">Food Menu</Sidebar.Item>
+                <Sidebar.Item href="/brewery/ourbeers">Our Beers</Sidebar.Item>
+                <Sidebar.Item href="/brewery/beerfinder">
+                  Beer Finder
+                </Sidebar.Item>
+                <Sidebar.Item href="/brewery/contractbrewing">
+                  Contract Brewing
+                </Sidebar.Item>
+                <Sidebar.Item href="/brewery/eventbooking">
+                  Event Space
+                </Sidebar.Item>
+              </Sidebar.Collapse>
+              <Sidebar.Collapse label="801 Craft Kitchen">
+                <Sidebar.Item href="/801craftkitchen">Home</Sidebar.Item>
+                <Sidebar.Item href="/801craftkitchen/menu">Menu</Sidebar.Item>
+                <Sidebar.Item href="/801craftkitchen/events">
+                  Events
+                </Sidebar.Item>
+                <Sidebar.Item href="/801craftkitchen/contact">
+                  Contact
+                </Sidebar.Item>
+              </Sidebar.Collapse>
+              <Sidebar.Item href="/rooftop">
+                <p>Rooftop Bar</p>
+              </Sidebar.Item>
+              <Sidebar.Item href="/shop">
+                <p>Shop</p>
+              </Sidebar.Item>
+              <Sidebar.Item href="/brewery/eventspace">
+                <p>Book an Event!</p>
+              </Sidebar.Item>
+            </Sidebar.ItemGroup>
+          </Sidebar.Items>
+        </Sidebar>
         {/* <a href="/about" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
           About
         </a>
