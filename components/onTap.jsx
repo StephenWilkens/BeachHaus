@@ -1,7 +1,7 @@
 export function OnTapBeer() {
   return (
     <div>
-      <h1>BEEEEERS</h1>
+      <h1>Beers from Untapped</h1>
     </div>
   );
 }
