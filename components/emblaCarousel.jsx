@@ -12,8 +12,9 @@ import rooftopPour from "../public/rooftopPour.JPG";
 import craftCool from "../public/801Cool.png";
 //[Autoplay()]
 
+
 export const EmblaCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   return (
     <div className="embla overflow-hidden w-full" ref={emblaRef}>
@@ -31,10 +32,10 @@ export const EmblaCarousel = () => {
               at Beach Haus
             </h1>
             <p className="text-white text-center md:text-start pt-2 px-12 md:px-0 md:pl-3 text-xl md:text-2xl">
-              Delicious food, award winning beer, and fresh cocktails
+              Belmar&apos;s best rooftop bar
             </p>
             <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-2 mt-3 rounded ml-3">
-              <Link href="/brewery">Explore our Menu</Link>
+              <Link href="/rooftop">Join the party!</Link>
             </button>
           </div>
         </div>
@@ -72,7 +73,7 @@ export const EmblaCarousel = () => {
               Fine dining at the shore
             </p>
             <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-2 mt-3 rounded ml-3">
-              <Link href="/brewery">Explore our Menu</Link>
+              <Link href="https://801craftkitchen.com/">Meet the Chef</Link>
             </button>
           </div>
         </div>
@@ -84,13 +85,13 @@ export const EmblaCarousel = () => {
           />
           <div className="absolute inset-0 flex flex-col items-center md:items-end justify-center md:gap-4">
             <h1 className="text-white text-center md:text-start text-5xl font-bold md:text-8xl md:pr-3">
-              Lobby Bar
+              The Lounge
             </h1>
-            <p className="text-white text-center md:text-start pt-2 px-12 md:px-0 md:pr-3 text-xl md:text-2xl">
-              Lounge Area
+            <p className="text-white text-center md:text-end pt-2 px-12 md:px-0 md:pr-3 text-xl md:text-2xl">
+              Local vibe with world class beer
             </p>
             <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-2 mt-3 rounded mr-3">
-              <Link href="/brewery">See the space!</Link>
+              <Link href="/lounge">Check it out!</Link>
             </button>
           </div>
         </div>
