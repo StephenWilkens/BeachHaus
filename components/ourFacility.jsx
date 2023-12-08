@@ -56,7 +56,7 @@ export function OurFacility() {
           </Link>
         </div>
       </div>
-      <Link href="/801craftkitchen">
+      <Link href="https://801craftkitchen.com">
         <div className="grid grid-cols-2 bg-black relative">
           <div className="w-full m-auto col-span-2">
             <Image

@@ -64,20 +64,12 @@ export function TwNav() {
                 </Dropdown.Item>
               </Dropdown>
 
-              <Dropdown label="801 Craft Kitchen" inline>
-                <Dropdown.Item as={Link} href="/801craftkitchen">
-                  Home
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/801craftkitchen/menu">
-                  Menu
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/801craftkitchen/events">
-                  Event Hosting
-                </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/801craftkitchen/contact">
-                  Contact Us
-                </Dropdown.Item>
-              </Dropdown>
+              <Link
+                href="https://801craftkitchen.com"
+                class="py-5 px-2 text-gray-700 hover:text-black"
+              >
+                801 Craft Kitchen
+              </Link>
 
               <Link
                 href="/rooftop"
