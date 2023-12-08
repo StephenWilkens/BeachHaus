@@ -44,8 +44,8 @@ export function TwNav() {
                 <Dropdown.Item as={Link} href="/brewery">
                   Home
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/ontap">
-                  Currently on Tap
+                <Dropdown.Item as={Link} href="/brewery/cocktails">
+                  Cocktails
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/food">
                   Food Menu
