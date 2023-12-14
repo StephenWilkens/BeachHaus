@@ -1,5 +1,5 @@
 import { BeerHallSemiPrivateCarousel } from "@/components/beerHallSemiPrivate";
-import { BeerHallPrivateCarousel } from "./berrHallPrivateCarousel";
+import { BeerHallPrivateCarousel } from "./beerHallPrivateCarousel";
 import { CraftKitchenCarousel } from "./craftKitchenCarousel";
 import { LobbyCarousel } from "./lobbyCarousel";
 import { TapPatioBeerHallCarousel } from "./tapPatioBeerHallCarousel";
