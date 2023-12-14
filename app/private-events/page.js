@@ -2,7 +2,7 @@ import { PrivateEventsHeader } from "@/components/privateEventsHeader";
 import { PrivateEventsAbout } from "@/components/privateEventsAbout";
 import { TripSeatScript } from "@/components/tripleSeatScript";
 import { VenueOptions } from "@/components/venueOptions";
-import { FoodAndBevPackages } from "@/components/FoodAndBevPackages";
+import { FoodAndBevPackages } from "@/components/foodAndBevPackages";
 export default function PrivateEvents() {
   return (
     <div>
