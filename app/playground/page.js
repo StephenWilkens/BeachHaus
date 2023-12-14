@@ -1,15 +1,19 @@
 "use client";
 import Script from "next/script";
 import { WeddingsAtBHScript } from "@/components/weddingsAtBHScript";
+import { EventsCarousel, EventsCarouselCarousel } from "@/components/eventsCarousel"
+import reserved from "../../public/BeerHallSemiPrivate/04BF669F-4982-475E-9E3C-B51B419FFD54.jpg";
+import weich from "../../public/BeerHallSemiPrivate/beerHallReserved.jpg";
+import xmas from "../../public/BeerHallSemiPrivate/DB16296C-80B7-42B0-9A18-0B0F84C65509.jpg";
+import jbs from "../../public/BeerHallSemiPrivate/DB16296C-80B7-42B0-9A18-0B0F84C65509.jpg";
+
+const OPTIONS = { loop: true }
+const IMAGES = [reserved, weich, xmas, jbs];
 
 export default function Playground() {
   return (
     <div>
-      <WeddingsAtBHScript />
-      <a target="_blank" id="wp-rated-img" rel="nofollow" href="https://www.weddingwire.com/biz/beach-haus-brewery-belmar/e10139cc05f08a93.html" title="Reviewed on WeddingWire">
-        <span id="wp-rated-reviews">hey</span>
-    </a>
-
+      < EventsCarousel images={IMAGES} options={OPTIONS} />
     </div>
   );
 }
