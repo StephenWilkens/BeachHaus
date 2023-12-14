@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --slide-spacing: 1rem;
+    --slide-size: 80%;
+    --slide-height: 40rem;
+  }
+}

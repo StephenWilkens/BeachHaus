@@ -90,7 +90,7 @@ export function Footer() {
             Beach Haus Brewery
           </Link>
           <Link
-            href="#"
+            href="https://801craftkitchen.com"
             class="block text-lg  hover:text-cyan-800"
           >
             801 Craft Kitchen
