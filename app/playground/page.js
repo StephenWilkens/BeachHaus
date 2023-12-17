@@ -6,14 +6,16 @@ import reserved from "../../public/BeerHallSemiPrivate/04BF669F-4982-475E-9E3C-B
 import weich from "../../public/BeerHallSemiPrivate/beerHallReserved.jpg";
 import xmas from "../../public/BeerHallSemiPrivate/DB16296C-80B7-42B0-9A18-0B0F84C65509.jpg";
 import jbs from "../../public/BeerHallSemiPrivate/DB16296C-80B7-42B0-9A18-0B0F84C65509.jpg";
-
+import { ThumbCarousel } from '@/components/keenSlider'
 const OPTIONS = { loop: true }
 const IMAGES = [reserved, weich, xmas, jbs];
 
 export default function Playground() {
   return (
     <div>
-      < EventsCarousel images={IMAGES} options={OPTIONS} />
+      < ThumbCarousel />
+      <div><h1>hey </h1></div>
+      < ThumbCarousel />
     </div>
   );
 }

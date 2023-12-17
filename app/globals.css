@@ -5,7 +5,10 @@
 @layer base {
   :root {
     --slide-spacing: 1rem;
-    --slide-size: 80%;
-    --slide-height: 40rem;
+    --slide-size: 100%;
+    --slide-height: 19rem;
+    --thumbs-slide-spacing: 0.8rem;
+    --thumbs-slide-height: 9rem;
+    --background-site-rgb-value: 249, 249, 249;
   }
 }
