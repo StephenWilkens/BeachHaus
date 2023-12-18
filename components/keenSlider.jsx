@@ -12,18 +12,17 @@ import bhp6 from "../public/BeerHallPrivate/IMG_6030.jpeg";
 import bhp7 from "../public/BeerHallPrivate/IMG_6537.jpg";
 import bhp8 from "../public/BeerHallPrivate/oT4e9E9c.jpeg";
 import Image from "next/image";
-import AutoHeight from "embla-carousel-auto-height";
+import Autoplay from "embla-carousel-autoplay";
 
-export function ThumbCarousel() {
+export function ThumCarousel() {
   // const { slides, options } = props
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel();
+  const [emblaMainRef, emblaMainApi] = useEmblaCarousel({loop: true}, [Autoplay()]);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel(
     {
       containScroll: "keepSnaps",
       dragFree: true,
-    },
-    [AutoHeight()]
+    }
   );
   const images = [bhp1, bhp2, bhp3, bhp4, bhp5, bhp6, bhp7, bhp8];
   const slideCount = images.length;
@@ -55,7 +54,7 @@ export function ThumbCarousel() {
   return (
     <div className="embla p-6">
       <div className="embla__viewport overflow-hidden" ref={emblaMainRef}>
-        <div className="embla__container [backface-visibility: hidden] flex touch-pan-y ml-[calc(var(--slide-spacing) * -1)] items-start">
+        <div className="embla__container h-[360px] md:h-[540px] 2xl:h-[720px] [backface-visibility: hidden] flex touch-pan-y ml-[calc(var(--slide-spacing) * -1)] items-start">
           {slides.map((index) => (
             <div
               className="embla__slide flex-[0_0_var(--slide-size)] min-w-0 pl-[var(--slide-spacing)] relative"
@@ -65,7 +64,7 @@ export function ThumbCarousel() {
                 <span>{index + 1}</span>
               </div>
               <Image
-                className="embla__slide__img block h-[var(--slide-height)] w-full object-cover"
+                className="embla__slide__img block h-[360px] md:h-[540px] 2xl:h-[720px] w-full object-contain"
                 src={imageByIndex(index)}
                 alt="Carousel Image"
               />
