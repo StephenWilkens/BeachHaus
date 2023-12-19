@@ -42,16 +42,16 @@ export function TwNav() {
 
               <Dropdown label="The Brewery" inline>
                 <Dropdown.Item as={Link} href="/brewery">
-                  Home
+                  The Brewery at Beach Haus
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/cocktails">
-                  Cocktails
+                <Dropdown.Item as={Link} href="/brewery/ourbrews">
+                  On Tap
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/food">
                   Food Menu
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/ourbrews">
-                  Our Beers
+                <Dropdown.Item as={Link} href="/brewery/cocktails">
+                  Cocktail Menu
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/beerfinder">
                   Beer Finder
@@ -77,6 +77,18 @@ export function TwNav() {
               >
                 Rooftop Bar
               </Link>
+
+              <Dropdown label="Private Events" inline>
+                <Dropdown.Item as={Link} href="/private-events">
+                  Private Events at Beach Haus
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/private-events/venue-options">
+                  Venue Options
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/private-events/booking">
+                  Book Your Event
+                </Dropdown.Item>
+              </Dropdown>
             </div>
           </div>
 
