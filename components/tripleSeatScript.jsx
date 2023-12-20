@@ -13,8 +13,15 @@ export function TripSeatScript() {
     return () => {};
   }, []);
   return (
-    <div className="grid grid-cols-2" >
-      \<div className="col-span-2 pl-20 tracking-widest w-full leading-none" ref={containerRef}></div>
-    </div>
+      <div
+        className="py-5 px-96 tracking-widest w-full leading-none"
+        ref={containerRef}
+      ></div>
   );
+}
+
+{
+  /* <div className="grid grid-cols-2" >
+<div className="col-span-2 pl-20 tracking-widest w-full leading-none" ref={containerRef}></div>
+</div> */
 }

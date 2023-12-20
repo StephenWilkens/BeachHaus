@@ -7,13 +7,13 @@ import weich from "../../public/BeerHallSemiPrivate/beerHallReserved.jpg";
 import xmas from "../../public/BeerHallSemiPrivate/DB16296C-80B7-42B0-9A18-0B0F84C65509.jpg";
 import jbs from "../../public/BeerHallSemiPrivate/DB16296C-80B7-42B0-9A18-0B0F84C65509.jpg";
 import { ThumbCarousel } from '@/components/keenSlider'
+const OPTIONS = { loop: true }
+const IMAGES = [reserved, weich, xmas, jbs];
+import { BHSPCarousel } from "@/components/bhspCarousel";
 import { PrivateEventsAbout } from "@/components/privateEventsAbout";
 import { BookYourEventButton } from "@/components/bookYourEventButton";
 import { PrivateEventsHeroCarousel } from "@/components/privateEventsHeroCarousel";
 import { PrivateEventsVenueOptions } from "@/components/privateEventsVenueOptions";
-const OPTIONS = { loop: true }
-const IMAGES = [reserved, weich, xmas, jbs];
-import { BHSPCarousel } from "@/components/bhspCarousel";
 
 export default function Playground() {
   return (

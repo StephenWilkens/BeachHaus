@@ -1,16 +1,15 @@
-import { PrivateEventsHeader } from "@/components/privateEventsHeader";
 import { PrivateEventsAbout } from "@/components/privateEventsAbout";
-import { TripSeatScript } from "@/components/tripleSeatScript";
+import { BookYourEventButton } from "@/components/bookYourEventButton";
+import { PrivateEventsHeroCarousel } from "@/components/privateEventsHeroCarousel";
 import { VenueOptions } from "@/components/venueOptions";
-import { FoodAndBevPackages } from "@/components/foodAndBevPackages";
+
 export default function PrivateEvents() {
   return (
     <div>
-      <PrivateEventsHeader />
+      <PrivateEventsHeroCarousel />
       <PrivateEventsAbout />
-      <TripSeatScript />
+      <BookYourEventButton />
       <VenueOptions />
-      <FoodAndBevPackages />
     </div>
   );
 }
