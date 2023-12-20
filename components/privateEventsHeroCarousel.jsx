@@ -11,20 +11,32 @@ import bhp5 from "../public/BeerHallPrivate/IMG_4132.jpeg";
 import bhp6 from "../public/BeerHallPrivate/IMG_6030.jpeg";
 import bhp7 from "../public/BeerHallPrivate/IMG_6537.jpg";
 import bhp8 from "../public/BeerHallPrivate/oT4e9E9c.jpeg";
+import r16_9_1 from "../public/16-9ratio/events-16:9.jpg"
+import r16_9_2 from "../public/16-9ratio/weich_16_9.jpg"
+import r16_9_27 from "../public/16-9ratio/62_27_img.jpeg"
+import r16_9_3 from "../public/16-9ratio/rooftopSunsetDrink16x9.jpeg"
+import r13_6_1 from "../public/13_6/bettertogeth.jpeg"
+import r13_6_2 from "../public/13_6/bluebeam.jpeg"
+import r13_6_3 from "../public/13_6/cheers.jpg"
+import r13_6_4 from "../public/13_6/cookiebeers.jpeg"
+import r13_6_5 from "../public/13_6/couple13_6.jpg"
+import r13_6_6 from "../public/13_6/decor.jpg"
+import r13_6_7 from "../public/13_6/donuts.jpg"
+import r13_6_8 from "../public/13_6/longDining.jpg"
+import r13_6_9 from "../public/13_6/thirty.jpeg"
 import Image from "next/image";
-import Autoplay from "embla-carousel-autoplay";
-
+// import Autoplay from "embla-carousel-autoplay";
+// [Autoplay()]
+// bhp1, bhp2, bhp3, bhp4, bhp5, bhp6, bhp7, bhp8
 export function PrivateEventsHeroCarousel() {
   // const { slides, options } = props
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel({loop: true}, [Autoplay()]);
-  const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel(
-    {
-      containScroll: "keepSnaps",
-      dragFree: true,
-    }
-  );
-  const images = [bhp1, bhp2, bhp3, bhp4, bhp5, bhp6, bhp7, bhp8];
+  const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ loop: true });
+  const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
+    containScroll: "keepSnaps",
+    dragFree: true,
+  });
+  const images = [r13_6_1, r13_6_2, r13_6_3, r13_6_4, r13_6_5, r13_6_6, r13_6_7, r13_6_8, r13_6_9];
   const slideCount = images.length;
   const slides = Array.from(Array(slideCount).keys());
 
@@ -52,19 +64,19 @@ export function PrivateEventsHeroCarousel() {
   }, [emblaMainApi, onSelect]);
 
   return (
-    <div className="embla p-6">
+    <div className="embla p-2 md:p-6">
       <div className="embla__viewport overflow-hidden" ref={emblaMainRef}>
-        <div className="embla__container h-[360px] md:h-[540px] 2xl:h-[720px] [backface-visibility: hidden] flex touch-pan-y ml-[calc(var(--slide-spacing) * -1)] items-start">
+        <div className="embla__container h-[240px] md:h-[630px] 2xl:h-[1080px] [backface-visibility: hidden] flex touch-pan-y ml-[calc(var(--slide-spacing) * -1)] items-start">
           {slides.map((index) => (
             <div
-              className="embla__slide flex-[0_0_var(--slide-size)] min-w-0 pl-[var(--slide-spacing)] relative"
+              className="embla__slide flex-[0_0_var(--slide-size)] min-w-0 px-[--slide-spacing] relative"
               key={index}
             >
               <div className="embla__slide__number w-16 h-16 z-10 absolute top-2 right-2 rounded-full bg-[rgba(249, 249, 249, 0.85)] leading-10 font-black text-center pointer-events-none">
                 <span>{index + 1}</span>
               </div>
               <Image
-                className="embla__slide__img block h-[360px] md:h-[540px] 2xl:h-[720px] w-full object-contain"
+                className="embla__slide__img block  w-full object-contain"
                 src={imageByIndex(index)}
                 alt="Carousel Image"
               />
@@ -73,7 +85,7 @@ export function PrivateEventsHeroCarousel() {
         </div>
       </div>
 
-      <div className="embla-thumbs mt-[var(--thumbs-slide-spacing)]">
+      <div className="embla-thumbs md:mt-[var(--thumbs-slide-spacing)]">
         <div
           className="embla-thumbs__viewport overflow-hidden"
           ref={emblaThumbsRef}
@@ -94,3 +106,6 @@ export function PrivateEventsHeroCarousel() {
     </div>
   );
 }
+
+
+ 

@@ -1,6 +1,7 @@
 import { PrivateEventsAbout } from "@/components/privateEventsAbout";
 import { BookYourEventButton } from "@/components/bookYourEventButton";
 import { PrivateEventsHeroCarousel } from "@/components/privateEventsHeroCarousel";
+import { VenueOptions } from "@/components/venueOptions";
 
 export default function PrivateEvents() {
   return (
@@ -8,7 +9,7 @@ export default function PrivateEvents() {
       <PrivateEventsHeroCarousel />
       <PrivateEventsAbout />
       <BookYourEventButton />
-      <BookYourEventButton>Make this a link to venue options</BookYourEventButton>
+      <VenueOptions />
     </div>
   );
 }
