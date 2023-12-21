@@ -25,13 +25,12 @@ import r13_6_7 from "../public/13_6/donuts.jpg"
 import r13_6_8 from "../public/13_6/longDining.jpg"
 import r13_6_9 from "../public/13_6/thirty.jpeg"
 import Image from "next/image";
-// import Autoplay from "embla-carousel-autoplay";
-// [Autoplay()]
-// bhp1, bhp2, bhp3, bhp4, bhp5, bhp6, bhp7, bhp8
+import Autoplay from "embla-carousel-autoplay";
+
 export function PrivateEventsHeroCarousel() {
   // const { slides, options } = props
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ loop: true });
+  const [emblaMainRef, emblaMainApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
   const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
     containScroll: "keepSnaps",
     dragFree: true,
@@ -64,9 +63,9 @@ export function PrivateEventsHeroCarousel() {
   }, [emblaMainApi, onSelect]);
 
   return (
-    <div className="embla p-2 md:p-6">
+    <div className="embla p-2 md:p-6 md:pb-0">
       <div className="embla__viewport overflow-hidden" ref={emblaMainRef}>
-        <div className="embla__container h-[240px] md:h-[630px] 2xl:h-[1080px] [backface-visibility: hidden] flex touch-pan-y ml-[calc(var(--slide-spacing) * -1)] items-start">
+        <div className="embla__container h-[200px] md:h-[630px] 2xl:h-[1080px] [backface-visibility: hidden] flex touch-pan-y ml-[calc(var(--slide-spacing) * -1)] items-start">
           {slides.map((index) => (
             <div
               className="embla__slide flex-[0_0_var(--slide-size)] min-w-0 px-[--slide-spacing] relative"

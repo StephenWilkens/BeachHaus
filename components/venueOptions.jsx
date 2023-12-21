@@ -10,62 +10,58 @@ import wedding11 from "../public/11_images/weddings_1_1.jpg";
 export function VenueOptions() {
   return (
     <div>
-      <div class="p-5 md:p-10">
-        <h1 class="text-5xl md:text-6xl text-center text-cyan-800 font-bold">
-          Venue Options
+      <div class="md:p-5 mt-5 md:mt-16">
+        <h1 class="text-4xl md:text-6xl text-center font-light md:pb-5">
+          VENUE OPTIONS
         </h1>
       </div>
       <div class="md:grid md:grid-cols-3">
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
           <Link href="/brewery/ontap">
             <Image class="w-full" src={bh11} alt="first offering pic" />
-            <div class="px-6 py-5">
-              <div class="font-bold text-4xl text-cyan-800 text-center mb-2">
-                Beer Hall
+            <div class="px-3 py-5">
+              <div class="font-light text-2xl md:text-4xl text-center mb-2">
+                BEER HALL
               </div>
-              <p class="text-gray-700 text-center">(Semi-Private / Private)</p>
             </div>
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
           <Link href="/brewery/food">
             <Image class="w-full" src={ck11} alt="Second offering pic" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-4xl text-center text-cyan-800 mb-2">
-                801 Craft Kitchen
+            <div class="px-3 py-4">
+              <div class="font-light text-2xl md:text-4xl text-center mb-2">
+                801 CRAFT KITCHEN
               </div>
-              <p class="text-gray-700 text-center">(Private)</p>
             </div>
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
           <Link href="/brewery/contractbrewing">
             <Image class="w-full" src={lb11} alt="third offering pic" />
-            <div class="px-6 py-5">
-              <div class="font-semibold text-4xl text-cyan-800 text-center mb-2">
-                Lobby Bar
+            <div class="px-3 py-5">
+              <div class="font-light text-2xl md:text-4xl text-center mb-2">
+                LOBBY BAR
               </div>
-              <p class="text-gray-700 text-center">(Semi-Private)</p>
             </div>
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
           <Link href="/brewery/ontap">
             <Image class="w-full" src={tap11} alt="first offering pic" />
-            <div class="px-6 py-5">
-              <div class="font-bold text-4xl text-cyan-800 text-center mb-2">
-                Tap Room, Beer hall, & Patio
+            <div class="px-3 py-5">
+              <div class="font-light text-2xl md:text-4xl text-center mb-2">
+                TAP ROOM, BEER HALL, AND PATIO
               </div>
-              <p class="text-gray-700 text-center">(Private)</p>
             </div>
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
           <Link href="/brewery/food">
             <Image class="w-full" src={food11} alt="Second offering pic" />
-            <div class="px-6 py-4">
-              <div class="font-bold text-4xl text-center text-cyan-800 mb-2">
-                Food and Beverage Packages
+            <div class="px-3 py-4">
+              <div class="font-light text-2xl md:text-4xl text-center mb-2">
+                FOOD AND BEVERAGE PACKAGES
               </div>
             </div>
           </Link>
@@ -73,9 +69,9 @@ export function VenueOptions() {
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
           <Link href="/brewery/contractbrewing">
             <Image class="w-full" src={wedding11} alt="third offering pic" />
-            <div class="px-6 py-5">
-              <div class="font-semibold text-4xl text-cyan-800 text-center mb-2">
-                Wedding Packages
+            <div class="px-3 py-5">
+              <div class="font-light text-2xl md:text-4xl text-center mb-2">
+                WEDDING PACKAGES
               </div>
             </div>
           </Link>
