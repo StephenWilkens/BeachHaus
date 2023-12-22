@@ -18,7 +18,7 @@ export const Thumb = (props) => {
           <span>{index + 1}</span>
         </div>
         <Image
-          className="embla-thumbs__slide__img block h-[--thumbs-slide-height] w-full object-cover"
+          className="embla-thumbs__slide__img block h-[100] md:h-[--thumbs-slide-height] w-full object-cover"
           src={imgSrc}
           alt="Your alt text"
         />
