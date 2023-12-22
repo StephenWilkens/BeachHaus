@@ -5,8 +5,8 @@ import bh11 from "../public/11_images/beerhallreso.jpg";
 import ck11 from "../public/11_images/ck_1_1.jpeg";
 import lb11 from "../public/11_images/lobby11.jpg";
 import tap11 from "../public/11_images/taproom.jpg";
-import food11 from "../public/11_images/zaOven11.jpg";
-import wedding11 from "../public/11_images/weddings_1_1.jpg";
+import food11 from "../public/11_images/burgers1_1.jpeg";
+import wedding11 from "../public/11_images/wedding1_1.jpeg";
 export function VenueOptions() {
   return (
     <div>
@@ -17,7 +17,7 @@ export function VenueOptions() {
       </div>
       <div class="md:grid md:grid-cols-3">
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
-          <Link href="/brewery/ontap">
+          <Link href="/private-events/venue-options/beer-hall">
             <Image class="w-full" src={bh11} alt="first offering pic" />
             <div class="px-3 py-5">
               <div class="font-light text-2xl md:text-4xl text-center mb-2">
@@ -27,7 +27,7 @@ export function VenueOptions() {
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
-          <Link href="/brewery/food">
+          <Link href="/private-events/venue-options/craft-kitchen">
             <Image class="w-full" src={ck11} alt="Second offering pic" />
             <div class="px-3 py-4">
               <div class="font-light text-2xl md:text-4xl text-center mb-2">
@@ -37,7 +37,7 @@ export function VenueOptions() {
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
-          <Link href="/brewery/contractbrewing">
+          <Link href="/private-events/venue-options/lobby-bar">
             <Image class="w-full" src={lb11} alt="third offering pic" />
             <div class="px-3 py-5">
               <div class="font-light text-2xl md:text-4xl text-center mb-2">
@@ -47,7 +47,7 @@ export function VenueOptions() {
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
-          <Link href="/brewery/ontap">
+          <Link href="/private-events/venue-options/taproom-beerhall-patio">
             <Image class="w-full" src={tap11} alt="first offering pic" />
             <div class="px-3 py-5">
               <div class="font-light text-2xl md:text-4xl text-center mb-2">
@@ -57,7 +57,7 @@ export function VenueOptions() {
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
-          <Link href="/brewery/food">
+          <Link href="/private-events/food-and-beverage-packages">
             <Image class="w-full" src={food11} alt="Second offering pic" />
             <div class="px-3 py-4">
               <div class="font-light text-2xl md:text-4xl text-center mb-2">
@@ -67,7 +67,7 @@ export function VenueOptions() {
           </Link>
         </div>
         <div class="max-w-sm rounded overflow-hidden shadow-2xl m-5 md:col-span-1">
-          <Link href="/brewery/contractbrewing">
+          <Link href="/private-events/weddings">
             <Image class="w-full" src={wedding11} alt="third offering pic" />
             <div class="px-3 py-5">
               <div class="font-light text-2xl md:text-4xl text-center mb-2">
