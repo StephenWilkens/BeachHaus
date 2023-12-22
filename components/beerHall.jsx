@@ -1,4 +1,6 @@
 import { ThumbCarousel } from "./thumbCarousel";
+import { BookYourEventButton } from "@/components/bookYourEventButton";
+
 import bh1 from "../public/16x9Crop/beerHall/04BF669F-4982-475E-9E3C-B51B419FFD54.jpg";
 import bh2 from "../public/16x9Crop/beerHall/DB16296C-80B7-42B0-9A18-0B0F84C65509.jpg";
 import bh3 from "../public/16x9Crop/beerHall/FullSizeRender 2.jpg";
@@ -29,6 +31,9 @@ export function BeerHall() {
       </div>
       <div className="mb-5">
         <ThumbCarousel images={carouselImages} options={carouselOptions} />
+      </div>
+      <div className="my-5">
+        <BookYourEventButton />
       </div>
     </div>
   );
