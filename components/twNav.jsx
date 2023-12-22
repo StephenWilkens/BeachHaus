@@ -82,12 +82,29 @@ export function TwNav() {
                 <Dropdown.Item as={Link} href="/private-events">
                   Private Events at Beach Haus
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/private-events/venue-options">
-                  Venue Options
-                </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/private-events/booking">
                   Book Your Event
                 </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/private-events/weddings">
+                  Weddings at Beach Haus
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/private-events/food-and-beverage-packages">
+                  Food & Beverage Packages
+                </Dropdown.Item>
+                <Dropdown label="Venue Options" inline>
+                  <Dropdown.Item as={Link} href="/private-events/venue-options/beer-hall">
+                    Beer Hall
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/private-events/venue-options/craft-kitchen">
+                    801 Craft Kitchen
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/private-events/venue-options/lobby-bar">
+                    Lobby Bar
+                  </Dropdown.Item>
+                  <Dropdown.Item as={Link} href="/private-events/venue-options/taproom-beerhall-patio">
+                    Tap Room, Patio, and Beer Hall
+                  </Dropdown.Item>
+                </Dropdown>
               </Dropdown>
             </div>
           </div>
@@ -98,7 +115,7 @@ export function TwNav() {
             </a>
             <Link
               href="/brewery/eventsbooking"
-              class="py-5 px-3 bg-red-500 hover:bg-red-400 text-white hover:text-red-800 rounded transition duration-300"
+              class="py-5 px-3 bg-cyan-800 hover:opacity-80 text-white hover:text-black rounded transition duration-300"
             >
               Book an Event!
             </Link>
@@ -186,9 +203,12 @@ export function TwNav() {
               <Sidebar.Item href="/shop">
                 <p>Shop</p>
               </Sidebar.Item>
-              <Sidebar.Item href="/brewery/eventspace">
-                <p>Book an Event!</p>
-              </Sidebar.Item>
+              <Sidebar.Collapse label="Private Events">
+                <Sidebar.Item href="/private-events"></Sidebar.Item>
+                <Sidebar.Item href="/private-events/booking">Book Your Event</Sidebar.Item>
+                <Sidebar.Item href="/private-events/weddings">Weddings at Beach Haus</Sidebar.Item>
+                <Sidebar.Item href="/private-events/food-and-beverage-packages">Food and Beverage Packages</Sidebar.Item>
+              </Sidebar.Collapse>
             </Sidebar.ItemGroup>
           </Sidebar.Items>
         </Sidebar>
