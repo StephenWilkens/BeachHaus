@@ -1,4 +1,4 @@
-import { ThumbCarousel } from "./thumbCarousel";
+import { VenuePagesCarousel } from "@/components/venuePagesCarousel";
 import { BookYourEventButton } from "@/components/bookYourEventButton";
 
 import wed1 from "../public/16x9Crop/wedding/2K6A8968.jpg";
@@ -62,17 +62,29 @@ const carouselOptions = { loop: true };
 
 export function Weddings() {
   return (
-    <div>
-      <div>
-        <h1 className="text-center text-3xl pt-6 pb-3 md:text-7xl font-light md:font-light tracking-widest">
-          Weddings at Beach Haus
+    <div className="grid grid-cols-5 my-8">
+      <div className="col-span-3">
+        <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
+      </div>
+      <div className="col-span-2 mx-12">
+        <h1 className="text-left font-light tracking-tight text-6xl">
+          WEDDINGS AT BEACH HAUS
         </h1>
-      </div>
-      <div className="mb-5">
-        <ThumbCarousel images={carouselImages} options={carouselOptions} />
-      </div>
-      <div className="my-5">
-        <BookYourEventButton />
+        <h1 className="text-justify mr-8  mt-10 text-xl font-light">
+          Brews & I do&apos;s! Looking for a unique, rustic, industrial,
+          beachside wedding? Look no further. Beach Haus&apos;s official wedding
+          package includes…
+          <br />
+          <br />
+          •Prosecco Toast <br />
+          •5 Hour Premium Open Bar <br />
+          •1 Hour Cocktail Party with 3 Stations + 3 Passed Hors D&apos;oeuvres{" "}
+          <br />
+          •4 Hour Reception with Plated Sit-Down Dinner
+        </h1>
+        <div className="mt-12 mr-10">
+          <BookYourEventButton />
+        </div>
       </div>
     </div>
   );
