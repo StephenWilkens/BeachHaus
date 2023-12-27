@@ -1,4 +1,4 @@
-import { ThumbCarousel } from "./thumbCarousel";
+import { VenuePagesCarousel } from "@/components/venuePagesCarousel";
 import { BookYourEventButton } from "@/components/bookYourEventButton";
 
 import fb1 from "../public/16x9Crop/food&Bev/0A568443-2E37-4258-824E-59561DB03127.jpg";
@@ -70,17 +70,31 @@ const carouselOptions = { loop: true };
 
 export function FoodAndBevPackages() {
   return (
-    <div>
-      <div>
-        <h1 className="text-center text-3xl pt-6 pb-3 md:text-7xl font-light md:font-light tracking-widest">
-          Food & Beverages
+    <div className="grid grid-cols-5 my-8">
+      <div className="col-span-3 mt-8">
+        <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
+      </div>
+      <div className="col-span-2 mx-12">
+        <h1 className="text-left font-light tracking-tight text-6xl">
+          FOOD AND BEVERAGE PACKAGES
         </h1>
-      </div>
-      <div className="mb-5">
-        <ThumbCarousel images={carouselImages} options={carouselOptions} />
-      </div>
-      <div className="my-5">
-        <BookYourEventButton />
+        <h1 className="text-justify mr-8  mt-10 text-xl font-light">
+          We offer six event packages, including stations, passed hors
+          d&apos;oeuvres, buffets, and plated dinners. We also offer a variety
+          of drink packages that include Beach Haus Brewery craft beer, wine,
+          and spirits. Our packages meet the needs for any event type whether it
+          be casual or formal, including birthdays, showers, rehearsal dinners,
+          corporate meetings, weddings and more!
+          <br />
+          <br />
+          The Beach Haus event and culinary teams&apos; first priority is to
+          offer a wonderful guest experience. If there is something you have in
+          mind that you don&apos;t see in our packages, please let us know! We
+          would love to customize your event to make it one of a kind!
+        </h1>
+        <div className="my-6 mr-10">
+          <BookYourEventButton />
+        </div>
       </div>
     </div>
   );
