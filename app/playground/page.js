@@ -25,7 +25,7 @@ export default function Playground() {
         <h1 className="text-left font-light tracking-tight text-6xl">
           BEER HALL
         </h1>
-        <h1 className="text-left mt-10 tracking-wide font-medium">
+        <h1 className="text-left text-lg mt-10 tracking-wide font-medium">
           •Semi-Private Capacity: 20-64 Guests <br /> •Private Capacity: 65-130
           Guests
         </h1>
