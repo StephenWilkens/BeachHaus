@@ -19,14 +19,23 @@ export function BeerHall() {
   return (
     <div>
       <div>
-        <h1 className="text-center text-3xl pt-6 pb-3 md:text-7xl font-light md:font-light tracking-widest">
+        <h1 className="text-center font-[250] text-3xl pt-6 pb-3 md:text-7xl md:font-light tracking-widest">
           BEER HALL
         </h1>
-        <h1 className="text-center md:text-3xl md:tracking-wide md:leading-normal md:font-[250]">
-          Semi-Private/Private
+        <h1 className="md:hidden text-center mx-6 md:text-xl md:tracking-wide md:leading-normal font-[450]">
+          •Semi-Private Capacity: 20-64 Guests <br /> •Private Capacity: 65-130 Guests
         </h1>
-        <h1 className="text-center md:text-xl md:tracking-wide md:leading-normal md:font-[250]">
+        <h1 className="hidden md:block text-center mx-6 md:text-xl md:tracking-wide md:leading-normal md:font-[350]">
           Semi-Private Capacity: 20-64 Guests • Private Capacity: 65-130 Guests
+        </h1>
+        <h1 className="text-justify mx-6 md:mx-12 mt-3 md:text-2xl md:tracking-wide md:leading-normal font-[250]">
+          To the right of the 2nd Floor Taproom, The Beer Hall is available
+          either as a private or semi-private venue depending on your headcount.
+          The rustic, industrial space is designed with 12 foot wooden tables
+          and benches, a wood paneled wall, 130&quot; display screen, portable bar,
+          and starry string lights. It is the perfect room for any event:
+          birthday parties, corporate events, wedding receptions, showers, and
+          more.
         </h1>
       </div>
       <div className="mb-5">
