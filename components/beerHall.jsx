@@ -17,7 +17,7 @@ const carouselOptions = { loop: true };
 
 export function BeerHall() {
   return (
-    <div className="grid grid-cols-5 mt-8">
+    <div className="grid grid-cols-5 my-8">
       <div className="col-span-3">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
@@ -26,8 +26,9 @@ export function BeerHall() {
           BEER HALL
         </h1>
         <h1 className="text-left text-lg mt-10 tracking-wide font-medium">
-          •Semi-Private Capacity: 20-64 Guests <br /> •Private Capacity: 65-130
-          Guests
+          •SEMI-PRIVATE CAPACITY: 20-64 GUESTS
+          <br />
+          •PRIVATE CAPAPCITY: 65-130 GUESTS
         </h1>
         <h1 className="text-justify mr-8  mt-10 text-xl font-light">
           To the right of the 2nd Floor Taproom, The Beer Hall is available

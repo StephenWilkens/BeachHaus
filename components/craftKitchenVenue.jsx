@@ -32,7 +32,7 @@ const carouselOptions = { loop: true };
 
 export function CraftKitchenVenue() {
   return (
-    <div className="grid grid-cols-5 mt-8">
+    <div className="grid grid-cols-5 my-8">
       <div className="col-span-3 mt-8">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
@@ -41,20 +41,23 @@ export function CraftKitchenVenue() {
           801 CRAFT KITCHEN
         </h1>
         <h1 className="text-left text-lg mt-10 tracking-wide font-medium">
-          •Seated Capacity: 20-65 Guests (Including the lounge area) <br />{" "}
-          •Standing Capacity: 20-100 Guests
+          •SEATED CAPACITY: 20-65 GUESTS
+          <br />
+          &nbsp;(INCLUDING LOUNGE AREA)
+          <br />
+          •STANDING CAPACITY:20-100 GUESTS
         </h1>
         <h1 className="text-justify mr-8  mt-10 text-xl font-light">
           Located on the second floor of Beach Haus, adjacent to the Taproom,
           801 Craft Kitchen is a stylish and chic venue including a bar, lounge
-          area, and dining room. The restaurant’s décor features a combination
-          of high top and low top tables, paint splattered antique windows
-          suspended from the ceiling, string lights, and fiery red walls,
-          creating an ambience that is eclectic, whimsical, creative, and
+          area, and dining room. The restaurant&apos;s décor features a
+          combination of high top and low top tables, paint splattered antique
+          windows suspended from the ceiling, string lights, and fiery red
+          walls, creating an ambience that is eclectic, whimsical, creative, and
           romantic. The inviting velvet lounge chairs, gold accents, and amusing
           artwork make the perfect spot to gather for your next event!
         </h1>
-        <div className="my-6 mr-10">
+        <div className="mt-8 mr-10">
           <BookYourEventButton />
         </div>
       </div>
