@@ -43,7 +43,7 @@ export function VenuePagesCarousel(props) {
   return (
     <div className="embla p-2 ">
       <div className="embla__viewport overflow-hidden" ref={emblaMainRef}>
-        <div className="embla__container h-[200px] md:h-[450px] 2xl:h-[1080px] [backface-visibility: hidden] flex touch-pan-y ml-[calc(var(--slide-spacing) * -1)] items-start">
+        <div className="embla__container h-[230px] md:h-[450px] 2xl:h-[1080px] [backface-visibility: hidden] flex touch-pan-y ml-[calc(var(--slide-spacing) * -1)] items-start">
           {slides.map((index) => (
             <div
               className="embla__slide flex-[0_0_var(--slide-size)] min-w-0 px-[--slide-spacing] relative"

@@ -12,18 +12,18 @@ const carouselOptions = { loop: true };
 
 export function TapRoomBeerHallPatioVenue() {
   return (
-    <div className="grid grid-cols-5 my-8">
-      <div className="col-span-3 mt-5">
+    <div className="grid grid-cols-1 md:grid-cols-5 mb-5 md:my-8">
+      <div className="md:col-span-3 mt-5">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
-      <div className="col-span-2 mx-12">
-        <h1 className="text-left font-light tracking-tight text-6xl">
+      <div className="md:col-span-2 mb-5 md:mb-0 md:mx-12">
+        <h1 className="text-center md:text-left font-light tracking-tight text-5xl md:text-6xl">
           TAPROOM, PATIO, AND BEER HALL BUYOUT
         </h1>
-        <h1 className="text-left text-lg mt-10 tracking-wide font-medium">
+        <h1 className="text-center md:text-left text-lg mt-5 md:mt-10 tracking-wide font-medium">
           •CAPACITY: 300 GUESTS
         </h1>
-        <h1 className="text-justify mr-8  mt-10 text-xl font-light">
+        <h1 className="mx-5 text-justify md:mx-0 md:mr-8 mt-5 md:mt-10 text-xl font-light">
           Located on the second floor, The Taproom, Beer Hall, and Patio is our
           most known space when you think of Beach Haus! This buyout can
           accommodate up to 300 guests and is most commonly bought out for
@@ -31,7 +31,7 @@ export function TapRoomBeerHallPatioVenue() {
           specific food and beverage minimums depending on the day of the week
           and time of the year.
         </h1>
-        <div className="my-6 mr-10">
+        <div className="my-6 md:mr-10">
           <BookYourEventButton />
         </div>
       </div>

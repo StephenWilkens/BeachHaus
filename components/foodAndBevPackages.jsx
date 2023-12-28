@@ -70,15 +70,15 @@ const carouselOptions = { loop: true };
 
 export function FoodAndBevPackages() {
   return (
-    <div className="grid grid-cols-5 my-8">
-      <div className="col-span-3 mt-8">
+    <div className="grid grid-cols-1 md:grid-cols-5 mb-5 md:my-8">
+      <div className="md:col-span-3 mt-8">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
-      <div className="col-span-2 mx-12">
-        <h1 className="text-left font-light tracking-tight text-6xl">
+      <div className="md:col-span-2 mb-5 md:mb-0 md:mx-12">
+        <h1 className="text-center md:text-left font-light tracking-tighter md:tracking-normal text-5xl md:text-6xl">
           FOOD AND BEVERAGE PACKAGES
         </h1>
-        <h1 className="text-justify mr-8  mt-10 text-xl font-light">
+        <h1 className="mx-5 text-justify md:mx-0 md:mr-8 mt-5 md:mt-10 text-xl font-light">
           We offer six event packages, including stations, passed hors
           d&apos;oeuvres, buffets, and plated dinners. We also offer a variety
           of drink packages that include Beach Haus Brewery craft beer, wine,
@@ -92,7 +92,7 @@ export function FoodAndBevPackages() {
           mind that you don&apos;t see in our packages, please let us know! We
           would love to customize your event to make it one of a kind!
         </h1>
-        <div className="my-6 mr-10">
+        <div className="my-6 md:mr-10">
           <BookYourEventButton />
         </div>
       </div>

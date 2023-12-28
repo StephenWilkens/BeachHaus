@@ -10,25 +10,25 @@ const carouselOptions = { loop: true };
 
 export function LobbyBarVenue() {
   return (
-    <div className="grid grid-cols-5 my-8">
-      <div className="col-span-3">
+    <div className="grid grid-cols-1 md:grid-cols-5 mb-5 md:my-8">
+      <div className="md:col-span-3 mb-5 md:mb-0">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
-      <div className="col-span-2 mx-12">
-        <h1 className="text-left font-light tracking-tight text-6xl">
+      <div className="md:col-span-2 mb-5 md:mb-0 md:mx-12">
+        <h1 className="text-center md:text-left font-light tracking-tight text-6xl">
           LOBBY BAR
         </h1>
-        <h1 className="text-left text-lg mt-10 tracking-wide font-medium">
+        <h1 className="text-center md:text-left text-lg mt-5 md:mt-10 tracking-wide font-medium">
           •CAPACITY: 20-55 GUESTS
         </h1>
-        <h1 className="text-justify mr-8  mt-10 text-xl font-light">
+        <h1 className="mx-5 text-justify md:mx-0 md:mr-8 mt-5 md:mt-10 text-xl font-light">
           Located on the first floor of Beach Haus, The Lobby bar serves as our
           main entrance and retail space. This space is considered semi-private,
           however you and your guests have exclusive access to the bar, high
           tops, and soft seating areas. This space is perfect for smaller,
           causal events!
         </h1>
-        <div className="mt-12 mr-10">
+        <div className="mt-12 md:mr-10">
           <BookYourEventButton />
         </div>
       </div>

@@ -17,28 +17,27 @@ const carouselOptions = { loop: true };
 
 export default function Playground() {
   return (
-    <div className="grid grid-cols-5 mt-8">
-      <div className="col-span-3">
+    <div className="grid grid-cols-1 md:grid-cols-5 mb-5 md:my-8">
+      <div className="md:col-span-3">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
-      <div className="col-span-2 mx-12">
-        <h1 className="text-left font-light tracking-tight text-6xl">
-          BEER HALL
+      <div className="md:col-span-2 mb-5 md:mb-0 md:mx-12">
+        <h1 className="text-center md:text-left font-light tracking-tight md:tracking-normal text-5xl md:text-6xl">
+          WEDDINGS AT BEACH HAUS
         </h1>
-        <h1 className="text-left text-lg mt-10 tracking-wide font-medium">
-          •Semi-Private Capacity: 20-64 Guests <br /> •Private Capacity: 65-130
-          Guests
+        <h1 className="mx-5 text-center md:text-justify md:mx-0 md:mr-8 mt-5 md:mt-10 text-xl font-light">
+          Brews & I do&apos;s! Looking for a unique, rustic, industrial,
+          beachside wedding? Look no further. Beach Haus&apos;s official wedding
+          package includes…
+          <br />
+          <br />
+          •Prosecco Toast <br />
+          •5 Hour Premium Open Bar <br />
+          •1 Hour Cocktail Party with 3 Stations + 3 Passed Hors D&apos;oeuvres{" "}
+          <br />
+          •4 Hour Reception with Plated Sit-Down Dinner
         </h1>
-        <h1 className="text-justify mr-8  mt-10 text-xl font-light">
-          To the right of the 2nd Floor Taproom, The Beer Hall is available
-          either as a private or semi-private venue depending on your headcount.
-          The rustic, industrial space is designed with 12 foot wooden tables
-          and benches, a wood paneled wall, 130&quot; display screen, portable
-          bar, and starry string lights. It is the perfect room for any event:
-          birthday parties, corporate events, wedding receptions, showers, and
-          more.
-        </h1>
-        <div className="mt-12">
+        <div className="mt-12 md:mr-10">
           <BookYourEventButton />
         </div>
       </div>
