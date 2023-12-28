@@ -114,7 +114,7 @@ export function TwNav() {
               Shop
             </a>
             <Link
-              href="/brewery/eventsbooking"
+              href="/private-events"
               class="py-5 px-3 bg-cyan-800 hover:opacity-80 text-white  rounded transition duration-300"
             >
               Book an Event!
