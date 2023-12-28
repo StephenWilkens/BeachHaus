@@ -1,4 +1,4 @@
-import { ThumbCarousel } from "./thumbCarousel";
+import { VenuePagesCarousel } from "@/components/venuePagesCarousel";
 import { BookYourEventButton } from "@/components/bookYourEventButton";
 
 import tbp1 from "../public/16x9Crop/tapRoom-BeerHall-Patio/853D0F99-6062-448F-AE9F-879356DDF2B1.jpg";
@@ -12,23 +12,28 @@ const carouselOptions = { loop: true };
 
 export function TapRoomBeerHallPatioVenue() {
   return (
-    <div>
-      <div>
-        <h1 className="text-center text-3xl pt-6 pb-3 md:text-7xl font-light md:font-light tracking-widest">
-          Tap Room, Patio, & Beer Hall Buyout
-        </h1>
-        <h1 className="text-center md:text-3xl md:tracking-wide md:leading-normal md:font-[250]">
-          Private
-        </h1>
-        <h1 className="text-center md:text-xl md:tracking-wide md:leading-normal md:font-[250]">
-          Capacity: 300 Guests
-        </h1>
+    <div className="grid grid-cols-1 md:grid-cols-5 mb-5 md:my-8">
+      <div className="md:col-span-3 mt-5">
+        <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
-      <div className="mb-5">
-        <ThumbCarousel images={carouselImages} options={carouselOptions} />
-      </div>
-      <div className="my-5">
-        <BookYourEventButton />
+      <div className="md:col-span-2 mb-5 md:mb-0 md:mx-12">
+        <h1 className="text-center md:text-left font-light tracking-tight text-5xl md:text-6xl">
+          TAPROOM, PATIO, AND BEER HALL BUYOUT
+        </h1>
+        <h1 className="text-center md:text-left text-lg mt-5 md:mt-10 tracking-wide font-medium">
+          •CAPACITY: 300 GUESTS
+        </h1>
+        <h1 className="mx-5 text-justify md:mx-0 md:mr-8 mt-5 md:mt-10 text-xl font-light">
+          Located on the second floor, The Taproom, Beer Hall, and Patio is our
+          most known space when you think of Beach Haus! This buyout can
+          accommodate up to 300 guests and is most commonly bought out for
+          Weddings and large Corporate Events. Please note that we do require
+          specific food and beverage minimums depending on the day of the week
+          and time of the year.
+        </h1>
+        <div className="my-6 md:mr-10">
+          <BookYourEventButton />
+        </div>
       </div>
     </div>
   );

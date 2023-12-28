@@ -1,4 +1,4 @@
-import { ThumbCarousel } from "./thumbCarousel";
+import { VenuePagesCarousel } from "@/components/venuePagesCarousel";
 import { BookYourEventButton } from "@/components/bookYourEventButton";
 
 import fb1 from "../public/16x9Crop/food&Bev/0A568443-2E37-4258-824E-59561DB03127.jpg";
@@ -70,17 +70,31 @@ const carouselOptions = { loop: true };
 
 export function FoodAndBevPackages() {
   return (
-    <div>
-      <div>
-        <h1 className="text-center text-3xl pt-6 pb-3 md:text-7xl font-light md:font-light tracking-widest">
-          Food & Beverages
+    <div className="grid grid-cols-1 md:grid-cols-5 mb-5 md:my-8">
+      <div className="md:col-span-3 mt-8">
+        <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
+      </div>
+      <div className="md:col-span-2 mb-5 md:mb-0 md:mx-12">
+        <h1 className="text-center md:text-left font-light tracking-tighter md:tracking-normal text-5xl md:text-6xl">
+          FOOD AND BEVERAGE PACKAGES
         </h1>
-      </div>
-      <div className="mb-5">
-        <ThumbCarousel images={carouselImages} options={carouselOptions} />
-      </div>
-      <div className="my-5">
-        <BookYourEventButton />
+        <h1 className="mx-5 text-justify md:mx-0 md:mr-8 mt-5 md:mt-10 text-xl font-light">
+          We offer six event packages, including stations, passed hors
+          d&apos;oeuvres, buffets, and plated dinners. We also offer a variety
+          of drink packages that include Beach Haus Brewery craft beer, wine,
+          and spirits. Our packages meet the needs for any event type whether it
+          be casual or formal, including birthdays, showers, rehearsal dinners,
+          corporate meetings, weddings and more!
+          <br />
+          <br />
+          The Beach Haus event and culinary teams&apos; first priority is to
+          offer a wonderful guest experience. If there is something you have in
+          mind that you don&apos;t see in our packages, please let us know! We
+          would love to customize your event to make it one of a kind!
+        </h1>
+        <div className="my-6 md:mr-10">
+          <BookYourEventButton />
+        </div>
       </div>
     </div>
   );

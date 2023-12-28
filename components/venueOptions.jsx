@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import bh11 from "../public/11_images/beerhallreso.jpg";
+import bh11 from "../public/11_images/beerHall_cardPic.JPEG";
 import ck11 from "../public/11_images/ck_1_1.jpeg";
 import lb11 from "../public/11_images/lobby11.jpg";
 import tap11 from "../public/11_images/taproom.jpg";
