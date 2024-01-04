@@ -19,7 +19,7 @@ export function TwNav() {
             <div>
               <Link
                 href="/"
-                class="flex items-center py-5 px-2 text-gray-700 hover:text-black"
+                class="flex items-center py-5 px-2 text-black"
               >
                 <Image
                   src={blackWave}
@@ -35,7 +35,7 @@ export function TwNav() {
             <div class="hidden md:flex items-center space-x-2">
               <Link
                 href="/about"
-                class="py-5 px-2 text-gray-700 hover:text-black"
+                class="py-5 px-2 text-black"
               >
                 About
               </Link>
@@ -53,27 +53,23 @@ export function TwNav() {
                 <Dropdown.Item as={Link} href="/brewery/cocktails">
                   Cocktail Menu
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/beerfinder">
-                  Beer Finder
-                </Dropdown.Item>
+                
                 <Dropdown.Item as={Link} href="/brewery/contractbrewing">
                   Contract Brewing
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/eventsbooking">
-                  Event Space
-                </Dropdown.Item>
+                
               </Dropdown>
 
               <Link
                 href="https://801craftkitchen.com"
-                class="py-5 px-2 text-gray-700 hover:text-black"
+                class="py-5 px-2 text-black"
               >
                 801 Craft Kitchen
               </Link>
 
               <Link
                 href="/rooftop"
-                class="py-5 px-2 text-gray-700 hover:text-black"
+                class="py-5 px-2 text-black"
               >
                 Rooftop Bar
               </Link>
@@ -106,11 +102,17 @@ export function TwNav() {
                   </Dropdown.Item>
                 </Dropdown>
               </Dropdown>
+              <Link
+                href="/virtual-tour"
+                class="py-5 px-2 text-black"
+              >
+                Virtual Tour
+              </Link>
             </div>
           </div>
 
           <div class="hidden md:flex items-center space-x-1">
-            <a href="#" class="py-5 px-3 text-gray-700 hover:text-black">
+            <a href="#" class="py-5 px-3 text-black">
               Shop
             </a>
             <Link
@@ -176,27 +178,14 @@ export function TwNav() {
                 <Sidebar.Item href="/brewery">Home</Sidebar.Item>
                 <Sidebar.Item href="/brewery/ontap">On Tap</Sidebar.Item>
                 <Sidebar.Item href="/brewery/food">Food Menu</Sidebar.Item>
-                <Sidebar.Item href="/brewery/ourbeers">Our Beers</Sidebar.Item>
-                <Sidebar.Item href="/brewery/beerfinder">
-                  Beer Finder
-                </Sidebar.Item>
+                <Sidebar.Item href="/brewery/cocktails">Cocktail Menu</Sidebar.Item>
                 <Sidebar.Item href="/brewery/contractbrewing">
                   Contract Brewing
                 </Sidebar.Item>
-                <Sidebar.Item href="/brewery/eventbooking">
-                  Event Space
-                </Sidebar.Item>
               </Sidebar.Collapse>
-              <Sidebar.Collapse label="801 Craft Kitchen">
-                <Sidebar.Item href="/801craftkitchen">Home</Sidebar.Item>
-                <Sidebar.Item href="/801craftkitchen/menu">Menu</Sidebar.Item>
-                <Sidebar.Item href="/801craftkitchen/events">
-                  Events
-                </Sidebar.Item>
-                <Sidebar.Item href="/801craftkitchen/contact">
-                  Contact
-                </Sidebar.Item>
-              </Sidebar.Collapse>
+              <Sidebar.Item href="https://801craftkitchen.com">
+                <p>801 Craft Kitchen</p>
+              </Sidebar.Item>
               <Sidebar.Item href="/rooftop">
                 <p>Rooftop Bar</p>
               </Sidebar.Item>
@@ -204,29 +193,23 @@ export function TwNav() {
                 <p>Shop</p>
               </Sidebar.Item>
               <Sidebar.Collapse label="Private Events">
-                <Sidebar.Item href="/private-events"></Sidebar.Item>
+                <Sidebar.Item href="/private-events">Private Events<br />at Beach Haus</Sidebar.Item>
                 <Sidebar.Item href="/private-events/booking">Book Your Event</Sidebar.Item>
+                <Sidebar.Item href="/private-events/food-and-beverage-packages">Food and Beverage<br />Packages</Sidebar.Item>
                 <Sidebar.Item href="/private-events/weddings">Weddings at Beach Haus</Sidebar.Item>
-                <Sidebar.Item href="/private-events/food-and-beverage-packages">Food and Beverage Packages</Sidebar.Item>
+                <Sidebar.Collapse label="Venue Options">
+                  <Sidebar.Item href="/private-events/venue-options/beer-hall">Beer Hall</Sidebar.Item>
+                  <Sidebar.Item href="/private-events/venue-options/craft-kitchen">801 Craft Kitchen</Sidebar.Item>
+                  <Sidebar.Item href="/private-events/venue-options/lobby-bar">Lobby Bar</Sidebar.Item>
+                  <Sidebar.Item href="/private-events/venue-options/taproom-beerhall-patio">Tap Room,<br />Patio,<br />and Beer Hall</Sidebar.Item>
+                </Sidebar.Collapse>
               </Sidebar.Collapse>
+              <Sidebar.Item href="/virtual-tour">
+                <p>Virtual Tour</p>
+              </Sidebar.Item>
             </Sidebar.ItemGroup>
           </Sidebar.Items>
         </Sidebar>
-        {/* <a href="/about" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
-          About
-        </a>
-        <a href="/brewery" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
-          Brewery
-        </a>
-        <a
-          href="/restaurant"
-          class="block py-2 pxp-4 text-sm hover:bg-gray-200"
-        >
-          Restaurant
-        </a>
-        <a href="/rooftop" class="block py-2 pxp-4 text-sm hover:bg-gray-200">
-          Rooftop Bar
-        </a> */}
       </div>
     </nav>
   );
