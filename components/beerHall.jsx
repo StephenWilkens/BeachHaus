@@ -16,20 +16,20 @@ const carouselOptions = { loop: true };
 
 export function BeerHall() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 mb-5 md:my-8">
-      <div className="md:col-span-3 mb-5 md:mb-0">
+    <div className="mb-5 grid grid-cols-1 md:my-8 md:grid-cols-5">
+      <div className="mb-5 md:col-span-3 md:mb-0">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
-      <div className="md:col-span-2 mb-5 md:mb-0 md:mx-12">
-        <h1 className="text-center md:text-left font-light tracking-tight text-6xl">
+      <div className="mb-5 md:col-span-2 md:mx-12 md:mb-0">
+        <h1 className="text-center text-6xl font-light tracking-tight md:text-left">
           BEER HALL
         </h1>
-        <h1 className="text-center md:text-left text-lg mt-5 md:mt-10 tracking-wide font-medium">
+        <h1 className="mt-5 text-center text-lg font-medium tracking-wide md:mt-10 md:text-left">
           •SEMI-PRIVATE CAPACITY: 20-64 GUESTS
           <br />
           •PRIVATE CAPAPCITY: 65-130 GUESTS
         </h1>
-        <h1 className="mx-5 text-justify md:mx-0 md:mr-8 mt-5 md:mt-10 text-xl font-light">
+        <h1 className="mx-5 mt-5 text-justify text-xl font-light md:mx-0 md:mr-8 md:mt-10">
           To the right of the 2nd Floor Taproom, The Beer Hall is available
           either as a private or semi-private venue depending on your headcount.
           The rustic, industrial space is designed with 12 foot wooden tables
