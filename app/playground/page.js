@@ -1,10 +1,9 @@
 'use client'
-
-import { UntappedIframe } from "@/components/UntappedIframe";
+import { ContractBrewingContactForm } from "@/components/ContractBrewingContactForm"
 export default function Playground() {
   return (
     <div>
-      <UntappedIframe />
+      <ContractBrewingContactForm />
     </div>
   );
 }
