@@ -10,12 +10,27 @@ export function ContractBrewingContactForm() {
       phone: String(event.target.phone.value),
       beerInfo: String(event.target.beerInfo.value),
     };
-    
+
+    const response = await fetch("api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (response.ok) {
+      console.log("Message sent!");
+    }
+    if (!response.ok) {
+      console.log("Error");
+    }
   }
   return (
-    <div className="mx-auto max-w-4xl px-4">
+    <div className="mx-auto mb-5 max-w-4xl rounded-lg bg-white px-4">
+      <h1 className="text-center text-3xl font-bold">Contact Us</h1>
       <form onSubmit={handleSubmit}>
-        <div className="my-4 flex w-full flex-col">
+        <div className="my-4 flex w-full flex-col pt-2">
           <label className="font-bold text-gray-800" htmlFor="name">
             Name
           </label>
@@ -66,6 +81,7 @@ export function ContractBrewingContactForm() {
         </div>
         <button
           type="submit"
+          // disabled={loading}
           className="mb-5 border bg-cyan-800 px-4 py-2 text-white hover:bg-opacity-70"
         >
           Send Info
