@@ -4,6 +4,7 @@ import { Card } from "flowbite-react";
 import Image from "next/image";
 import barrelBeer from "../public/averimg3.jpeg";
 import ube from "../public/UbeCanHallway.jpg";
+import { ContractBrewingContactForm } from "./ContractBrewingContactForm";
 
 export function ContractBrewingMain() {
   return (
@@ -77,6 +78,7 @@ export function ContractBrewingMain() {
           </ul>
         </div>
       </div>
+      <ContractBrewingContactForm />
     </div>
   );
 }
