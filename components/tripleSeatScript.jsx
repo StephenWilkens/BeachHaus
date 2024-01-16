@@ -13,10 +13,10 @@ export function TripSeatScript() {
     return () => {};
   }, []);
   return (
-      <div
-        className="py-5 md:px-96 tracking-widest w-full leading-none"
-        ref={containerRef}
-      ></div>
+    <div
+      className="w-full py-5 leading-none tracking-widest md:px-96"
+      ref={containerRef}
+    ></div>
   );
 }
 
