@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import ck30 from "../public/11_images/ck_1_1.jpeg";
+import cocktail11 from "../public/11_images/cocktail11.JPG";
 import cocktail from "../public/16x9Crop/roofTop/1B7A4E97-2B90-4985-AD3A-960F379D7C03.jpg";
 import { MartiniIcon, WineIcon, FlaskConicalIcon } from "lucide-react";
 
@@ -10,7 +10,7 @@ export function BreweryLandingPageCocktailsContentRow() {
       <div className="mobile group relative bg-black lg:hidden">
         <div className="before: before:absolute before:right-1 before:top-1 before:z-10 before:hidden before:h-[97%] before:w-[98%] before:border-2 before:border-white before:opacity-70 group-hover:before:block">
           <Image
-            src={ck30}
+            src={cocktail11}
             alt="Cocktails"
             class="w-full object-cover opacity-90 duration-500 ease-in-out group-hover:opacity-50"
           />
