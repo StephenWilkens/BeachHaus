@@ -9,7 +9,7 @@ export function BreweryLandingPageHeader() {
             src={BHLong}
             alt="top img"
             fill
-            class="object-cover opacity-50 md:opacity-80 absolute"
+            class="object-cover opacity-80 absolute"
           />
           <div class="md:col-span-1 md:w-2/6 md:h-4/6 md:bg-black md:absolute md:opacity-70 md:inset-y-24 md:inset-x-28"></div>
         </div>
