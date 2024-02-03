@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import rooftop from "../public/16x9Crop/roofTop/1B7A4E97-2B90-4985-AD3A-960F379D7C03.jpg";
-import square from "../public/11_images/burgers1_1.jpeg";
+import rooftop from "../../public/16x9Crop/roofTop/1B7A4E97-2B90-4985-AD3A-960F379D7C03.jpg";
 
 export function LandingPageRooftopContentRow() {
   return (

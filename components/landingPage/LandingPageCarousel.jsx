@@ -2,18 +2,16 @@
 
 import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
-import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
-import flights from "../public/bhFlights.png";
-import fullTable from "../public/801FullTable.jpg";
-import rooftopDrink from "../public/rooftopSunsetDrink.jpeg";
-import rooftopPour from "../public/rooftopPour.JPG";
-import craftCool from "../public/801Cool.png";
+import flights from "../../public/bhFlights.png";
+import fullTable from "../../public/801FullTable.jpg";
+import rooftopPour from "../../public/rooftopPour.JPG";
+import craftCool from "../../public/801Cool.png";
 //[Autoplay()]
 
 
-export const EmblaCarousel = () => {
+export const LandingPageCarousel = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
   return (
@@ -99,14 +97,3 @@ export const EmblaCarousel = () => {
     </div>
   );
 };
-
-{
-  /* <div className="absolute inset-0 flex items-center justify-between">
-            <h1 className="text-white text-8xl">
-              The Brewery
-              <br />
-              at Beach Haus
-            </h1>
-            <p className="text-white text-2xl">Great food, fresh beer, and cocktails</p>
-          </div> */
-}

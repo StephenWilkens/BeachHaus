@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import bhBG from "../public/16x9Crop/tapRoom-BeerHall-Patio/GALLERY 2022 - LAUREN AND JAMES WEDDING - SF PHOTO -518.jpg";
-import brewery1_1 from "../public/11_images/brewery1_1.jpg";
+import bhBG from "../../public/16x9Crop/tapRoom-BeerHall-Patio/GALLERY 2022 - LAUREN AND JAMES WEDDING - SF PHOTO -518.jpg";
+import brewery1_1 from "../../public/11_images/brewery1_1.jpg";
 
 export function LandingPageBreweryContentRow() {
   return (
