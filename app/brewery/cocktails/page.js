@@ -1,9 +1,9 @@
-import { BHCocktailMenu } from "@/components/bhCocktailMenu"
+import { BreweryCocktailMenu } from "@/components/brewery/BreweryCocktailMenu"
 
 export default function Cocktails() {
   return (
     <div>
-      <BHCocktailMenu />
+      <BreweryCocktailMenu />
     </div>
   )
 }

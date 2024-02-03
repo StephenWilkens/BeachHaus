@@ -1,4 +1,4 @@
-import { BeerHall } from "@/components/beerHall";
+import { BeerHall } from "@/components/private events/VenueOptionsBeerHall";
 
 export default function BeerHallPage() {
   return (

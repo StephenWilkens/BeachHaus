@@ -1,5 +1,5 @@
-import { PrivateEventsHeader } from "@/components/privateEventsHeader";
-import { TripSeatScript } from "@/components/tripleSeatScript";
+import { PrivateEventsHeader } from "@/components/private events/PrivateEventsBookingHeader";
+import { TripSeatScript } from "@/components/private events/TripleSeatBookingFormScript";
 
 export default function Booking() {
   return (

@@ -1,9 +1,9 @@
-import { VirtualTour } from "@/components/virtualTour"
+import { VirtualTour } from "@/components/virtual tour/virtualTour";
 
 export default function VirtualTourPage() {
   return (
     <div>
       <VirtualTour />
     </div>
-  )
+  );
 }

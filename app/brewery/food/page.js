@@ -1,4 +1,4 @@
-import { BreweryFoodMenu } from "@/components/breweryFoodMenu";
+import { BreweryFoodMenu } from "@/components/brewery/BreweryFoodMenu";
 
 export default function Page() {
   return (

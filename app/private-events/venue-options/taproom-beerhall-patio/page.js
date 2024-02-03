@@ -1,4 +1,4 @@
-import { TapRoomBeerHallPatioVenue } from "@/components/taproomBeerhallPatioVenue"
+import { TapRoomBeerHallPatioVenue } from "@/components/private events/VenueOptionsTaproomBeerhallPatio"
 export default function TaproomBeerhallPatioVenuePage() {
   return (
     <div>
