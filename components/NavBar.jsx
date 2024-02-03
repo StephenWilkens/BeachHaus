@@ -38,7 +38,7 @@ export function TwNav() {
                 <Dropdown.Item as={Link} href="/brewery">
                   The Brewery at Beach Haus
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/ourbrews">
+                <Dropdown.Item as={Link} href="/brewery/ontap">
                   On Tap
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/food">
