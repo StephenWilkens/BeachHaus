@@ -1,9 +1,9 @@
-import { MainAbout } from "@/components/mainAbout"
+import { About } from "@/components/about/About"
 
-export default function About() {
+export default function AboutPage() {
   return (
     <div>
-      <MainAbout />
+      <About />
     </div>
   )
 }

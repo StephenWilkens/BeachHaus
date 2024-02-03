@@ -1,4 +1,4 @@
-import { CraftKitchenVenue } from "@/components/craftKitchenVenue";
+import { CraftKitchenVenue } from "@/components/private events/VenueOptionsCraftKitchen";
 
 export default function CraftKitchenVenuePage() {
   return (

@@ -1,5 +1,5 @@
 'use client'
-import { EcwidStoreScript } from "@/components/EcwidStoreScript";
+import { EcwidStoreScript } from "@/components/shop/EcwidStoreScript";
 
 export default function Shop() {
   return (

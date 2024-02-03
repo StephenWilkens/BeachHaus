@@ -1,9 +1,8 @@
-'use client'
-import { ContractBrewingContactForm } from "@/components/ContractBrewingContactForm"
+"use client";
+import Image from "next/image";
 export default function Playground() {
   return (
     <div>
-      <ContractBrewingContactForm />
     </div>
   );
 }

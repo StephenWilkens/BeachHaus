@@ -1,4 +1,4 @@
-import { Weddings } from "@/components/weddings";
+import { Weddings } from "@/components/private events/PrivateEventsWeddings";
 
 export default function WeddingsPage() {
   return (

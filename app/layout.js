@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { TwNav } from "@/components/twNav";
-import { Footer } from "@/components/footer";
+import { TwNav } from "@/components/NavBar";
+import { Footer } from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
