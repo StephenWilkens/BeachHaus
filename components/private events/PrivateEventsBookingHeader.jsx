@@ -1,4 +1,4 @@
-import header2 from "../../public/BeerHallPrivate/IMG_6537.jpg";
+import header2 from "../../public/privateEventsBookingHeaderImage.jpg";
 import Image from "next/image";
 
 export function PrivateEventsHeader() {
