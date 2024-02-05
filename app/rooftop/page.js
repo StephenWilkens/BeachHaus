@@ -1,3 +1,9 @@
+import { Rooftop } from "@/components/rooftop/Rooftop";
+
 export default function RooftopPage() {
-  return <h1>Rooftop</h1>
+  return (
+    <div>
+      <Rooftop />
+    </div>
+  )
 }
