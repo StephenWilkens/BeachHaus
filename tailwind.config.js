@@ -2,12 +2,12 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
-    './node_modules/flowbite-react/**/*.js',
-	],
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
+    "./node_modules/flowbite-react/**/*.js",
+  ],
   theme: {
     container: {
       center: true,
@@ -31,7 +31,10 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        sans: ["var(--font-nunito-sans)"],
+      },
     },
   },
-  plugins:  [require("tailwindcss-animate"), require('flowbite/plugin')], 
-}
+  plugins: [require("tailwindcss-animate"), require("flowbite/plugin")],
+};

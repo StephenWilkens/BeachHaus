@@ -50,7 +50,7 @@ export function LandingPageRooftopContentRow() {
               releases & our fan favorites on our menu!
             </p>
             <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-4 rounded self-center mr-10 mt-5">
-              <Link href="/brewery">See More!</Link>
+              <Link className="text-xl" href="/brewery">See More!</Link>
             </button>
           </div>
         </div>

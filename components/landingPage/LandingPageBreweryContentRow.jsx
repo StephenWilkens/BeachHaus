@@ -20,13 +20,12 @@ export function LandingPageBreweryContentRow() {
           </div>
           <div className="absolute inset-0 top-40 opacity-0 duration-500 ease-in-out group-hover:opacity-100">
             <p className="mx-12 text-justify text-sm font-medium leading-tight text-white">
-              Not only is our brewery the Jersey Shore&apos;s premier brewery
-              for crispy lagers and refresing ales, but we also offer incredible
-              food and a full bar.
+              Enjoy hot food from the kitchen, cocktails from our full bar, and
+              20 craft beers on tap!
             </p>
             <button class="ml-28 mt-4 self-center rounded bg-cyan-800 px-4 py-2 text-white hover:bg-cyan-600">
               <Link href="/brewery">
-                <h1 className="text-sm">Explore the Menus</h1>
+                <h1 className="text-sm">See our menus!</h1>
               </Link>
             </button>
           </div>
@@ -46,14 +45,14 @@ export function LandingPageBreweryContentRow() {
           </div>
           <div className="absolute inset-0 top-72 opacity-0 duration-500 ease-in-out group-hover:opacity-100 2xl:top-96">
             <p className="ml-10 text-justify text-3xl text-white 2xl:text-4xl">
-              Not only is our brewery the Jersey Shore&apos;s premier
+              Enjoy hot food from the kitchen, cocktails from
               <br />
-              brewery for crispy lagers and refresing ales,
-              <br />
-              but we also offer incredible food and a full bar.
+              our full bar, and 20 craft beers on tap!
             </p>
             <button class="ml-10 mt-5 self-center rounded bg-cyan-800 px-4 py-2 text-white hover:bg-cyan-600">
-              <Link href="/brewery">Explore our Menus</Link>
+              <Link className="text-xl" href="/brewery">
+                See our menus!
+              </Link>
             </button>
           </div>
         </div>
