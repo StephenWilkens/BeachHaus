@@ -46,79 +46,79 @@ export function BreweryCocktailMenu() {
           <h1 class="text-center text-2xl font-medium">
             SPICED APPLE MARGARITA
           </h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Espolon Reposado Tequila, Apple Cider, Lime, Brown Sugar Simple,
             Cinnamon Sugar Rim
           </p>
-          <p class="text-center text-sm text-gray-500">14</p>
+          <p class="mx-5 text-center text-sm text-gray-500">14</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">KARAMEL APPLE</h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Stoli Salted Caramel Vodka, Apple Cider, Lemon
           </p>
-          <p class="text-center text-sm text-gray-500">13</p>
+          <p class="mx-5 text-center text-sm text-gray-500">13</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">SEASONAL MULE</h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Rotating Seasonal Mule
           </p>
-          <p class="text-center text-sm text-gray-500">14</p>
+          <p class="mx-5 text-center text-sm text-gray-500">14</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">CRANBERRY SPRITZ</h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Sourland Mountain Cranberry Vodka, Aperol, Lemon, Rosemary Simple,
             Prosecco
           </p>
-          <p class="text-center text-sm text-gray-500">15</p>
+          <p class="mx-5 text-center text-sm text-gray-500">15</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">SEASONAL SANGRIA</h1>
-          <p class="text-center text-sm text-gray-500">14</p>
+          <p class="mx-5 text-center text-sm text-gray-500">14</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">THE HORNET</h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Haus Gin, Lemon, Mike’s Hot Honey
           </p>
-          <p class="text-center text-sm text-gray-500">13</p>
+          <p class="mx-5 text-center text-sm text-gray-500">13</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">CRANBERRY LEMONADE</h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Sourland Mountain Cranberry Vodka, Lemonade, Club
           </p>
-          <p class="text-center text-sm text-gray-500">14</p>
+          <p class="mx-5 text-center text-sm text-gray-500">14</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">
             CHAI ESPRESSO MARTINI
           </h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Stoli Vanilla Vodka, Kahlua, Espresso, Coconut Water, Chai Simple,
             Cinnamon Sugar Rim
           </p>
-          <p class="text-center text-sm text-gray-500">14</p>
+          <p class="mx-5 text-center text-sm text-gray-500">14</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">
             CAMPFIRE S&apos;MORES
           </h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Birddog S&apos;mores Whiskey, Kahlua, Cream, Chocolate Syrup &
             Graham Cracker Rim
           </p>
-          <p class="text-center text-sm text-gray-500">15</p>
+          <p class="mx-5 text-center text-sm text-gray-500">15</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">THE FALL BUCKET</h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Laird&apos;s Apple Jack, Misunderstood Ginger Whiskey, Apple Cider,
             Lemon, Club
           </p>
-          <p class="text-center text-sm text-gray-500">17</p>
+          <p class="mx-5 text-center text-sm text-gray-500">17</p>
         </div>
       </div>
       <div id="beertails" class="my-5">
@@ -127,17 +127,17 @@ export function BreweryCocktailMenu() {
         </h1>
         <div class="">
           <h1 class="text-center text-2xl font-medium">BEERGARITA</h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Haus Margarita topped with choice of Beach Haus Sour Beer
           </p>
-          <p class="text-center text-sm text-gray-500">14</p>
+          <p class="mx-5 text-center text-sm text-gray-500">14</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">HAUS CIDER</h1>
-          <p class="text-center text-sm text-gray-500">
+          <p class="mx-5 text-center text-sm text-gray-500">
             Ironbound Hard Cider, Laird&apos;s Apple Jack, Apple Cider
           </p>
-          <p class="text-center text-sm text-gray-500">13</p>
+          <p class="mx-5 text-center text-sm text-gray-500">13</p>
         </div>
       </div>
     </div>
