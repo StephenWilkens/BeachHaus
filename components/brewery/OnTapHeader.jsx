@@ -1,5 +1,6 @@
 import Image from "next/image";
 import tapsHeader from "../../public/16x9Crop/food&Bev/Kaitlyn+Zack-1093.jpg";
+//node version update
 export function OnTapHeader() {
   return (
     <div className="group relative w-full overflow-hidden bg-black lg:max-h-[540px] 2xl:max-h-[900px]">
