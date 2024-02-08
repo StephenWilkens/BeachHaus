@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import blackWave from "../public/blackWave.png";
+import blackWave from "../public/bh_blk_wave_noBG.png";
 import Image from "next/image";
 import { useState } from "react";
 import { Dropdown, Sidebar } from "flowbite-react";
@@ -12,7 +12,7 @@ export function TwNav() {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav class="z-50 bg-white">
+    <nav class="z-50 bg-cyan-50">
       <div class="mx-auto max-w-7xl px-8">
         <div class="flex justify-between">
           <div class="flex space-x-4">
@@ -21,11 +21,11 @@ export function TwNav() {
                 <Image
                   src={blackWave}
                   alt="BH Logo"
-                  width={75}
-                  // height={70}
+                  width={50}
+                  height={50}
                   class=""
                 />
-                <span class="font-bold">Beach Haus</span>
+                <span class="font-bold text-xl ml-2">Beach Haus</span>
               </Link>
             </div>
 
