@@ -38,10 +38,10 @@ export async function OnTapBeer() {
           <div className="col-span-10 ml-1">
             <h1 className="text-xl">{beer.name}</h1>
             <p className="text-sm">{beer.style}</p>
-            <p className="text-sm">
+            <p className="text-sm font-semibold">
               {beer.abv}% ABV • {beer.ibu} IBU
             </p>
-            <p className="text-sm">{beer.description}</p>
+            <p className="text-sm mr-10">{beer.description}</p>
           </div>
           <div className="col-span-2"></div>
         </div>
