@@ -1,9 +1,10 @@
-import { Rooftop } from "@/components/rooftop/Rooftop";
-import Image from "next/image";
+import { OnTapHeader } from "@/components/brewery/OnTapHeader";
+import { OnTapBeer } from "@/components/brewery/OnTap";
 export default function Playground() {
   return (
     <div>
-      <Rooftop />
+      <OnTapHeader />
+      <OnTapBeer />
     </div>
   );
 }
