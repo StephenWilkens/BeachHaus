@@ -1,28 +1,8 @@
+import { getOnTapBeer } from "@/lib/untappedMenuReqs";
 import Image from "next/image";
 
-async function getBeers() {
-  let url = process.env.untappedOnTapURL;
-  let username = process.env.untappedUserName;
-  let pass = process.env.untappedPass;
-  let headers = new Headers();
-  headers.set(
-    "Authorization",
-    "Basic " + Buffer.from(username + ":" + pass).toString("base64"),
-  );
-  const res = await fetch(url, {
-    method: "GET",
-    headers: headers,
-    next: { revalidate: 86400 },
-    // cache: 'no-store'
-  });
-  const data = await res.json();
-  return data;
-}
-
 export async function OnTapBeer() {
-  let menu = await getBeers();
-  let onTapBeers = await menu.menu.sections[0].items;
-  let cannedBeers = await menu.menu.sections[1];
+  let onTapBeers = await getOnTapBeer()
   return (
     <div className="lg:grid-cols-2 grid grid-cols-1 bg-cyan-50">
       {onTapBeers.map((beer) => (
