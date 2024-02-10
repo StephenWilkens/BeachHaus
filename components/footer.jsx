@@ -14,7 +14,7 @@ export function Footer() {
       <div className="grid justify-items-center grid-cols-1 md:grid-cols-3 max-w-7xl px-5 py-16  mx-auto">
         <div className="space-y-5 p-5 ">
           <Link
-            href="#"
+            href="https://main.d13ng5sk5onsb6.amplifyapp.com/about#info"
             class="block text-lg  hover:text-cyan-800"
           >
             Contact Us
@@ -77,7 +77,7 @@ export function Footer() {
             >
               Directions
             </Link>
-            <Link href="#" class="text-sm  hover:text-cyan-800">
+            <Link href="https://main.d13ng5sk5onsb6.amplifyapp.com/about#info" class="text-sm  hover:text-cyan-800">
               Hours
             </Link>
           </div>
@@ -96,7 +96,7 @@ export function Footer() {
             801 Craft Kitchen
           </Link>
           <Link
-            href="#"
+            href="/rooftop"
             class="block text-lg  hover:text-cyan-800"
           >
             Rooftop at Beach Haus
