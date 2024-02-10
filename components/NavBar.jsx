@@ -38,18 +38,23 @@ export function TwNav() {
                 <Dropdown.Item as={Link} href="/brewery">
                   The Brewery at Beach Haus
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/ontap">
-                  On Tap
-                </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/food">
                   Food Menu
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/cocktails">
                   Cocktail Menu
                 </Dropdown.Item>
-
+                <Dropdown.Item as={Link} href="/brewery/ontap">
+                  On Tap
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/beer-to-go">
+                  Beer To Go
+                </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/contractbrewing">
                   Contract Brewing
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/brewery/distribution">
+                  Distribution
                 </Dropdown.Item>
               </Dropdown>
 
@@ -178,14 +183,16 @@ export function TwNav() {
               </Sidebar.Item>
               <Sidebar.Collapse label="The Brewery">
                 <Sidebar.Item href="/brewery">Home</Sidebar.Item>
-                <Sidebar.Item href="/brewery/ontap">On Tap</Sidebar.Item>
                 <Sidebar.Item href="/brewery/food">Food Menu</Sidebar.Item>
                 <Sidebar.Item href="/brewery/cocktails">
                   Cocktail Menu
                 </Sidebar.Item>
+                <Sidebar.Item href="/brewery/ontap">On Tap</Sidebar.Item>
+                <Sidebar.Item href="/brewery/beer-to-go">Beer To Go</Sidebar.Item>
                 <Sidebar.Item href="/brewery/contractbrewing">
                   Contract Brewing
                 </Sidebar.Item>
+                <Sidebar.Item href="/brewery/distribution">Distribution</Sidebar.Item>
               </Sidebar.Collapse>
               <Sidebar.Item href="https://801craftkitchen.com">
                 <p>801 Craft Kitchen</p>
