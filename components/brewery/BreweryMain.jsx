@@ -3,6 +3,7 @@ import { BreweryLandingPageFoodMenuContentRow } from "./BreweryLandingPageFoodMe
 import { BreweryLandingPageCocktailsContentRow } from "./BreweryLandingPageCocktailsContentRow";
 import { BreweryLandingPageBeerContentRow } from "./BreweryLandingPageBeerContentRow";
 import { BreweryLandingPageContractBrewContentRow } from "./BreweryLandingPageContracBrewContentRow";
+import { BreweryLandingPageDistributionContentRow } from "./BreweryLandingPageDistributionContentRow";
 
 export function BreweryMain() {
   return (
@@ -12,6 +13,7 @@ export function BreweryMain() {
       <BreweryLandingPageCocktailsContentRow />
       <BreweryLandingPageBeerContentRow />
       <BreweryLandingPageContractBrewContentRow />
+      <BreweryLandingPageDistributionContentRow />
     </div>
   );
 }

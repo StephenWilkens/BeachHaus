@@ -18,7 +18,7 @@ export function LandingPageBreweryContentRow() {
               The Brewery at Beach Haus
             </h1>
           </div>
-          <div className="absolute inset-0 top-40 opacity-0 duration-500 ease-in-out group-hover:opacity-100">
+          <div className="absolute inset-0 top-40 opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100">
             <p className="mx-12 text-justify text-sm font-medium leading-tight text-white">
               Enjoy hot food from the kitchen, cocktails from our full bar, and
               20 craft beers on tap!

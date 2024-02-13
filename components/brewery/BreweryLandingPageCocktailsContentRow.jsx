@@ -19,7 +19,7 @@ export function BreweryLandingPageCocktailsContentRow() {
               Cocktails
             </h1>
           </div>
-          <div className="absolute inset-0 top-40 flex flex-col items-center opacity-0 duration-500 ease-in-out group-hover:opacity-100">
+          <div className="absolute inset-0 top-40 flex flex-col items-center opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100">
             <p className="mx-12 text-center text-sm font-medium leading-tight text-white">
               Full bar with specialty crafted cocktails. We&apos;re no one trick
               pony
@@ -42,7 +42,7 @@ export function BreweryLandingPageCocktailsContentRow() {
           <h1 className="ml-10 mt-12 text-left text-6xl font-bold text-cyan-800 2xl:text-7xl">
             Cocktails
           </h1>
-          <p className="mx-10 mt-5 text-left text-2xl font-light 2xl:text-3xl 2xl:mt-7">
+          <p className="mx-10 mt-5 text-left text-2xl font-light 2xl:mt-7 2xl:text-3xl">
             Full bar with specialty crafted cocktails. We&apos;re no one trick
             pony
           </p>
@@ -53,7 +53,7 @@ export function BreweryLandingPageCocktailsContentRow() {
           </button>
         </div>
         <div className="absolute inset-0 left-10 top-[55%] h-1/6 w-1/3 bg-black 2xl:top-[70%]">
-          <div className="flex h-full w-full place-items-center mx-3 2xl:mx-10">
+          <div className="mx-3 flex h-full w-full place-items-center 2xl:mx-10">
             <div className="flex flex-auto items-center">
               <FlaskConicalIcon className=" h-8 w-8 text-white 2xl:h-16 2xl:w-16" />
               <h1 className="ml-2 text-lg font-light text-white 2xl:text-2xl">
