@@ -1,10 +1,5 @@
-import { OnTapHeader } from "@/components/brewery/OnTapHeader";
-import { OnTapBeer } from "@/components/brewery/OnTap";
+import { EventsCalendar } from "@/components/events calendar/EventsCalendar";
 export default async function Playground() {
-  return (
-    <div>
-      <OnTapHeader />
-      <OnTapBeer />
-    </div>
-  );
+  return <div>
+  </div>;
 }
