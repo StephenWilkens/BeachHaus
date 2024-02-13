@@ -13,7 +13,7 @@ export function TwNav() {
   };
   return (
     <nav class="z-50 bg-cyan-50">
-      <div class="mx-auto max-w-8xl px-8">
+      <div class="max-w-8xl mx-auto px-8">
         <div class="flex justify-between">
           <div class="flex space-x-4">
             <div>
@@ -25,7 +25,7 @@ export function TwNav() {
                   height={50}
                   class=""
                 />
-                <span class="font-bold text-xl ml-2">Beach Haus</span>
+                <span class="ml-2 text-xl font-bold">Beach Haus</span>
               </Link>
             </div>
 
@@ -191,11 +191,15 @@ export function TwNav() {
                   Cocktail Menu
                 </Sidebar.Item>
                 <Sidebar.Item href="/brewery/ontap">On Tap</Sidebar.Item>
-                <Sidebar.Item href="/brewery/beer-to-go">Beer To Go</Sidebar.Item>
+                <Sidebar.Item href="/brewery/beer-to-go">
+                  Beer To Go
+                </Sidebar.Item>
                 <Sidebar.Item href="/brewery/contractbrewing">
                   Contract Brewing
                 </Sidebar.Item>
-                <Sidebar.Item href="/brewery/distribution">Distribution</Sidebar.Item>
+                <Sidebar.Item href="/brewery/distribution">
+                  Distribution
+                </Sidebar.Item>
               </Sidebar.Collapse>
               <Sidebar.Item href="https://801craftkitchen.com">
                 <p>801 Craft Kitchen</p>
@@ -244,6 +248,9 @@ export function TwNav() {
               </Sidebar.Collapse>
               <Sidebar.Item href="/virtual-tour">
                 <p>Virtual Tour</p>
+              </Sidebar.Item>
+              <Sidebar.Item href="/events-calendar">
+                <p>Events Calendar</p>
               </Sidebar.Item>
             </Sidebar.ItemGroup>
           </Sidebar.Items>
