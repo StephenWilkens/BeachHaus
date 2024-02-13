@@ -19,7 +19,7 @@ export function BreweryLandingPageContractBrewContentRow() {
               Contract Brewing
             </h1>
           </div>
-          <div className="absolute inset-0 top-40 flex flex-col items-center opacity-0 duration-500 ease-in-out group-hover:opacity-100">
+          <div className="absolute inset-0 top-40 flex flex-col items-center opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100">
             <p className="mx-12 text-center text-sm font-medium leading-tight text-white">
               Start-to-finish contract brewing and packaging services.
             </p>

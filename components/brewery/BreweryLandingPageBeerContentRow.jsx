@@ -5,7 +5,7 @@ import { HopIcon } from "lucide-react";
 
 export function BreweryLandingPageBeerContentRow() {
   return (
-    <div className="w-full  lg:max-h-[720px] 2xl:max-h-[1080px] overflow-hidden">
+    <div className="w-full  overflow-hidden lg:max-h-[720px] 2xl:max-h-[1080px]">
       <div className="mobile group relative bg-black lg:hidden">
         <div className="before: before:absolute before:right-1 before:top-1 before:z-10 before:hidden before:h-[97%] before:w-[98%] before:border-2 before:border-white before:opacity-70 group-hover:before:block">
           <Image
@@ -18,7 +18,7 @@ export function BreweryLandingPageBeerContentRow() {
               On Tap
             </h1>
           </div>
-          <div className="absolute inset-0 top-40 flex flex-col items-center opacity-0 duration-500 ease-in-out group-hover:opacity-100">
+          <div className="absolute inset-0 top-40 flex flex-col items-center opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100">
             <p className="mx-12 text-center text-sm font-medium leading-tight text-white">
               Come see what we&apos;ve got on tap!
             </p>
@@ -31,7 +31,6 @@ export function BreweryLandingPageBeerContentRow() {
         </div>
       </div>
       <div className="desktop relative hidden h-full w-full grid-cols-12 lg:grid">
-        
         <div className="absolute inset-0 z-10 col-start-1 col-end-7 opacity-60">
           <HopIcon className="h-2/6 w-2/6 stroke-[.5px]" />
         </div>
