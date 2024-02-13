@@ -13,11 +13,11 @@ export function TwNav() {
   };
   return (
     <nav class="z-50 bg-cyan-50">
-      <div class="mx-auto max-w-7xl px-8">
+      <div class="mx-auto max-w-8xl px-8">
         <div class="flex justify-between">
           <div class="flex space-x-4">
             <div>
-              <Link href="/" class="flex items-center px-2 py-5 text-black">
+              <Link href="/" class="flex items-center px-4 py-5 text-black">
                 <Image
                   src={blackWave}
                   alt="BH Logo"
@@ -114,6 +114,9 @@ export function TwNav() {
               </Dropdown>
               <Link href="/virtual-tour" class="px-2 py-5 text-black">
                 Virtual Tour
+              </Link>
+              <Link href="/events-calendar" class="px-2 py-5 text-black">
+                Events Calendar
               </Link>
             </div>
           </div>
