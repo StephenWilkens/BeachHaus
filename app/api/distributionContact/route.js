@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(request) {
   const { name, business, email, phone, beerInfo } = await request.json();
-  
+
   const user = process.env.user;
 
   const data = {
@@ -43,6 +43,7 @@ export async function POST(request) {
       { status: 200 },
     );
   } catch (error) {
+    console.log(error);
     return NextResponse.json(
       { message: "Failed to Send Email" },
       { status: 500 },
