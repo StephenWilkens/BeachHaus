@@ -1,7 +1,5 @@
 import { NextResponse } from "next/server";
-import { resolve } from "styled-jsx/css";
-// import nodemailer from "nodemailer";
-const nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
 
 export async function POST(request) {
   const { name, email, phone, beerInfo } = await request.json();
@@ -26,7 +24,7 @@ export async function POST(request) {
   });
 
   try {
-    await new Promise((resolve, reject) => {
+    const mail = await new Promise((resolve, reject) => {
       transporter.sendMail(
         {
           from: user,
