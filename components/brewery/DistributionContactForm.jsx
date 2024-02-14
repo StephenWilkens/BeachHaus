@@ -6,28 +6,36 @@ export function DistributionContactForm() {
 
     const data = {
       name: String(event.target.name.value),
+      business: String(event.target.business.value),
       email: String(event.target.email.value),
       phone: String(event.target.phone.value),
       beerInfo: String(event.target.beerInfo.value),
     };
 
-    const response = await fetch("api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    try {
+      const response = await fetch("../api/distributionContact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    if (response.ok) {
-      console.log("Message sent!");
-    }
-    if (!response.ok) {
-      console.log("Error");
+      if (!response.ok) {
+        console.log("Error");
+        throw new Error(`response status: ${response.status}`);
+      }
+      const responseData = await response.json();
+      console.log(responseData["message"]);
+
+      alert("Message successfully sent");
+    } catch (err) {
+      console.error(err);
+      alert("Error, please try resubmitting the form");
     }
   }
   return (
-    <div className="px-10 pb-5 w-full bg-cyan-50">
+    <div className="w-full bg-cyan-50 px-10 pb-5">
       <h1 className="text-center text-3xl font-bold">Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className="flex flex-col">
@@ -78,7 +86,7 @@ export function DistributionContactForm() {
         </div>
         <div className="my-4 flex w-full flex-col">
           <label className="font-bold text-gray-800" htmlFor="beerInfo">
-            What are you looking to sell?
+            How can we help?
           </label>
           <textarea
             rows={4}

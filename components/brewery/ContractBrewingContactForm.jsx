@@ -11,19 +11,26 @@ export function ContractBrewingContactForm() {
       beerInfo: String(event.target.beerInfo.value),
     };
 
-    const response = await fetch("api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    try {
+      const response = await fetch("../api/contractBrewContact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    if (response.ok) {
-      console.log("Message sent!");
-    }
-    if (!response.ok) {
-      console.log("Error");
+      if (!response.ok) {
+        console.log("Error");
+        throw new Error(`response status: ${response.status}`);
+      }
+      const responseData = await response.json();
+      console.log(responseData["message"]);
+
+      alert("Message successfully sent");
+    } catch (err) {
+      console.error(err);
+      alert("Error, please try resubmitting the form");
     }
   }
   return (
