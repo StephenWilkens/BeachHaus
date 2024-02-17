@@ -12,7 +12,7 @@ export function ContractBrewingContactForm() {
     };
 
     try {
-      const response = await fetch("../api/contractBrewContact", {
+      const response = await fetch("../api/promise", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

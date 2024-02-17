@@ -1,0 +1,60 @@
+import { NextResponse } from "next/server";
+const nodemailer = require("nodemailer");
+
+export async function POST(req, res) {
+  const { name, email, phone, beerInfo } = await req.json();
+
+  const transporter = nodemailer.createTransport({
+    port: 465,
+    host: "smtp.gmail.com",
+    auth: {
+      user: process.env.user,
+      pass: process.env.pass,
+    },
+    secure: true,
+  });
+
+  await new Promise((resolve, reject) => {
+    // verify connection configuration
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("Server is ready to take our messages");
+        resolve(success);
+      }
+    });
+  });
+
+  const mailData = {
+    from: process.env.user,
+    replyTo: email,
+    to: process.env.user,
+    subject: `Contract Brewing Inquerey from ${name}`,
+    text: name,
+    email,
+    phone,
+    beerInfo,
+    html: `
+      <p>Name: ${name}</p>
+      <p>Email: ${email}</p>
+      <p>Phone Number: ${phone}</p>
+      <p>Brew Information: ${beerInfo}</p>`,
+  };
+
+  await new Promise((resolve, reject) => {
+    // send mail
+    transporter.sendMail(mailData, (err, info) => {
+      if (err) {
+        console.error(err);
+        reject(err);
+      } else {
+        console.log(info);
+        resolve(info);
+      }
+    });
+  });
+
+  return NextResponse.json({ status: 200 },);
+}
