@@ -1,7 +1,7 @@
 import { ContractBrewingContactForm } from "./ContractBrewingContactForm";
 import { ContractBrewingHeader } from "./ContractBrewingHeader";
 
-export function ContractBrewing() {
+export function ContractBrewV2() {
   return (
     <div className="grid grid-cols-1 bg-cyan-50 lg:grid-cols-2">
       <div className="col-span-full">
