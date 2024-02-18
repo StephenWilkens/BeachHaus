@@ -4,44 +4,44 @@ import tanks from "../../public/bh2.jpg";
 
 export function BreweryCocktailMenu() {
   return (
-    <div>
-      <div class="grid grid-cols-2 bg-black relative">
-        <div class="w-full m-auto col-span-2">
+    <div className="bg-cyan-50">
+      <div class="relative grid grid-cols-2 bg-black">
+        <div class="col-span-2 m-auto w-full">
           <Image
             src={tanks}
             alt="About us background"
             fill
-            class="object-cover opacity-70 absolute"
+            class="absolute object-cover opacity-70"
           />
         </div>
         <div class="z-20 col-span-2 h-full w-full p-12 md:py-32">
-          <h1 className="text-5xl md:text-8xl text-white font-bold text-center">
+          <h1 className="text-center text-5xl font-bold text-white md:text-8xl">
             HAUS DRINKS
           </h1>
         </div>
       </div>
-      <div class="grid grid-rows-2 md:grid-rows-1 divide-y">
+      <div class="grid grid-rows-2 divide-y md:grid-rows-1">
         <div class="row-span-1 mx-auto mt-3">
           <Link
             href="#cocktails"
-            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Craft Cocktails
           </Link>
           <Link
             href="#beertails"
-            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Beertails
           </Link>
         </div>
       </div>
       <div id="cocktails" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
           COCKTAILS
         </h1>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
         <div class="md:pt-5">
           <h1 class="text-center text-2xl font-medium">
             SPICED APPLE MARGARITA
@@ -121,8 +121,8 @@ export function BreweryCocktailMenu() {
           <p class="mx-5 text-center text-sm text-gray-500">17</p>
         </div>
       </div>
-      <div id="beertails" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
+      <div id="beertails" class="mt-5 pb-5">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
           BEERTAILS
         </h1>
         <div class="">
@@ -137,7 +137,7 @@ export function BreweryCocktailMenu() {
           <p class="mx-5 text-center text-sm text-gray-500">
             Ironbound Hard Cider, Laird&apos;s Apple Jack, Apple Cider
           </p>
-          <p class="mx-5 text-center text-sm text-gray-500">13</p>
+          <p class="mt-5 text-center text-sm text-gray-500">13</p>
         </div>
       </div>
     </div>

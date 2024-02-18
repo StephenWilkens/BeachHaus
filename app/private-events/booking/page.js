@@ -3,7 +3,7 @@ import { TripSeatScript } from "@/components/private events/TripleSeatBookingFor
 
 export default function Booking() {
   return (
-    <div>
+    <div className="bg-cyan-50">
       <PrivateEventsHeader />
       <TripSeatScript />
     </div>

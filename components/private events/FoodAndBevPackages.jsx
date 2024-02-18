@@ -70,7 +70,7 @@ const carouselOptions = { loop: true };
 
 export function FoodAndBevPackages() {
   return (
-    <div className="mb-5 grid grid-cols-1 md:my-8 md:grid-cols-5">
+    <div className="grid grid-cols-1 bg-cyan-50 pb-5 md:grid-cols-5 md:py-8">
       <div className="mt-8 md:col-span-3">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
