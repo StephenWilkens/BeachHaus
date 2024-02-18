@@ -5,17 +5,17 @@ export async function POST(req, res) {
   const { name, email, phone, beerInfo } = await req.json();
 
   const transporter = nodemailer.createTransport({
-    port: 465,
     host: "smtp.gmail.com",
+    port: 465,
+    secure: true,
     auth: {
       type: "OAuth2",
-      user: process.env.user,
-      clientId: process.env.oAuthClientID,
-      clientSecret: process.env.oAuthClientSecret,
-      refreshToken: process.env.oAuthRefreshToken,
-      accessToken: process.env.oAuthAccessToken,
+      user: process.env.OAUTH_USER,
+      clientId: process.env.OAUTH_CLIENT_ID,
+      clientSecret: process.env.OAUTH_CLIENT_SECRET,
+      refreshToken: process.env.OAUTH_REFRESH_TOKEN,
+      accessToken: process.env.OAUTH_ACCESS_TOKEN,
     },
-    secure: true,
   });
 
   await new Promise((resolve, reject) => {
@@ -32,9 +32,9 @@ export async function POST(req, res) {
   });
 
   const mailData = {
-    from: process.env.user,
+    from: process.env.OAUTH_USER,
     replyTo: email,
-    to: process.env.user,
+    to: process.env.OAUTH_USER,
     subject: `Contract Brewing Inquerey from ${name}`,
     text: name,
     email,
