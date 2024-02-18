@@ -77,7 +77,7 @@ export function PrivateEventsHeroCarousel() {
   }, [emblaMainApi, onSelect]);
 
   return (
-    <div className="embla p-2 md:p-6 md:pb-0">
+    <div className="embla p-2 md:p-6 md:pb-0 bg-cyan-50">
       <div className="embla__viewport overflow-hidden" ref={emblaMainRef}>
         <div className="embla__container [backface-visibility: hidden] ml-[calc(var(--slide-spacing) * -1)] flex h-[200px] touch-pan-y items-start md:h-[630px] 2xl:h-[1080px]">
           {slides.map((index) => (

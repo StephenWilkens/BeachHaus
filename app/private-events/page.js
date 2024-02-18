@@ -5,7 +5,7 @@ import { VirtualTour } from "@/components/virtual tour/virtualTour";
 
 export default function PrivateEvents() {
   return (
-    <div>
+    <div className="bg-cyan-50">
       <h1 className="py-3 text-center text-3xl font-light tracking-widest md:hidden md:text-6xl md:font-light">
         PRIVATE EVENTS
         <br />
