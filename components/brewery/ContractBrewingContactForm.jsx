@@ -12,7 +12,7 @@ export function ContractBrewingContactForm() {
     };
 
     try {
-      const response = await fetch("../api/promise", {
+      const response = await fetch("../api/contractBrewContact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -30,7 +30,9 @@ export function ContractBrewingContactForm() {
       alert("Message successfully sent");
     } catch (err) {
       console.error(err);
-      alert("Error, please try resubmitting the form");
+      alert(
+        "Error, please try resubmitting the form. If the error persists, please reach out by phone or email at info@beachhaus.com",
+      );
     }
   }
   return (
@@ -88,7 +90,6 @@ export function ContractBrewingContactForm() {
         </div>
         <button
           type="submit"
-          // disabled={loading}
           className="mb-5 border bg-cyan-800 px-4 py-2 text-white hover:bg-opacity-70"
         >
           Send Info
