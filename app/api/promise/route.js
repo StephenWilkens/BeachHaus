@@ -8,8 +8,12 @@ export async function POST(req, res) {
     port: 465,
     host: "smtp.gmail.com",
     auth: {
+      type: "OAuth2",
       user: process.env.user,
-      pass: process.env.pass,
+      clientId: process.env.oAuthClientID,
+      clientSecret: process.env.oAuthClientSecret,
+      refreshToken: process.env.oAuthRefreshToken,
+      accessToken: process.env.oAuthAccessToken,
     },
     secure: true,
   });
@@ -56,5 +60,5 @@ export async function POST(req, res) {
     });
   });
 
-  return NextResponse.json({ status: 200 },);
+  return NextResponse.json({ status: 200 });
 }
