@@ -4,70 +4,70 @@ import Link from "next/link";
 
 export function BreweryFoodMenu() {
   return (
-    <div>
-      <div class="grid grid-cols-2 bg-black relative">
-        <div class="w-full m-auto col-span-2">
+    <div className="bg-cyan-50">
+      <div class="relative grid grid-cols-2 bg-black">
+        <div class="col-span-2 m-auto w-full">
           <Image
             src={tanks}
             alt="About us background"
             fill
-            class="object-cover opacity-70 absolute"
+            class="absolute object-cover opacity-70"
           />
         </div>
         <div class="z-20 col-span-2 h-full w-full p-12 md:py-32">
-          <h1 className="text-5xl md:text-8xl text-white font-bold text-center">
+          <h1 className="text-center text-5xl font-bold text-white md:text-8xl">
             HAUS FOOD
           </h1>
         </div>
       </div>
-      <div class="grid grid-rows-2 md:grid-rows-1 divide-y">
+      <div class="grid grid-rows-2 divide-y md:grid-rows-1">
         <div class="row-span-1 mx-auto mt-3">
           <Link
             href="#appetizers"
-            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Appetizers
           </Link>
           <Link
             href="#soup&salad"
-            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Soup & Salad
           </Link>
           <Link
             href="#burgers"
-            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Burgers
           </Link>
         </div>
-        <div class="row-span-1 mx-auto mt-1 mb-3">
+        <div class="row-span-1 mx-auto mb-3 mt-1">
           <Link
             href="#pizza"
-            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Wood-Fired Pizza
           </Link>
           <Link
             href="#entrees"
-            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Entrees
           </Link>
           <Link
             href="#dessert"
-            class="m-3 font-medium hover:font-regular hover:text-cyan-800"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Dessert
           </Link>
         </div>
       </div>
       <div id="appetizers" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
           APPETIZERS
         </h1>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
         <div class="md:pt-5">
           <h1 class="text-center text-2xl font-medium">BAVARIAN PRETZEL</h1>
           <p class="text-center text-sm text-gray-500">
@@ -131,11 +131,11 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="soup&salad" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
           SOUP & SALAD
         </h1>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
         <div class="md:col-span-2 md:pb-3">
           <h1 class="text-center font-semibold">
             ADD CHICKEN +6 • ADD SHRIMP +10
@@ -164,12 +164,12 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="burgers" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
           BURGERS
         </h1>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
-        <div class="md:col-span-2 pb-3">
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
+        <div class="pb-3 md:col-span-2">
           <h1 class="text-center font-semibold">
             ALL BURGERS ARE SERVED WITH A SIDE OF HAUS CUT FRIES AND A PICKLE
           </h1>
@@ -205,11 +205,11 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="pizza" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
           WOOD-FIRED PIZZA
         </h1>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
         <div class="md:col-span-2 md:pb-3">
           <h1 class="text-center font-semibold">
             COOKED IN OUR TRADITIONAL BRICK OVEN FUELED BY HARDWOOD
@@ -245,11 +245,11 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="entrees" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
           ENTREES
         </h1>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
         <div class="md:col-span-2 md:pb-3">
           <h1 class="text-center font-semibold">
             ENJOY OUR FAVORITES AT THE JERSEY SHORE
@@ -340,13 +340,15 @@ export function BreweryFoodMenu() {
         </div>
       </div>
       <div id="dessert" class="my-5">
-        <h1 class="text-4xl font-bold border-y-2 border-gray-500 text-cyan-800 text-center">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
           DESSERT
         </h1>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 space-y-5">
-        <div class="md:col-span-2 pb-5">
-          <h1 class="text-center text-2xl font-medium">CONEY WAFFLE ICE CREAM</h1>
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
+        <div class="pb-5 md:col-span-2">
+          <h1 class="text-center text-2xl font-medium">
+            CONEY WAFFLE ICE CREAM
+          </h1>
           <p class="text-center text-sm text-gray-500">10</p>
         </div>
       </div>
