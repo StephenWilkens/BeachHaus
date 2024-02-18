@@ -4,7 +4,8 @@ import nodemailer from "nodemailer";
 export async function POST(request) {
   const { name, business, email, phone, beerInfo } = await request.json();
 
-  const user = process.env.user;
+  const user = process.env.OAUTH_USER
+  ;
 
   const data = {
     name,
@@ -20,7 +21,7 @@ export async function POST(request) {
     secure: true,
     auth: {
       user: user,
-      pass: process.env.pass,
+      pass: process.env.OAUTH_PASS,
     },
   });
 
