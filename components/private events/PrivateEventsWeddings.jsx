@@ -62,7 +62,7 @@ const carouselOptions = { loop: true };
 
 export function Weddings() {
   return (
-    <div className="py-8 grid grid-cols-5 bg-cyan-50">
+    <div className="grid grid-cols-5 bg-cyan-50 py-8">
       <div className="col-span-3">
         <VenuePagesCarousel images={carouselImages} options={carouselOptions} />
       </div>
