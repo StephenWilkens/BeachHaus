@@ -1,8 +1,8 @@
-'use client'
+"use client";
 import Script from "next/script";
 
 export function EcwidStoreScript() {
-  return(
+  return (
     <div className="w-full">
       <Script
         src="https://app.ecwid.com/script.js?30876003&data_platform=code&data_date=2024-01-15"
@@ -21,5 +21,5 @@ export function EcwidStoreScript() {
         }}
       />
     </div>
-  )
+  );
 }

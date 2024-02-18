@@ -1,6 +1,6 @@
 export function VirtualTour() {
   return (
-    <div>
+    <div className="bg-cyan-50">
       <h1 class="py-5 text-center text-4xl font-light md:pb-5 md:text-6xl">
         VIRTUAL TOUR
       </h1>
