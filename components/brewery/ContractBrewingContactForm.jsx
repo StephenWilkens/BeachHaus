@@ -36,7 +36,7 @@ export function ContractBrewingContactForm() {
     }
   }
   return (
-    <div className="mx-auto mb-5 max-w-4xl rounded-lg bg-white px-4">
+    <div className="mx-auto mb-5 max-w-4xl rounded-lg bg-cyan-50 px-4">
       <h1 className="text-center text-3xl font-bold">Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className="my-4 flex w-full flex-col pt-2">
@@ -46,7 +46,7 @@ export function ContractBrewingContactForm() {
           <input
             type="text"
             required
-            className="border border-gray-100 bg-gray-50 p-4"
+            className="border border-gray-100 bg-gray-100 p-4"
             id="name"
           />
         </div>
@@ -57,7 +57,7 @@ export function ContractBrewingContactForm() {
           <input
             type="email"
             id="email"
-            className="border border-gray-100 bg-gray-50 p-4"
+            className="border border-gray-100 bg-gray-100 p-4"
             required
           />
         </div>
@@ -70,7 +70,7 @@ export function ContractBrewingContactForm() {
             id="phone"
             placeholder="1234567890"
             maxLength={12}
-            className="border border-gray-100 bg-gray-50 p-4"
+            className="border border-gray-100 bg-gray-100 p-4"
             required
           />
         </div>
@@ -82,7 +82,7 @@ export function ContractBrewingContactForm() {
             rows={4}
             name="beerInfo"
             id="beerInfo"
-            className="border border-gray-100 bg-gray-50 p-4"
+            className="border border-gray-100 bg-gray-100 p-4"
             required
             maxLength={100}
             placeholder="Please not that we only brew malted beverages and seltzers. We do not provide non-alcoholic brewing either."

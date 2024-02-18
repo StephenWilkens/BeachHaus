@@ -1,9 +1,9 @@
-import { ContractBrewingMain } from "@/components/brewery/ContractBrewing";
+import { ContractBrewing } from "@/components/brewery/ContractBrewing";
 
-export default function ContractBrewing() {
+export default function ContractBrewingPage() {
   return (
     <div>
-      <ContractBrewingMain />
+      <ContractBrewing />
     </div>
   );
 }
