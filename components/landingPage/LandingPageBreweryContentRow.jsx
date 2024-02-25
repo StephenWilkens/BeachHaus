@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import bhBG from "../../public/16x9Crop/tapRoom-BeerHall-Patio/GALLERY 2022 - LAUREN AND JAMES WEDDING - SF PHOTO -518.jpg";
 import brewery1_1 from "../../public/11_images/brewery1_1.jpg";
+import breweryLandingImg from "../../public/Landing_Page_BH_Row.jpeg";
 
 export function LandingPageBreweryContentRow() {
   return (
@@ -9,11 +10,11 @@ export function LandingPageBreweryContentRow() {
       <div className="before: before:absolute before:right-1 before:top-1 before:z-10 before:hidden before:h-[97%] before:w-[98%] before:border-2 before:border-white before:opacity-70 group-hover:before:block md:before:right-4 md:before:top-2 2xl:before:right-8 2xl:before:border-4">
         <div className="mobile md:hidden">
           <Image
-            src={brewery1_1}
+            src={breweryLandingImg}
             alt="beer"
             class="w-full object-cover opacity-90 duration-500 ease-in-out group-hover:opacity-50"
           />
-          <div className="absolute inset-0 top-28 duration-500 ease-in-out group-hover:top-12">
+          <div className="absolute inset-0 top-24 duration-500 ease-in-out group-hover:top-12">
             <h1 className="mx-6 text-center text-5xl font-bold leading-tight text-white group-hover:leading-none">
               The Brewery at Beach Haus
             </h1>
@@ -32,7 +33,7 @@ export function LandingPageBreweryContentRow() {
         </div>
         <div className="desktop hidden md:block">
           <Image
-            src={bhBG}
+            src={breweryLandingImg}
             alt="beer"
             class="w-full object-cover opacity-90 duration-500 ease-in-out group-hover:opacity-50 lg:max-h-[720px] 2xl:max-h-[1080px]"
           />
@@ -43,7 +44,7 @@ export function LandingPageBreweryContentRow() {
               at Beach Haus
             </h1>
           </div>
-          <div className="absolute inset-0 top-72 opacity-0 duration-500 ease-in-out group-hover:opacity-100 2xl:top-96">
+          <div className="absolute inset-0 top-72 opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100 2xl:top-96">
             <p className="ml-10 text-justify text-3xl text-white 2xl:text-4xl">
               Enjoy hot food from the kitchen, cocktails from
               <br />

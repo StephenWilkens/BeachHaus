@@ -20,7 +20,7 @@ export function Footer() {
             Contact Us
           </Link>
           <Link
-            href="#"
+            href="/careers"
             class="block text-lg  hover:text-cyan-800"
           >
             Careers

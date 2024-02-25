@@ -115,9 +115,14 @@ export function TwNav() {
               <Link href="/virtual-tour" class="px-2 py-5 text-black">
                 Virtual Tour
               </Link>
-              <Link href="/events-calendar" class="px-2 py-5 text-black">
-                Events Calendar
-              </Link>
+              <Dropdown label="Events Calendar" inline>
+                <Dropdown.Item as={Link} href="/events-calendar">
+                  Upcoming Events
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} href="/weekly-fun">
+                  Weekly Fun
+                </Dropdown.Item>
+              </Dropdown>
             </div>
           </div>
 
@@ -184,6 +189,9 @@ export function TwNav() {
               <Sidebar.Item href="/">
                 <p>Home</p>
               </Sidebar.Item>
+              <Sidebar.Item href="/about">
+                <p>About</p>
+              </Sidebar.Item>
               <Sidebar.Collapse label="The Brewery">
                 <Sidebar.Item href="/brewery">Home</Sidebar.Item>
                 <Sidebar.Item href="/brewery/food">Food Menu</Sidebar.Item>
@@ -249,9 +257,10 @@ export function TwNav() {
               <Sidebar.Item href="/virtual-tour">
                 <p>Virtual Tour</p>
               </Sidebar.Item>
-              <Sidebar.Item href="/events-calendar">
-                <p>Events Calendar</p>
-              </Sidebar.Item>
+              <Sidebar.Collapse label="Events Calendars">
+                <Sidebar.Item href="/events-calendar">Upcoming Events</Sidebar.Item>
+                <Sidebar.Item href="/weekly-fun">Weekly Fun</Sidebar.Item>
+              </Sidebar.Collapse>
             </Sidebar.ItemGroup>
           </Sidebar.Items>
         </Sidebar>

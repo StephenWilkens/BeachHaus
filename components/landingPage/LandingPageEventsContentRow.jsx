@@ -13,12 +13,12 @@ export function LandingPageEventsContentRow() {
             alt="beer"
             class="w-full object-cover opacity-80 duration-500 ease-in-out group-hover:opacity-50"
           />
-          <div className="absolute inset-0 top-16 duration-500 ease-in-out group-hover:top-5">
-            <h1 className="text-center text-4xl font-bold text-white group-hover:text-3xl group-hover:font-bold">
+          <div className="absolute inset-0 top-24 duration-500 ease-in-out group-hover:top-16">
+            <h1 className="text-center text-4xl font-bold text-white group-hover:text-4xl group-hover:font-bold">
               Private Events
             </h1>
           </div>
-          <div className="absolute inset-0 top-16 opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100">
+          <div className="absolute inset-0 top-28 opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100">
             <p className="mx-20 text-center leading-tight text-white">
               Contact our private events booking staff to rent out our event
               space for your next party!
@@ -41,7 +41,7 @@ export function LandingPageEventsContentRow() {
               Private Events
             </h1>
           </div>
-          <div className="absolute inset-0 top-64 grid grid-cols-1 opacity-0 duration-500 ease-in-out group-hover:opacity-100 2xl:top-96">
+          <div className="absolute inset-0 top-64 grid grid-cols-1 opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100 2xl:top-96">
             <div className="">
               <p className="mx-60 text-center text-3xl text-white 2xl:text-4xl">
                 Contact our private events booking staff to rent out our event
