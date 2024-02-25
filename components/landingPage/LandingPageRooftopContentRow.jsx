@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import rooftop from "../../public/16x9Crop/roofTop/1B7A4E97-2B90-4985-AD3A-960F379D7C03.jpg";
-
+import rooftopLandingImg from "../../public/16x9Crop/BH_RooftopPacked.jpg"
 export function LandingPageRooftopContentRow() {
   return (
     <div className="group relative mt-2 w-full bg-black lg:max-h-[720px] 2xl:max-h-[1080px]">
       <div className="before: before:absolute before:right-1 before:top-1 before:z-10 before:hidden before:h-[97%] before:w-[98%] before:border-2 before:border-white before:opacity-70 group-hover:before:block md:before:right-4 md:before:top-2 2xl:before:right-8 2xl:before:border-4">
         <div className="mobile md:hidden">
           <Image
-            src={rooftop}
+            src={rooftopLandingImg}
             alt="beer"
             class="w-full object-cover opacity-90 duration-500 ease-in-out group-hover:opacity-50"
           />
@@ -32,7 +32,7 @@ export function LandingPageRooftopContentRow() {
         </div>
         <div className="desktop hidden md:block">
           <Image
-            src={rooftop}
+            src={rooftopLandingImg}
             alt="beer"
             class="w-full object-cover opacity-90 duration-500 ease-in-out group-hover:opacity-50 lg:max-h-[720px] 2xl:max-h-[1080px]"
           />
@@ -43,7 +43,7 @@ export function LandingPageRooftopContentRow() {
               at Beach Haus
             </h1>
           </div>
-          <div className="absolute inset-0 left-1/2 top-72 opacity-0 duration-500 ease-in-out group-hover:opacity-100 2xl:top-96">
+          <div className="absolute inset-0 left-1/2 top-72 opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100 2xl:top-96">
             <p className="mr-10 text-left text-3xl text-white 2xl:text-4xl">
               A 40-seat bar, fire pits with soft seating, an extensive cocktail
               menu, and a sunset view of the Shark River. Check out the new

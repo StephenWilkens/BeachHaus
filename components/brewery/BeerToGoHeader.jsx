@@ -1,5 +1,5 @@
 import Image from "next/image";
-import tapsHeader from "../../public/16x9Crop/food&Bev/Kaitlyn+Zack-1093.jpg";
+import tapsHeader from "../../public/16x9Crop/BH_16x9togoBeer.jpg";
 
 export function BeerToGoHeader() {
   return (

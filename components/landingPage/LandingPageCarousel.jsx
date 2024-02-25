@@ -8,88 +8,92 @@ import flights from "../../public/bhFlights.png";
 import fullTable from "../../public/801FullTable.jpg";
 import rooftopPour from "../../public/rooftopPour.JPG";
 import craftCool from "../../public/801Cool.png";
+import trivia from "../../public/16x9Crop/BH_16X9trivia.jpg";
+import testDept from "../../public/16x9Crop/BH_16x9testDept.jpg";
+import contractBrewImg from "../../public/16x9Crop/BH_16x9contractBrewing.jpg";
+import distroImg from "../../public/16x9Crop/BH_16x9_DistroSlider.jpg";
+import burgersImg from "../../public/16x9Crop/BH_BurgerSlider.png";
+import liveMusicImg from "../../public/16x9Crop/BH_16x9_MusicSlider.jpg";
 //[Autoplay()]
-
-
+// stopOnInteraction: false
 export const LandingPageCarousel = () => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
+    Autoplay({ delay: 2500 }),
+  ]);
 
   return (
-    <div className="embla overflow-hidden w-full" ref={emblaRef}>
-      <div className="embla__container flex max-h-[360px] lg:max-h-[540px] 2xl:max-h-[780px] items-center">
-        <div className="embla__slide bg-black relative flex flex-none flex-wrap lg:flex-nowrap w-full min-h-[360px] lg:max-h-[540px] 2xl:max-h-[780px]">
+    <div className="embla w-full overflow-hidden" ref={emblaRef}>
+      <div className="embla__container flex max-h-[360px] items-center lg:max-h-[720px] 2xl:max-h-[780px]">
+        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-[720px] lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={rooftopPour }
+            src={burgersImg}
             alt="flight of beers"
-            class="opacity-70 w-full object-cover"
+            class="w-full object-cover opacity-70"
           />
-          <div className="absolute inset-0 flex flex-col items-center md:items-start justify-center md:gap-4">
-            <h1 className="text-white text-center md:text-start text-5xl font-bold md:text-8xl md:pl-3">
-              The Rooftop
-              <br />
-              at Beach Haus
+          <div className="absolute inset-0 flex flex-col items-center justify-center md:items-start md:gap-4">
+            <h1 className="text-center text-5xl font-bold text-white md:pl-3 md:text-start md:text-8xl">
+              Burger Mondays
             </h1>
-            <p className="text-white text-center md:text-start pt-2 px-12 md:px-0 md:pl-3 text-xl md:text-2xl">
-              Belmar&apos;s best rooftop bar
+            <p className="px-12 pt-2 text-center text-xl text-white md:px-0 md:pl-3 md:text-start md:text-2xl">
+              Every Monday, Buy 1 Burger, Get a 2nd Burger Half Off!
             </p>
-            <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-2 mt-3 rounded ml-3">
-              <Link href="/rooftop">Join the party!</Link>
+            <button class="ml-3 mt-3 rounded bg-cyan-800 px-2 py-2 text-white hover:bg-cyan-600">
+              <Link href="/brewery/food">See the Burger Menu!</Link>
             </button>
           </div>
         </div>
-        <div className="embla__slide bg-black relative flex flex-none flex-wrap lg:flex-nowrap w-full min-h-[360px] lg:max-h-[540px] 2xl:max-h-[780px]">
+        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-[720px] lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={fullTable }
+            src={trivia}
             alt="flight of beers"
-            class="opacity-70 w-full object-cover"
+            class="w-full object-cover"
           />
-          <div className="absolute inset-0 flex flex-col items-center md:items-start justify-center md:gap-4">
-            <h1 className="text-white text-center md:text-start text-5xl font-bold md:text-8xl md:pl-3">
-              The Brewery
-              <br />
-              at Beach Haus
+        </div>
+        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-[720px] lg:flex-nowrap 2xl:max-h-[780px]">
+          <Image
+            src={testDept}
+            alt="flight of beers"
+            class="w-full object-cover opacity-70 lg:opacity-90"
+          />
+          <div className="absolute inset-0 top-10 flex flex-col items-center md:gap-4 lg:top-60">
+            <h1 className="text-center text-5xl font-bold text-white md:pl-3 md:text-start md:text-8xl">
+              Test Dept. Friday
             </h1>
-            <p className="text-white text-center md:text-start pt-2 px-12 md:px-0 md:pl-3 text-xl md:text-2xl">
-              Delicious food, award winning beer, and fresh cocktails
+          </div>
+          <div className="absolute inset-0 top-40 lg:top-80">
+            <p className="text-center text-xl text-white lg:mt-40 lg:px-80 lg:font-semibold lg:text-center lg:text-2xl">
+              Each Friday, our brewers release a limited small brew to
+              experiment with new styles! These unique beers are draft only, and
+              go fast!
             </p>
-            <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-2 mt-3 rounded ml-3">
-              <Link href="/brewery">Explore our Menu</Link>
-            </button>
           </div>
         </div>
-        <div className="embla__slide bg-black relative flex flex-none flex-wrap lg:flex-nowrap w-full min-h-[360px] lg:max-h-[540px] 2xl:max-h-[780px]">
-          <Image
-            src={craftCool }
-            alt="flight of beers"
-            class="opacity-70 w-full object-cover"
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-center md:gap-4">
-            <h1 className="text-white text-center md:text-start text-5xl font-bold md:text-8xl md:pl-3">
-              801 Craft Kitchen
-            </h1>
-            <p className="text-white text-center md:text-start pt-2 px-12 md:px-0 md:pl-3 text-xl md:text-2xl">
-              Fine dining at the shore
-            </p>
-            <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-2 mt-3 rounded ml-3">
-              <Link href="https://801craftkitchen.com/">Meet the Chef</Link>
-            </button>
-          </div>
+        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-[720px] lg:flex-nowrap 2xl:max-h-[780px]">
+          <Link className="max-md:h-[360px] lg:max-h-[720px] " href="/events-calendar">
+            <Image
+              src={liveMusicImg}
+              alt="flight"
+              class="max-md:h-[360px] h-full object-cover"
+            />
+          </Link>
+          button to events
         </div>
-        <div className="embla__slide bg-black relative flex flex-none flex-wrap lg:flex-nowrap w-full min-h-[360px] lg:max-h-[540px] 2xl:max-h-[780px]">
+        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-[720px] lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={ flights }
+            src={distroImg}
             alt="flight"
-            class="opacity-70 w-full object-cover"
+            class="w-full object-cover opacity-70"
           />
-          <div className="absolute inset-0 flex flex-col items-center md:items-end justify-center md:gap-4">
-            <h1 className="text-white text-center md:text-start text-5xl font-bold md:text-8xl md:pr-3">
-              The Lounge
+          <div className="absolute inset-0 flex flex-col items-center justify-center md:items-end md:gap-4">
+            <h1 className="text-center text-5xl font-bold text-white md:px-3 md:text-start md:text-8xl">
+              We Finally Can Distribute our Beer!
             </h1>
-            <p className="text-white text-center md:text-end pt-2 px-12 md:px-0 md:pr-3 text-xl md:text-2xl">
-              Local vibe with world class beer
+            <p className="px-12 pt-2 text-center text-xl text-white md:px-0 md:pr-3 md:text-end md:text-4xl">
+              Bars! Restaurants! Retailers! Buyers and managers reach out to us
+              directly for beer inquiries!
             </p>
-            <button class="bg-cyan-800 hover:bg-cyan-600 text-white py-2 px-2 mt-3 rounded mr-3">
-              <Link href="/lounge">Check it out!</Link>
+            <button class="mr-3 mt-3 rounded bg-cyan-800 px-2 py-2 text-white hover:bg-cyan-600">
+              <Link href="/brewery/contractbrewing">Contact Us Today</Link>
             </button>
           </div>
         </div>

@@ -1,20 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
 import tanks from "../../public/bh2.jpg";
+import aboutImg from "../../public/DRONE SHOTS 2022 - LAUREN AND JAMES WEDDING - SARA FITZ CO-1111.jpg"
 
 export function About() {
   return (
     <div>
       <div class="group relative w-full overflow-hidden bg-black lg:max-h-[540px] 2xl:max-h-[900px]">
         <Image
-          src={tanks}
+          src={aboutImg}
           alt="About background"
           class="object-cover opacity-80"
         />
-        <div className="absolute inset-0 left-1/2 hidden h-2/3 w-1/2 bg-black/60 lg:top-14 lg:block lg:w-1/3"></div>
+        {/* <div className="absolute inset-0 left-1/2 hidden h-2/3 w-1/2 bg-black/60 lg:top-14 lg:block lg:w-1/3"></div>
         <div class="absolute inset-0 left-10 top-14 h-1/3 w-1/3 lg:left-1/2 lg:top-36 2xl:left-32 2xl:top-40 2xl:pr-32">
           <h1 className="text-center text-8xl font-bold text-cyan-50">About</h1>
-        </div>
+        </div> */}
       </div>
       <div class="grid grid-rows-2 divide-y bg-cyan-50 md:grid-rows-1 lg:hidden">
         <div class="row-span-1 mx-auto mt-3">
@@ -101,7 +102,7 @@ export function About() {
             <b>Hours:</b>
           </p>
           <p className="mx-5 pt-1">
-            <b>Thursday-Saturday Dinner:</b> 5PM-11PM
+            <b>Thursday-Saturday Dinner:</b> 5PM-10PM
           </p>
           <p className=" mx-5">
             <b>Thursday-Saturday Happy Hour:</b> 5PM-7PM

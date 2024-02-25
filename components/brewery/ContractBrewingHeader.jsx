@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headerImg from "../../public/16x9Crop/ube_169.jpg";
+import headerImg from "../../public/16x9Crop/BH_16x9contractBrewing.jpg";
 
 export function ContractBrewingHeader() {
   return (

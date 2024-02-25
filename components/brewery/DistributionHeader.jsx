@@ -1,5 +1,5 @@
 import Image from "next/image";
-import distroHeader from "../../public/distributionHeader.jpg";
+import distroHeader from "../../public/16x9Crop/BH_16x9_DistroSlider.jpg";
 
 export function DistributionHeader() {
   return (
