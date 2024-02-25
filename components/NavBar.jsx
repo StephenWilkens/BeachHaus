@@ -127,7 +127,10 @@ export function TwNav() {
           </div>
 
           <div class="hidden items-center space-x-1 md:flex">
-            <a href="/shop" class="px-3 py-5 text-black">
+            <a
+              href="https://0e81a9-f7.myshopify.com/"
+              class="px-3 py-5 text-black"
+            >
               Shop
             </a>
             <Link
@@ -215,7 +218,7 @@ export function TwNav() {
               <Sidebar.Item href="/rooftop">
                 <p>Rooftop Bar</p>
               </Sidebar.Item>
-              <Sidebar.Item href="/shop">
+              <Sidebar.Item href="https://0e81a9-f7.myshopify.com/">
                 <p>Shop</p>
               </Sidebar.Item>
               <Sidebar.Collapse label="Private Events">
@@ -258,7 +261,9 @@ export function TwNav() {
                 <p>Virtual Tour</p>
               </Sidebar.Item>
               <Sidebar.Collapse label="Events Calendars">
-                <Sidebar.Item href="/events-calendar">Upcoming Events</Sidebar.Item>
+                <Sidebar.Item href="/events-calendar">
+                  Upcoming Events
+                </Sidebar.Item>
                 <Sidebar.Item href="/weekly-fun">Weekly Fun</Sidebar.Item>
               </Sidebar.Collapse>
             </Sidebar.ItemGroup>
