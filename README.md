@@ -8,12 +8,11 @@ This website was built to inform customers of the many offerings provided by the
 
 ## Motivation behind the Project
 
-As Beach Haus began expanding beyond just a brewery, they needed a way to inform customers of all offerings within the building, while making it easy for management to make quick and easy changes as necessary. This website aims to achieve that by utilizing RESTful APIs to pull menu information from a database updated by management, provide unique pages for the businesses and services that are offered, and incorporating a Shopify store that management can easily update and customers can easily navigate. 
+As Beach Haus began expanding beyond just a brewery, they needed a way to inform customers of all businesses and services offered within the building, while making it easy for management to make updates as necessary. This website aims to achieve that by utilizing RESTful APIs to pull menu information from a database updated by management, providing unique pages for the businesses and services that are offered, and incorporating a Shopify store that management can easily update and customers can easily navigate. 
 
 ## Languages & tools
 
 ![JavaScript](https://img.shields.io/static/v1?style=for-the-badge&message=JavaScript&color=000000&logo=JavaScript&logoColor=F7DF1E&label=)
-
 
 <a href="https://nextjs.org/" rel="nofollow">![Next.js](https://img.shields.io/static/v1?style=for-the-badge&message=Next.js&color=000000&logo=Next.js&logoColor=FFFFFF&label=)
 </a>
