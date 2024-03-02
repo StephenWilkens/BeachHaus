@@ -1,68 +1,14 @@
-# Beach Haus Website
+# All Encompassing Website for the Business within the Beach Haus Building
 
-This website was built to advertise the businesses within the Beach Haus building. Built to be mobile friendly and responsive, with beer menus being pulled from the Untapped API for easy updating of rotating inventory. Embedded with a live store hosted on the Ecwid platform, management is able to easily market and sell merch and tickets to upcoming events. 
+This website was built to inform customers of the many offerings provided by the businesses within the Beach Haus building.
 
-## Requirements
+## Live Site
 
-For development, you will only need Node.js installed on your environment.
+[Beach Haus Live Site](https://main.d13ng5sk5onsb6.amplifyapp.com/)
 
-### Node
+## Motivation behind the Project
 
-[Node](http://nodejs.org/) is really easy to install & now includes [NPM](https://npmjs.org/). Node v18.17 or higher is required for this application.
-You should be able to run the following commands after the installation procedure to check your node and npm versions. Please note that it is generally recommend to use a Node version manages, such as [NVM](https://github.com/nvm-sh/nvm), to instal and manage Node.
-
-    $ node --version
-
-    $ npm --version
-
-#### Node installation on OS X
-
-You can install Node from the downloads page on their website [here](https://nodejs.org/en)
-
-#### Node installation on Linux
-
-    sudo apt-get install python-software-properties
-    sudo add-apt-repository ppa:chris-lea/node.js
-    sudo apt-get update
-    sudo apt-get install nodejs
-
-#### Node installation on Windows
-
-Just go on [official Node.js website](http://nodejs.org/) & grab the installer.
-Also, be sure to have `git` available in your PATH, `npm` might need it.
-
----
-
-## Install
-
-    $ git clone https://github.com/StephenWilkens/BeachHaus.git
-    $ cd BH_V8
-    $ npm i
-
-## Run Locally
-
-    $ npm run dev
-
-Open [http://localhost:3000](http://localhost:3000) within your browser to see the result.
-
-## Simple build for production
-
-    $ npm run build
-
-## Update sources
-
-Some packages usage might change so you should run `npm prune` & `npm install` often.
-A common way to update is by doing
-
-    $ git pull
-    $ npm prune
-    $ npm install
-
-To run those 3 commands you can just do
-
-    $ npm run pull
-
----
+As Beach Haus began expanding beyond just a brewery, they needed a way to inform customers of all offerings within the building, while making it easy for management to make quick and easy changes as necessary. This website aims to achieve that by utilizing RESTful APIs to pull menu information from a database updated by management, provide unique pages for the businesses and services that are offered, and incorporating a Shopify store that management can easily update and customers can easily navigate. 
 
 ## Languages & tools
 
