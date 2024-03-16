@@ -13,7 +13,7 @@ import testDept from "../../public/16x9Crop/BH_16x9testDept.jpg";
 import contractBrewImg from "../../public/16x9Crop/BH_16x9contractBrewing.jpg";
 import distroImg from "../../public/16x9Crop/BH_16x9_DistroSlider.jpg";
 import burgersImg from "../../public/16x9Crop/BH_BurgerSlider.png";
-import liveMusicImg from "../../public/16x9Crop/BH_16x9_MusicSlider.jpg";
+import liveMusicImg from "../../public/16x9Crop/BH_16x9_HausPartySlider.jpg";
 //[Autoplay()]
 // stopOnInteraction: false
 export const LandingPageCarousel = () => {
@@ -69,14 +69,11 @@ export const LandingPageCarousel = () => {
           </div>
         </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-[720px] lg:flex-nowrap 2xl:max-h-[780px]">
-          <Link className="max-md:h-[360px] lg:max-h-[720px] " href="/events-calendar">
             <Image
               src={liveMusicImg}
               alt="flight"
-              class="max-md:h-[360px] h-full object-cover"
+              class="w-full object-contain lg:object-cover"
             />
-          </Link>
-          button to events
         </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-[720px] lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
