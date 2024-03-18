@@ -6,6 +6,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "beer.untappd.com",
       },
+      {
+        protocol: "https",
+        hostname: "utfb-images.untappd.com",
+      },
     ],
   },
 };

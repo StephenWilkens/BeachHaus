@@ -22,9 +22,9 @@ export default function RootLayout({ children }) {
         className={nunito.className}
       >
         <>
-          <TwNav />
+
           <main class="flex-grow">{children}</main>
-          <Footer />
+
         </>
       </body>
     </html>
