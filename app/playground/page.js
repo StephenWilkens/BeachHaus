@@ -1,19 +1,4 @@
-import dynamic from "next/dynamic";
 import Script from "next/script";
-
-// const DynamicCaptcha = dynamic(
-//   () => import("../../components/private events/CaptchaScript"),
-//   {
-//     ssr: false,
-//   },
-// );
-
-// const DynamicTripSeat = dynamic(
-//   () => import("../../components/private events/TripleSeatBookingFormScript"),
-//   {
-//     ssr: false,
-//   },
-// );
 
 export default async function Playground() {
   return (
