@@ -5,7 +5,7 @@ export default function Booking() {
   return (
     <div className="bg-cyan-50">
       <PrivateEventsHeader />
-      <TripSeatScript />
+      {/* <TripSeatScript /> */}
     </div>
   )
 }

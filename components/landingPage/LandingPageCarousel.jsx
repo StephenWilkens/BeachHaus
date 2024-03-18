@@ -23,7 +23,7 @@ export const LandingPageCarousel = () => {
 
   return (
     <div className="embla w-full overflow-hidden" ref={emblaRef}>
-      <div className="embla__container flex max-h-[360px] items-center lg:max-h-[720px] 2xl:max-h-[780px]">
+      <div className="embla__container flex items-center lg:max-h-[720px] 2xl:max-h-[780px]">
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-[720px] lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
             src={burgersImg}
