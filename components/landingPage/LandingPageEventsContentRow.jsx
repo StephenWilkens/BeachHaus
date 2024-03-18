@@ -50,7 +50,7 @@ export function LandingPageEventsContentRow() {
             </div>
             <div className="place-self-center pb-56">
               <button class="rounded bg-cyan-800 px-4 py-2 text-white hover:bg-cyan-600">
-                <Link href="https://801craftkitchen.com">
+                <Link href="/private-events">
                   <h1 className="text-2xl">See the Space</h1>
                 </Link>
               </button>
