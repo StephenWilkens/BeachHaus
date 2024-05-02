@@ -86,13 +86,16 @@ export function About() {
             <b>Hours:</b>
           </p>
           <p className="mx-5 pt-1">
-            <b>Monday-Thursday:</b> 4PM-10PM
+            <b>Monday, Tuesday, Thursday:</b> 4PM-10PM
           </p>
           <p className=" mx-5">
             <b>Friday & Saturday:</b> 12PM-11PM
           </p>
           <p className=" mx-5">
             <b>Sunday:</b> 12PM-8PM
+          </p>
+          <p className=" mx-5">
+            <b>Closed Wednesday</b>
           </p>
           <h3 className="mx-5 pt-4 text-xl font-semibold">801 Craft Kitchen</h3>
           <p className="mx-5  pt-1">
@@ -110,7 +113,7 @@ export function About() {
           <h3 className="mx-5 pt-4 text-xl font-semibold">
             Rooftop at Beach Haus
           </h3>
-          <p className="mx-5  pt-1">Closed for Winter</p>
+          <p className="mx-5  pt-1">Opening Soon!</p>
         </div>
       </div>
     </div>
