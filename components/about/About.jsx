@@ -75,35 +75,28 @@ export function About() {
           </p>
         </div>
         <div className="col-span-12 pb-5 lg:col-span-4" id="info">
-          <h1 className="mx-5 pt-14 text-4xl font-bold text-cyan-800">Info</h1>
+          <h1 className="mx-5 pt-14 text-4xl font-bold text-cyan-800">Info & Hours</h1>
           <h3 className="mx-5 pt-4 text-xl font-semibold">
             Beach Haus Brewery Tap Room and Lobby
           </h3>
           <p className="mx-5  pt-1">
             <b className="text-lg">Phone:</b> 732-202-7782
           </p>
-          <p className="mx-5 text-lg ">
-            <b>Hours:</b>
-          </p>
+          
           <p className="mx-5 pt-1">
-            <b>Monday, Tuesday, Thursday:</b> 4PM-10PM
+            <b>Monday - Thursday:</b> 4PM-10PM
           </p>
           <p className=" mx-5">
-            <b>Friday & Saturday:</b> 12PM-11PM
+            <b>Friday & Saturday:</b> 12PM-12AM
           </p>
           <p className=" mx-5">
-            <b>Sunday:</b> 12PM-8PM
-          </p>
-          <p className=" mx-5">
-            <b>Closed Wednesday</b>
+            <b>Sunday:</b> 12PM-9PM
           </p>
           <h3 className="mx-5 pt-4 text-xl font-semibold">801 Craft Kitchen</h3>
           <p className="mx-5  pt-1">
             <b className="text-lg">Phone:</b> 732 202 7783
           </p>
-          <p className="mx-5 text-lg ">
-            <b>Hours:</b>
-          </p>
+          
           <p className="mx-5 pt-1">
             <b>Thursday-Saturday Dinner:</b> 5PM-10PM
           </p>
@@ -113,7 +106,10 @@ export function About() {
           <h3 className="mx-5 pt-4 text-xl font-semibold">
             Rooftop at Beach Haus
           </h3>
-          <p className="mx-5  pt-1">Opening Soon!</p>
+          <p className="mx-5  pt-1"><b>Monday - Thursday:</b> 4PM-10PM</p>
+          <p className="mx-5  pt-1"><b>Friday & Saturday:</b> 12PM-1AM</p>
+          <p className="mx-5  pt-1"><b>Sunday:</b> 12PM-9PM</p>
+          <p className="mx-5  pt-1"><b>21+ after 5pm</b></p>
         </div>
       </div>
     </div>
