@@ -6,28 +6,22 @@ export function BreweryFoodMenu() {
   return (
     <div className="bg-cyan-50">
       <div class="relative grid grid-cols-2 bg-black">
-        <div class="col-span-2 m-auto w-full">
+        <div class="col-span-2 m-auto w-full p-10 lg:p-20">
           <Image
             src={tanks}
             alt="About us background"
             fill
             class="absolute object-cover opacity-70"
           />
-        </div>
-        <div class="z-20 col-span-2 h-full w-full p-12 md:py-32">
-          <h1 className="text-center text-5xl font-bold text-white md:text-8xl">
+        <div class="col-span-2 h-full w-full p-12 md:py-32">
+          <h1 className="absolute inset-0 top-14 left-16 text-5xl font-bold text-white md:text-8xl lg:top-40 lg:left-96">
             HAUS FOOD
           </h1>
+        </div>
         </div>
       </div>
       <div class="grid grid-rows-2 divide-y md:grid-rows-1">
         <div class="row-span-1 mx-auto mt-3">
-          <Link
-            href="#appetizers"
-            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
-          >
-            Appetizers
-          </Link>
           <Link
             href="#soup&salad"
             class="hover:font-regular m-3 font-medium hover:text-cyan-800"
@@ -35,24 +29,30 @@ export function BreweryFoodMenu() {
             Soup & Salad
           </Link>
           <Link
-            href="#burgers"
+            href="#appetizers"
             class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
-            Burgers
+            Appetizers
           </Link>
-        </div>
-        <div class="row-span-1 mx-auto mb-3 mt-1">
           <Link
             href="#pizza"
             class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
             Wood-Fired Pizza
           </Link>
+        </div>
+        <div class="row-span-1 mx-auto mb-3 mt-1">
           <Link
-            href="#entrees"
+            href="#burgers"
             class="hover:font-regular m-3 font-medium hover:text-cyan-800"
           >
-            Entrees
+            Burgers
+          </Link>
+          <Link
+            href="#mains"
+            class="hover:font-regular m-3 font-medium hover:text-cyan-800"
+          >
+            Mains
           </Link>
           <Link
             href="#dessert"
@@ -60,6 +60,46 @@ export function BreweryFoodMenu() {
           >
             Dessert
           </Link>
+        </div>
+      </div>
+      <div id="soup&salad" class="my-5">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
+          SOUP & SALAD
+        </h1>
+      </div>
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
+        <div class="md:col-span-2 md:pb-3">
+          <h1 class="text-center font-semibold">
+            ADD CHICKEN +6 • ADD SHRIMP +10
+          </h1>
+        </div>
+        <div class="">
+          <h1 class="text-center text-2xl font-medium">SARA&apos;S SALAD</h1>
+          <p class="text-center text-sm text-gray-500">
+            Arugula, Toasted Pistachios, Red Grapes, Grated Asiago Cheese, Poppy
+            Seed Dressing
+          </p>
+          <p class="text-center text-sm text-gray-500">14</p>
+        </div>
+        <div class="">
+          <h1 class="text-center text-2xl font-medium">CAESAR</h1>
+          <p class="text-center text-sm text-gray-500">
+            Romaine, Croutons, Parmesan, Classic Caesar Dressing
+          </p>
+          <p class="text-center text-sm text-gray-500">13</p>
+        </div>
+        <div class="">
+          <h1 class="text-center text-2xl font-medium">HAUS SALAD</h1>
+          <p class="text-center text-sm text-gray-500">
+            Mixed Greens, Cucumbers, Cherry Tomatoes, Honey Dijon Vinaigrette
+          </p>
+          <p class="text-center text-sm text-gray-500">12</p>
+        </div>
+        <div class="">
+          <h1 class="text-center text-2xl font-medium">
+            CROCK OF FRENCH ONION SOUP
+          </h1>
+          <p class="text-center text-sm text-gray-500">8</p>
         </div>
       </div>
       <div id="appetizers" class="my-5">
@@ -116,7 +156,7 @@ export function BreweryFoodMenu() {
             Tortilla, Guacamole, Sour Cream, Pico, Cheese, Jalapeños
           </p>
           <p class="text-center text-sm text-gray-500">13</p>
-          <p class="text-center text-sm text-gray-500">
+          <p class="text-center font-medium text-sm text-gray-900">
             Add Shredded Chicken +8
             <br />
             Add Short Rib +12
@@ -129,79 +169,12 @@ export function BreweryFoodMenu() {
           </p>
           <p class="text-center text-sm text-gray-500">25</p>
         </div>
-      </div>
-      <div id="soup&salad" class="my-5">
-        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
-          SOUP & SALAD
-        </h1>
-      </div>
-      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
-        <div class="md:col-span-2 md:pb-3">
-          <h1 class="text-center font-semibold">
-            ADD CHICKEN +6 • ADD SHRIMP +10
-          </h1>
-        </div>
-        <div class="">
-          <h1 class="text-center text-2xl font-medium">
-            CROCK OF FRENCH ONION SOUP
-          </h1>
+        <div class="lg:col-span-2">
+          <h1 class="text-center text-2xl font-medium">STREET CORN</h1>
+          <p class="text-center text-sm text-gray-500">
+            Mexican Style Corn Cob
+          </p>
           <p class="text-center text-sm text-gray-500">8</p>
-        </div>
-        <div class="">
-          <h1 class="text-center text-2xl font-medium">HARVEST SALAD</h1>
-          <p class="text-center text-sm text-gray-500">
-            Arugula, Toasted Pistachios, Red Grapes, Grated Asiago Cheese, Poppy
-            Seed Dressing
-          </p>
-          <p class="text-center text-sm text-gray-500">14</p>
-        </div>
-        <div class="">
-          <h1 class="text-center text-2xl font-medium">CAESAR</h1>
-          <p class="text-center text-sm text-gray-500">
-            Romaine, Croutons, Parmesan, Classic Caesar Dressing
-          </p>
-          <p class="text-center text-sm text-gray-500">13</p>
-        </div>
-      </div>
-      <div id="burgers" class="my-5">
-        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
-          BURGERS
-        </h1>
-      </div>
-      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
-        <div class="pb-3 md:col-span-2">
-          <h1 class="text-center font-semibold">
-            ALL BURGERS ARE SERVED WITH A SIDE OF HAUS CUT FRIES AND A PICKLE
-          </h1>
-        </div>
-        <div class="">
-          <h1 class="text-center text-2xl font-medium">CLASSIC BURGER</h1>
-          <p class="text-center text-sm text-gray-500">
-            Custom Burger Blend, American Cheese, LTO, Haus Sauce, Brioche Bun
-          </p>
-          <p class="text-center text-sm text-gray-500">15</p>
-        </div>
-        <div class="">
-          <h1 class="text-center text-2xl font-medium">HAUS BURGER</h1>
-          <p class="text-center text-sm text-gray-500">
-            Custom Burger Blend, NY Sharp Cheddar, Caramelized Onions, Apple
-            Smoked Bacon, Chipotle Ranch, Brioche Bun
-          </p>
-          <p class="text-center text-sm text-gray-500">18</p>
-        </div>
-        <div class="">
-          <h1 class="text-center text-2xl font-medium">BURGER OF THE MONTH</h1>
-          <p class="text-center text-sm text-gray-500">
-            Showcasing a Unique Burger Recipe from Our Chef each Month!
-          </p>
-          <p class="text-center text-sm text-gray-500">20</p>
-        </div>
-        <div class="">
-          <h1 class="text-center text-2xl font-medium">IMPOSSIBLE BURGER</h1>
-          <p class="text-center text-sm text-gray-500">
-            American Cheese, LTO, Chipotle Ranch, Brioche Bun
-          </p>
-          <p class="text-center text-sm text-gray-500">18</p>
         </div>
       </div>
       <div id="pizza" class="my-5">
@@ -243,10 +216,58 @@ export function BreweryFoodMenu() {
           </p>
           <p class="text-center text-sm text-gray-500">18</p>
         </div>
+        <div class="lg:col-span-2">
+          <h1 class="text-center text-2xl font-medium">CHICKEN PARM PIZZA</h1>
+          <p class="text-center text-sm text-gray-500">
+            Breaded Chicken, Tomato Sauce, Shredded Mozzalrella, Parmesan
+          </p>
+          <p class="text-center text-sm text-gray-500">18</p>
+        </div>
       </div>
-      <div id="entrees" class="my-5">
+      <div id="burgers" class="my-5">
         <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
-          ENTREES
+          BURGERS
+        </h1>
+      </div>
+      <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
+        <div class="pb-3 md:col-span-2">
+          <h1 class="text-center font-semibold">
+            ALL BURGERS ARE SERVED WITH A SIDE OF HAUS CUT FRIES AND A PICKLE
+          </h1>
+        </div>
+        <div class="">
+          <h1 class="text-center text-2xl font-medium">CLASSIC BURGER</h1>
+          <p class="text-center text-sm text-gray-500">
+            Custom Burger Blend, American Cheese, LTO, Haus Sauce, Brioche Bun
+          </p>
+          <p class="text-center text-sm text-gray-500">16</p>
+        </div>
+        <div class="">
+          <h1 class="text-center text-2xl font-medium">HAUS BURGER</h1>
+          <p class="text-center text-sm text-gray-500">
+            Custom Burger Blend, NY Sharp Cheddar, Caramelized Onions, Apple
+            Smoked Bacon, Chipotle Ranch, Brioche Bun
+          </p>
+          <p class="text-center text-sm text-gray-500">18</p>
+        </div>
+        <div class="">
+          <h1 class="text-center text-2xl font-medium">BURGER OF THE MONTH</h1>
+          <p class="text-center text-sm text-gray-500">
+            Unique Burger Recipe Curated by Our Chef Monthly
+          </p>
+          <p class="text-center text-sm text-gray-500">20</p>
+        </div>
+        <div class="">
+          <h1 class="text-center text-2xl font-medium">IMPOSSIBLE BURGER</h1>
+          <p class="text-center text-sm text-gray-500">
+            American Cheese, LTO, Chipotle Ranch, Brioche Bun
+          </p>
+          <p class="text-center text-sm text-gray-500">18</p>
+        </div>
+      </div>
+      <div id="mains" class="my-5">
+        <h1 class="border-y-2 border-gray-500 text-center text-4xl font-bold text-cyan-800">
+          MAINS
         </h1>
       </div>
       <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
@@ -258,23 +279,28 @@ export function BreweryFoodMenu() {
         <div class="">
           <h1 class="text-center text-2xl font-medium">CHICKEN TACOS (3)</h1>
           <p class="text-center text-sm text-gray-500">
-            Mojo Chicken, Avocado, Pico de Gallo, Lime Crema, Queso Oaxaca,
-            Flour Tortillas
+            Mojo Chicken, Avocado, Pico de Gallo, Lime Crema, Queso Oaxaca
           </p>
           <p class="text-center text-sm text-gray-500">15</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">BEEF TACOS (3)</h1>
           <p class="text-center text-sm text-gray-500">
-            Slow Braised Short Rib, Pico de Gallo, Queso Fresco, Chimichurri,
-            Flour Tortillas
+            Slow Braised Short Rib, Pico de Gallo, Queso Fresco, Chimichurri
           </p>
           <p class="text-center text-sm text-gray-500">17</p>
         </div>
         <div class="">
+          <h1 class="text-center text-2xl font-medium">PORK TACOS (3)</h1>
+          <p class="text-center text-sm text-gray-500">
+            BBQ Pulled Poke, Cherry Cole Slaw
+          </p>
+          <p class="text-center text-sm text-gray-500">15</p>
+        </div>
+        <div class="">
           <h1 class="text-center text-2xl font-medium">FISH TACOS (3)</h1>
           <p class="text-center text-sm text-gray-500">
-            Blackened Cod, Pico de Gallo, Queso Fresco, Pepper Crema, Flour
+            Seasoned Cod, Pico de Gallo, Queso Fresco, Pepper Crema, Flour
             Tortillas
           </p>
           <p class="text-center text-sm text-gray-500">18</p>
@@ -303,7 +329,7 @@ export function BreweryFoodMenu() {
             Breaded Chicken Breast Marinated in Buttermilk, Lettuce, Tomato, Red
             Onion, Ranch, Haus Cut Fries
           </p>
-          <p class="text-center text-sm text-gray-500">15</p>
+          <p class="text-center text-sm text-gray-500">16</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">DOUBLE DECKER BLT</h1>
@@ -329,7 +355,7 @@ export function BreweryFoodMenu() {
             Short Rib, Bourbon Aioli, Haus-made Pickles, NY Sharp Cheddar,
             Brioche Bun, Haus Cut Fries
           </p>
-          <p class="text-center text-sm text-gray-500">18</p>
+          <p class="text-center text-sm text-gray-500">20</p>
         </div>
         <div class="">
           <h1 class="text-center text-2xl font-medium">FISH + CHIPS</h1>

@@ -12,20 +12,20 @@ export function LandingPageRooftopContentRow() {
             alt="beer"
             class="w-full object-cover opacity-90 duration-500 ease-in-out group-hover:opacity-50"
           />
-          <div className="absolute inset-0 top-12 duration-500 ease-in-out group-hover:top-2">
-            <h1 className="mx-16 text-center text-4xl font-bold text-white group-hover:mx-10 group-hover:text-3xl group-hover:font-bold">
+          <div className="absolute inset-0 top-12 duration-500 ease-in-out group-hover:top-6">
+            <h1 className="mx-16 text-center text-4xl font-bold text-white group-hover:mx-0 group-hover:text-3xl group-hover:font-bold">
               The Rooftop at Beach Haus
             </h1>
           </div>
-          <div className="absolute inset-0 top-20 opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100">
+          <div className="absolute inset-0 top-20 opacity-0 duration-500 ease-in-out group-hover:mx-8 group-hover:z-20 group-hover:opacity-100">
             <p className="mx-12 text-justify text-sm leading-tight text-white">
-              Not only is our brewery the Jersey Shore&apos;s premier brewery
-              for crispy lagers and refresing ales, but we also offer incredible
-              food and a full bar.
+            A 40-seat bar, fire pits with soft seating, an extensive cocktail
+              menu, and a sunset view of the Shark River. Check out the new
+              releases & our fan favorites on our menu!
             </p>
-            <button class="ml-28 mt-2 self-center rounded bg-cyan-800 px-4 py-2 text-white hover:bg-cyan-600">
-              <Link href="/brewery">
-                <h1 className="text-sm">Explore the Menus</h1>
+            <button class="ml-28 mt-8 self-center rounded bg-cyan-800 px-4 py-2 text-white hover:bg-cyan-600">
+              <Link href="/rooftop">
+                <h1 className="text-sm">See More!</h1>
               </Link>
             </button>
           </div>
@@ -50,7 +50,7 @@ export function LandingPageRooftopContentRow() {
               releases & our fan favorites on our menu!
             </p>
             <button class="mr-10 mt-5 self-center rounded bg-cyan-800 px-4 py-2 text-white hover:bg-cyan-600">
-              <Link className="text-xl" href="/brewery">
+              <Link className="text-xl" href="/rooftop">
                 See More!
               </Link>
             </button>

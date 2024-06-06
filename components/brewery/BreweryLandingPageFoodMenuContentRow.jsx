@@ -15,7 +15,7 @@ export function BreweryLandingPageFoodMenuContentRow() {
           />
           <div className="absolute inset-0 top-28 duration-500 ease-in-out group-hover:top-12">
             <h1 className="mx-6 text-center text-5xl font-bold leading-tight text-white group-hover:leading-none">
-              Brew Food
+              Taproom Food
             </h1>
           </div>
           <div className="absolute inset-0 top-40 flex flex-col items-center opacity-0 duration-500 ease-in-out group-hover:z-20 group-hover:opacity-100">
@@ -44,7 +44,7 @@ export function BreweryLandingPageFoodMenuContentRow() {
         />
         <div className="z-10 col-span-1 mt-[40%] h-2/3 w-2/3">
           <h1 className="text-left text-6xl font-bold leading-tight text-cyan-800 2xl:text-7xl">
-            Brewery
+            Taproom
             <br />
             Food
           </h1>

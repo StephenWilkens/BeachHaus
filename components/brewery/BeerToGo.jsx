@@ -15,15 +15,20 @@ export async function BeerToGo() {
               alt="Label Image"
             />
           </div>
-          <div className="col-span-10 ml-1">
+          <div className="col-span-6 ml-1">
             <h1 className="text-xl">{beer.name}</h1>
             <p className="text-sm">{beer.style}</p>
             <p className="text-sm font-semibold">
-              {beer.abv}% ABV • {beer.ibu} IBU
+              {beer.abv}% ABV 
             </p>
-            <p className="mr-10 text-sm">{beer.description}</p>
           </div>
-          <div className="col-span-2"></div>
+          <div className="col-span-3">
+
+            <p>{beer.containers[0].container_size.name}</p>
+          </div>
+          <div className="col-span-1">
+            <p>${beer.containers[0].price}</p>
+            </div>
         </div>
       ))}
     </div>

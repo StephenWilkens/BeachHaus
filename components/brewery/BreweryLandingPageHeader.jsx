@@ -15,7 +15,7 @@ export function BreweryLandingPageHeader() {
       </div>
       <div class="relative col-span-2 h-full w-full p-10 text-center md:col-span-1">
         <h1 class="z-20 text-2xl font-bold text-white md:px-40 md:py-36 md:text-left md:text-6xl 2xl:ml-12 2xl:mr-44 2xl:py-52 2xl:text-8xl">
-          The Brewery at Beach Haus
+          The Taproom at Beach Haus
         </h1>
       </div>
     </div>

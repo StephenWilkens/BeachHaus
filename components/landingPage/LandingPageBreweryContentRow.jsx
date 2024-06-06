@@ -39,7 +39,7 @@ export function LandingPageBreweryContentRow() {
           />
           <div className="absolute inset-0 top-40 duration-500 ease-in-out group-hover:top-20">
             <h1 className="ml-10 text-left text-8xl font-bold text-white 2xl:text-9xl">
-              The Brewery
+              The Taproom
               <br />
               at Beach Haus
             </h1>

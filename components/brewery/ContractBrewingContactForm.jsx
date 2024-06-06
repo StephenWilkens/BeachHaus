@@ -85,7 +85,7 @@ export function ContractBrewingContactForm() {
             className="border border-gray-100 bg-gray-100 p-4"
             required
             maxLength={100}
-            placeholder="Please not that we only brew malted beverages and seltzers. We do not provide non-alcoholic brewing either."
+            placeholder="Please note that we only brew malted beverages and seltzers. We do not provide non-alcoholic brewing either."
           />
         </div>
         <button
