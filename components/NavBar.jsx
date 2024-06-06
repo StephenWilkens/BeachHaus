@@ -34,15 +34,15 @@ export function TwNav() {
                 About
               </Link>
 
-              <Dropdown label="The Brewery" inline>
+              <Dropdown label="The Taproom" inline>
                 <Dropdown.Item as={Link} href="/brewery">
-                  The Brewery at Beach Haus
+                  The Taproom at Beach Haus
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/food">
                   Food Menu
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/cocktails">
-                  Cocktail Menu
+                  Drink Menu
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} href="/brewery/ontap">
                   On Tap
