@@ -8,6 +8,10 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "labels.untappd.com",
+      },
+      {
+        protocol: "https",
         hostname: "utfb-images.untappd.com",
       },
     ],

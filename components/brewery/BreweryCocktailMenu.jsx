@@ -6,18 +6,18 @@ export function BreweryCocktailMenu() {
   return (
     <div className="bg-cyan-50">
       <div class="relative grid grid-cols-2 bg-black">
-        <div class="col-span-2 m-auto w-full">
+        <div class="col-span-2 m-auto w-full p-10 lg:p-20">
           <Image
             src={tanks}
             alt="About us background"
             fill
             class="absolute object-cover opacity-70"
           />
-        </div>
-        <div class="z-20 col-span-2 h-full w-full p-12 md:py-32">
-          <h1 className="text-center text-5xl font-bold text-white md:text-8xl">
-            HAUS DRINKS
-          </h1>
+          <div class="col-span-2 h-full w-full p-12 md:py-32">
+            <h1 className="absolute inset-0 left-16 top-14 text-5xl font-bold text-white md:text-8xl lg:left-96 lg:top-40">
+              HAUS DRINKS
+            </h1>
+          </div>
         </div>
       </div>
       <div class="grid grid-rows-2 divide-y md:grid-rows-1">
