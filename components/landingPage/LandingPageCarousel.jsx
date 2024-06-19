@@ -13,6 +13,7 @@ import liveMusicImg from "../../public/16x9Crop/BH_16x9_HausPartySlider.jpg";
 import musicBingo from "../../public/MusicBingo.jpg"
 import karaoke from "../../public/Karaoke.jpg"
 import cigarNight from "../../public/SUNSETS&CIGARS.jpg"
+import legrande from "../../public/ERIC LEGRAND BOURBON TASTING (11 x 11 in) (16 x 9 in).png"
 //[Autoplay()]
 // stopOnInteraction: false
 export const LandingPageCarousel = () => {
@@ -23,6 +24,13 @@ export const LandingPageCarousel = () => {
   return (
     <div className="embla w-full overflow-hidden" ref={emblaRef}>
       <div className="embla__container flex items-center lg:max-h-full 2xl:max-h-[780px]">
+        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
+          <Image
+            src={legrande}
+            alt="flight of beers"
+            class="w-full object-cover"
+          />
+        </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
             src={karaoke}
