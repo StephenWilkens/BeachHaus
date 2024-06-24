@@ -84,7 +84,7 @@ export function About() {
           </p>
           
           <p className="mx-5 pt-1">
-            <b>Monday - Thursday:</b> 4PM-10PM
+            <b>Monday - Thursday:</b> 12PM-10PM
           </p>
           <p className=" mx-5">
             <b>Friday & Saturday:</b> 12PM-12AM
