@@ -70,7 +70,7 @@ export function BreweryFoodMenu() {
       <div class="grid grid-cols-1 space-y-5 md:grid-cols-2">
         <div class="md:col-span-2 md:pb-3">
           <h1 class="text-center font-semibold">
-            ADD CHICKEN +6 • ADD SHRIMP +10
+            ADD CHICKEN +6 • ADD SHRIMP +6
           </h1>
         </div>
         <div class="">
