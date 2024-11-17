@@ -10,10 +10,18 @@ import testDept from "../../public/16x9Crop/BH_16x9testDept.jpg";
 import distroImg from "../../public/16x9Crop/BH_16x9_DistroSlider.jpg";
 import burgersImg from "../../public/16x9Crop/BH_BurgerSlider.png";
 import liveMusicImg from "../../public/16x9Crop/BH_16x9_HausPartySlider.jpg";
-import musicBingo from "../../public/MusicBingo.jpg"
-import karaoke from "../../public/Karaoke.jpg"
-import cigarNight from "../../public/SUNSETS&CIGARS.jpg"
-import legrande from "../../public/ERIC LEGRAND BOURBON TASTING (11 x 11 in) (16 x 9 in).png"
+import musicBingo from "../../public/MusicBingo.jpg";
+import karaoke from "../../public/Karaoke.jpg";
+import cigarNight from "../../public/SUNSETS&CIGARS.jpg";
+import legrande from "../../public/ERIC LEGRAND BOURBON TASTING (11 x 11 in) (16 x 9 in).png";
+import slider1 from "../../public/BH_Pics_11_17/1.png";
+import slider2 from "../../public/BH_Pics_11_17/2.png";
+import slider3 from "../../public/BH_Pics_11_17/3.png";
+import slider4 from "../../public/BH_Pics_11_17/4.png";
+import slider5 from "../../public/BH_Pics_11_17/5.png";
+import slider6 from "../../public/BH_Pics_11_17/6.png";
+import slider7 from "../../public/BH_Pics_11_17/7.png";
+
 //[Autoplay()]
 // stopOnInteraction: false
 export const LandingPageCarousel = () => {
@@ -26,76 +34,56 @@ export const LandingPageCarousel = () => {
       <div className="embla__container flex items-center lg:max-h-full 2xl:max-h-[780px]">
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={legrande}
+            src={slider1}
             alt="flight of beers"
-            class="w-full object-cover"
+                        class="w-full object-contain lg:object-cover"
+
           />
         </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={karaoke}
+            src={slider2}
             alt="flight of beers"
-            class="w-full object-cover"
+                        class="w-full object-contain lg:object-cover"
+
           />
         </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={musicBingo}
+            src={slider3}
             alt="flight of beers"
-            class="w-full object-cover"
+                        class="w-full object-contain lg:object-cover"
+
           />
         </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={trivia}
+            src={slider4}
             alt="flight of beers"
-            class="w-full object-cover"
+                        class="w-full object-contain lg:object-cover"
+
           />
         </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={testDept}
+            src={slider5}
             alt="flight of beers"
-            class="w-full object-cover opacity-70 lg:opacity-90"
+            class="w-full object-contain lg:object-cover"
           />
-          <div className="absolute inset-0 top-10 flex flex-col items-center md:gap-4 lg:top-60">
-            <h1 className="text-center text-5xl font-bold text-white md:pl-3 md:text-start md:text-8xl">
-              Test Dept. Friday
-            </h1>
-          </div>
-          <div className="absolute inset-0 top-40 lg:top-80">
-            <p className="text-center text-xl text-white lg:mt-40 lg:px-80 lg:font-semibold lg:text-center lg:text-2xl">
-              Each Friday, our brewers release a limited small brew to
-              experiment with new styles! These unique beers are draft only, and
-              go fast!
-            </p>
-          </div>
-        </div>
-        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
-            <Image
-              src={cigarNight}
-              alt="flight"
-              class="w-full object-contain lg:object-cover"
-            />
         </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
-            src={distroImg}
+            src={slider6}
             alt="flight"
-            class="w-full object-cover opacity-70"
+            class="w-full object-contain lg:object-cover"
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center md:items-end md:gap-4">
-            <h1 className="text-center text-5xl font-bold text-white md:px-3 md:text-start md:text-8xl">
-              We Finally Can Distribute our Beer!
-            </h1>
-            <p className="px-12 pt-2 text-center text-xl text-white md:px-0 md:pr-3 md:text-end md:text-4xl">
-              Bars! Restaurants! Retailers! Buyers and managers reach out to us
-              directly for beer inquiries!
-            </p>
-            <button class="mr-3 mt-3 rounded bg-cyan-800 px-2 py-2 text-white hover:bg-cyan-600">
-              <Link href="/brewery/contractbrewing">Contact Us Today</Link>
-            </button>
-          </div>
+        </div>
+        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
+          <Image
+            src={slider7}
+            alt="flight"
+            class="w-full object-contain lg:object-cover"
+          />
         </div>
       </div>
     </div>
