@@ -18,17 +18,14 @@ export async function BeerToGo() {
           <div className="col-span-6 ml-1">
             <h1 className="text-xl">{beer.name}</h1>
             <p className="text-sm">{beer.style}</p>
-            <p className="text-sm font-semibold">
-              {beer.abv}% ABV 
-            </p>
+            <p className="text-sm font-semibold">{beer.abv}% ABV</p>
           </div>
-          <div className="col-span-3">
-
+          {/* <div className="col-span-3">
             <p>{beer.containers[0].container_size.name}</p>
           </div>
           <div className="col-span-1">
             <p>${beer.containers[0].price}</p>
-            </div>
+          </div> */}
         </div>
       ))}
     </div>
