@@ -53,16 +53,16 @@ export function TwNav() {
                 <Dropdown.Item as={Link} href="/brewery/contractbrewing">
                   Contract Brewing
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} href="/brewery/distribution">
+                {/* <Dropdown.Item as={Link} href="/brewery/distribution">
                   Distribution
-                </Dropdown.Item>
+                </Dropdown.Item> */}
               </Dropdown>
 
               <Link
-                href="https://801craftkitchen.com"
+                href="/brewery/distribution"
                 class="px-2 py-5 text-black"
               >
-                801 Craft Kitchen
+                Distribution
               </Link>
 
               <Link href="/rooftop" class="px-2 py-5 text-black">
@@ -212,8 +212,8 @@ export function TwNav() {
                   Distribution
                 </Sidebar.Item>
               </Sidebar.Collapse>
-              <Sidebar.Item href="https://801craftkitchen.com">
-                <p>801 Craft Kitchen</p>
+              <Sidebar.Item href="/brewery/distribution">
+                <p>Distribution</p>
               </Sidebar.Item>
               <Sidebar.Item href="/rooftop">
                 <p>Rooftop Bar</p>

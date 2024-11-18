@@ -13,7 +13,6 @@ export default function Home() {
       <div className="bg-black">
         <LandingPageCarousel />
         <LandingPageBreweryContentRow />
-        <LandingPage801ContentRow />
         <LandingPageRooftopContentRow />
         <LandingPageEventsContentRow />
       </div>
