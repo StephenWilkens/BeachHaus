@@ -84,13 +84,16 @@ export function About() {
           </p>
           
           <p className="mx-5 pt-1">
-            <b>Monday - Thursday:</b> 4PM-10PM
+            <b>Monday, Tuesday, Thursday:</b> 4PM-10PM
           </p>
           <p className=" mx-5">
             <b>Friday & Saturday:</b> 12PM-11PM
           </p>
           <p className=" mx-5">
             <b>Sunday:</b> 12PM-8PM
+          </p>
+          <p className=" mx-5">
+            Closed on Wednesdays
           </p>
           <p className=" mx-5 pt-1">
             <b>Please note:</b> The kitchen shuts down one hour before closing time
