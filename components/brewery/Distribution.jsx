@@ -1,4 +1,7 @@
 import { DistributionContactForm } from "./DistributionContactForm";
+import Image from "next/image";
+import mikeD1 from "../../public/2_11_images/DISTRO PHOTO.png";
+import mikeD2 from "../../public/2_11_images/DISTRO.png";
 
 export function Distribution() {
   return (
@@ -19,6 +22,18 @@ export function Distribution() {
       <h1 className="px-10 pt-10 text-center text-3xl font-semibold">
         Welcoming Mike DiTomasso, Director of Sales
       </h1>
+      <div className="grid lg:grid-cols-2">
+        <Image
+          src={mikeD1}
+          alt="Mike DiTomasso"
+          class="w-full object-contain py-2 lg:py-10 px-2 lg:px-5 lg:object-cover"
+        />
+        <Image
+          src={mikeD2}
+          alt="flight of beers"
+          class="w-full object-contain py-2 lg:py-10 px-2 lg:px-5 lg:object-cover"
+        />
+      </div>
       <p className="px-10 py-5 text-2xl">
         In late 2024, Beach Haus welcomed Mike DiTomasso to the team as the
         Director of Sales. DiTomasso brings a substantial breadth of experience
@@ -43,6 +58,17 @@ export function Distribution() {
         far will require patience and hard work, the future is bright for Beach
         Haus Brewery.&quot;
       </p>
+      <p className="px-10 py-5 text-2xl">
+        Check out the map below to discover where you can enjoy a refreshing
+        Beach Haus beer near you.
+      </p>
+      <div className="flex place-content-center p-2">
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1DKsm2lGTQnTom9I1VjrLjO6GwyRcSMg&ehbc=2E312F"
+          width="640"
+          height="480"
+        ></iframe>
+      </div>
       <h1 className="px-10 pt-10 text-center text-3xl font-semibold">
         Purchase Beach Haus Beer
       </h1>
