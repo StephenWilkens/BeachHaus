@@ -35,15 +35,6 @@ export const LandingPageCarousel = () => {
     <div className="embla w-full overflow-hidden" ref={emblaRef}>
       <div className="embla__container flex items-center lg:max-h-full 2xl:max-h-[780px]">
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
-          <Link href="https://0e81a9-f7.myshopify.com/products/pints-pairings-valentines-night-experience">
-            <Image
-              src={slider0}
-              alt="flight of beers"
-              class="w-full object-contain lg:object-cover"
-            />
-          </Link>
-        </div>
-        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Link href="https://www.eventbrite.com/e/brews-i-dos-bridal-expo-beach-haus-brewery-tickets-1147674839339?aff=oddtdtcreator">
             <Image
               src={slider1}
