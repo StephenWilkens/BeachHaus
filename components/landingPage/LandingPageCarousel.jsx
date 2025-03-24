@@ -15,7 +15,7 @@ import karaoke from "../../public/Karaoke.jpg";
 import cigarNight from "../../public/SUNSETS&CIGARS.jpg";
 import legrande from "../../public/ERIC LEGRAND BOURBON TASTING (11 x 11 in) (16 x 9 in).png";
 import slider0 from "../../public/2_11_images/WEBSITE BANNER PHOTOS_valentines.jpg"
-import slider1 from "../../public/2_11_images/WEBSITE BANNER PHOTOSjpg.jpg";
+import slider1 from "../../public/2_11_images/Sip&Stitch.png";
 import slider2 from "../../public/2_11_images/WEBSITE BANNER PHOTOSjpg2.jpg";
 import slider3 from "../../public/BH_Pics_11_17/WEBSITE BANNER PHOTOS-2.png";
 import slider4 from "../../public/BH_Pics_11_17/1.png";
@@ -35,7 +35,7 @@ export const LandingPageCarousel = () => {
     <div className="embla w-full overflow-hidden" ref={emblaRef}>
       <div className="embla__container flex items-center lg:max-h-full 2xl:max-h-[780px]">
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
-          <Link href="https://www.eventbrite.com/e/brews-i-dos-bridal-expo-beach-haus-brewery-tickets-1147674839339?aff=oddtdtcreator">
+          <Link href="https://0e81a9-f7.myshopify.com/products/sip-stitch-workshop-april-29-2025">
             <Image
               src={slider1}
               alt="flight of beers"
@@ -43,13 +43,13 @@ export const LandingPageCarousel = () => {
             />
           </Link>
         </div>
-        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
+        {/* <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
             src={slider2}
             alt="flight of beers"
             class="w-full object-contain lg:object-cover"
           />
-        </div>
+        </div> */}
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
             src={slider3}
