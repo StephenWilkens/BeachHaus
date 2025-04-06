@@ -1,8 +1,8 @@
 import tanks from "../../public/bh2.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import food_menu from "../../public/TAPROOM_MENU_FOOD.jpg";
-import food_menu2 from "../../public/TAPROOM_MENU_FOOD2.jpg";
+import food_menu from "../../public/menu_pics/FOOD_MENU_Spring25_1.jpg";
+import food_menu2 from "../../public/menu_pics/FOOD_MENU_Spring25_2.jpg";
 
 export function BreweryFoodMenu() {
   return (
