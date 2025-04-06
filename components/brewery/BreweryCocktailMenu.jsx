@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import tanks from "../../public/bh2.jpg";
-import drinks_menu from "../../public/TAPROOM_MENU_DRINKS.jpg"
+import drinks_menu from "../../public/menu_pics/DRINK_MEN_Spring25.jpg"
 
 export function BreweryCocktailMenu() {
   return (
