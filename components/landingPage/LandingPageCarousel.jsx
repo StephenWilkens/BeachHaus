@@ -32,7 +32,7 @@ export const LandingPageCarousel = () => {
             class="w-full object-contain lg:object-cover"
           />
         </div>
-        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
+        {/* <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Link href="https://0e81a9-f7.myshopify.com/products/sip-stitch-workshop-june-10-2025">
             <Image
               src={slider2}
@@ -49,7 +49,7 @@ export const LandingPageCarousel = () => {
               class="w-full object-contain lg:object-cover"
             />
           </Link>
-        </div>
+        </div> */}
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
             src={slider4}
