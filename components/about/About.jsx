@@ -84,32 +84,16 @@ export function About() {
           </p>
           
           <p className="mx-5 pt-1">
-            <b>Monday - Thursday:</b> 12PM-10PM
-          </p>
-          <p className=" mx-5">
-            <b>Friday & Saturday:</b> 12PM-12AM
-          </p>
-          <p className=" mx-5">
-            <b>Sunday:</b> 12PM-10PM
-          </p>
-          <p className=" mx-5 pt-1">
-            <b>Please note:</b> The kitchen shuts down one hour before closing time
-          </p>
-          <h3 className="mx-5 pt-4 text-xl font-semibold">
-            Rooftop at Beach Haus
-          </h3>
-          <p className="mx-5 pt-1">
             <b>Monday - Thursday:</b> 4PM-10PM
           </p>
           <p className=" mx-5">
-            <b>Friday & Saturday:</b> 12PM-1AM
+            <b>Friday & Saturday:</b> 12PM-11AM
           </p>
           <p className=" mx-5">
-            <b>Sunday:</b> 12PM-10PM
+            <b>Sunday:</b> 12PM-9PM
           </p>
-          <h3 className="mx-5 pt-4 text-xl font-semibold">801 Craft Kitchen</h3>
-          <p className="mx-5  pt-1">
-            <b className="text-lg">Closed for the season</b>
+          <p className=" mx-5 pt-1">
+            <b>Please note:</b> The kitchen shuts down one hour before closing time
           </p>
         </div>
       </div>
