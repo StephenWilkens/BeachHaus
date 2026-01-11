@@ -50,13 +50,13 @@ export const LandingPageCarousel = () => {
             />
           </Link>
         </div> */}
-        <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
+        {/* <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
             src={slider4}
             alt="flight of beers"
             class="w-full object-contain lg:object-cover"
           />
-        </div>
+        </div> */}
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Image
             src={slider5}
