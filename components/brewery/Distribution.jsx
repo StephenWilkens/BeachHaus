@@ -26,12 +26,12 @@ export function Distribution() {
         <Image
           src={mikeD1}
           alt="Mike DiTomasso"
-          class="w-full object-contain py-2 lg:py-10 px-2 lg:px-5 lg:object-cover"
+          class="w-full object-contain px-2 py-2 lg:object-cover lg:px-5 lg:py-10"
         />
         <Image
           src={mikeD2}
           alt="flight of beers"
-          class="w-full object-contain py-2 lg:py-10 px-2 lg:px-5 lg:object-cover"
+          class="w-full object-contain px-2 py-2 lg:object-cover lg:px-5 lg:py-10"
         />
       </div>
       <p className="px-10 py-5 text-2xl">
@@ -64,7 +64,7 @@ export function Distribution() {
       </p>
       <div className="flex place-content-center p-2">
         <iframe
-          src="https://www.google.com/maps/d/embed?mid=1DKsm2lGTQnTom9I1VjrLjO6GwyRcSMg&ehbc=2E312F"
+          src="https://www.google.com/maps/d/u/0/embed?mid=1WJTii0_Oa6z__Y0D9s2J8oCnqgodVVU&ehbc=2E312F&noprof=1"
           width="640"
           height="480"
         ></iframe>
