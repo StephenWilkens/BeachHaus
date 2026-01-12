@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import doordash from "../public/BH_doordash.jpg";
 import blackWave from "../public/bh_blk_wave_noBG.png";
 import Image from "next/image";
 import { useState } from "react";
@@ -58,10 +59,7 @@ export function TwNav() {
                 </Dropdown.Item> */}
               </Dropdown>
 
-              <Link
-                href="/brewery/distribution"
-                class="px-2 py-5 text-black"
-              >
+              <Link href="/brewery/distribution" class="px-2 py-5 text-black">
                 Distribution
               </Link>
 
@@ -126,16 +124,25 @@ export function TwNav() {
             </div>
           </div>
 
-          <div class="hidden items-center space-x-1 md:flex">
+          <div class="hidden items-center space-x-3 md:flex">
+            <a href="https://order.online/store/-38548005?hideModal=true">
+              <Image
+                src={doordash}
+                alt="doordash"
+                width={150}
+                height={50}
+                class=""
+              />
+            </a>
             <a
               href="https://0e81a9-f7.myshopify.com/"
-              class="px-3 py-5 text-black"
+              class="px-3 py-5 text-black bg-slate-200 rounded-md"
             >
               Shop
             </a>
             <Link
               href="/private-events"
-              class="rounded bg-cyan-800 px-3 py-5 text-white  transition duration-300 hover:opacity-80"
+              class=" rounded bg-cyan-800 py-5 text-white  transition duration-300 hover:opacity-80"
             >
               Book an Event!
             </Link>
