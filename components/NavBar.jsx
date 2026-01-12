@@ -136,7 +136,7 @@ export function TwNav() {
             </a>
             <a
               href="https://0e81a9-f7.myshopify.com/"
-              class="px-3 py-5 text-black bg-slate-200 rounded-md"
+              class="rounded-md bg-slate-200 px-3 py-5 text-black"
             >
               Shop
             </a>
@@ -198,6 +198,15 @@ export function TwNav() {
             <Sidebar.ItemGroup className="">
               <Sidebar.Item href="/">
                 <p>Home</p>
+              </Sidebar.Item>
+              <Sidebar.Item href="https://order.online/store/-38548005?hideModal=true">
+                <Image
+                  src={doordash}
+                  alt="doordash"
+                  width={100}
+                  height={33}
+                  class=""
+                />
               </Sidebar.Item>
               <Sidebar.Item href="/about">
                 <p>About</p>
