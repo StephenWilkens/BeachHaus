@@ -5,9 +5,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import Link from "next/link";
 import Autoplay from "embla-carousel-autoplay";
 
-
-import slider1 from "../../public/5_28/3.png";
-import slider2 from "../../public/5_28/13.png";
+import slider1 from "../../public/adsbannerwtvr/WEBSITE BANNER PHOTOS (1).png";
+import slider2 from "../../public/adsbannerwtvr/WEBSITE BANNER PHOTOS-2 (1).png";
 import slider3 from "../../public/5_28/14.png";
 import slider4 from "../../public/5_28/15.png";
 import slider5 from "../../public/BH_Pics_11_17/3.png";
@@ -32,16 +31,14 @@ export const LandingPageCarousel = () => {
             class="w-full object-contain lg:object-cover"
           />
         </div>
-        {/* <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
-          <Link href="https://0e81a9-f7.myshopify.com/products/sip-stitch-workshop-june-10-2025">
-            <Image
-              src={slider2}
-              alt="flight of beers"
-              class="w-full object-contain lg:object-cover"
-            />
-          </Link>
-        </div>
         <div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
+          <Image
+            src={slider2}
+            alt="flight of beers"
+            class="w-full object-contain lg:object-cover"
+          />
+        </div>
+        {/*<div className="embla__slide relative flex min-h-[360px] w-full flex-none flex-wrap bg-black lg:max-h-full lg:flex-nowrap 2xl:max-h-[780px]">
           <Link href="https://0e81a9-f7.myshopify.com/products/cocktail-aura-on-the-rooftop-june-25-2025">
             <Image
               src={slider3}
